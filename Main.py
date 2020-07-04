@@ -16,12 +16,11 @@ import Crossover
 import Population
 import statistics
 import Probabilities
-from sklearn import datasets
 
 
 # GENERATE DATA
-k_min = 1
-k_max = 7
+k_min = 2
+k_max = 4
 print("Loading data")
 data = Data.generateData("Input/data.fasta", "Input/target.csv")
 print("Generating K-mers")
@@ -34,7 +33,7 @@ X = numpy.matrix(X)
 # INITIALIZE VIARIABLES
 n_features = numpy.size(X, 1)
 n_iterations = 250
-n_results = 100
+n_results = 50
 n_chromosomes = 100
 n_genes = 100
 crossover_rate = 0.2
@@ -114,20 +113,17 @@ print("Number of results =", len(results))
 # Save selected k-mers and their indexes
 Indexes = []
 Selected_k_mers = []
-f = open("Output/Indexes.txt", "w")
-	
+f = open("Output/Model/indexes.txt", "w")
 	
 for r in results:
-	f.write(str(r) + "\n");
 	index = []
 	for i in r: 
 		if K_mers[i] not in Selected_k_mers: 
 			Selected_k_mers.append(K_mers[i])
 			index.append(Selected_k_mers.index(K_mers[i]))
 		else: index.append(Selected_k_mers.index(K_mers[i]))
-
+	f.write(str(index) + "\n");
 	Indexes.append(index)
-
 f.close()
 
 
@@ -153,22 +149,15 @@ dataTest = Data.generateData("Input/data.fasta", "Input/target.csv")
 ################################################
 print("TEST")
 X_test, y_test = Matrix.generateMatrice(dataTest, Selected_k_mers, k_min, k_max)
-						
-
 X_test = numpy.matrix(X_test)
 
-print(X_test)
 
 y_pred = []
 
-print(len(X_test), len(y_test))
-
 # Pour chaque instance 
 for i, x in enumerate(X_test):
-	print("\n Instance:", i, y_test[i])
 	scores = []
 	for n in range(n_targets): scores.append(0)
-	print(scores)
 	# Pour chaque model
 	for j, model in enumerate(Models):
 		probabilities = []
@@ -180,19 +169,12 @@ for i, x in enumerate(X_test):
 		
 		# Pour chaque tableau de probabilité
 		for p in probabilities:
-			#print("Model :", j)
 			# Sauvegarde les probabilités associées à chaque classes
 			for n in range(n_targets):
-				#print(p[n], targets[n])
 				scores[n] = scores[n] + p[n]
 
-	for n in range(n_targets): print(scores[n], targets[n])
-		
 	# Recupère le meilleur score et son index
-	index, value = max(enumerate(scores), key=operator.itemgetter(1))
-
-	print(index, value, y_test[i], targets[index])
-	
+	index, value = max(enumerate(scores), key=operator.itemgetter(1))	
 	y_pred.append(targets[index])	
 
 from sklearn.metrics import f1_score
@@ -200,8 +182,7 @@ print("f1-score =", f1_score(y_test, y_pred, average ="weighted"))
 from sklearn.metrics import classification_report
 print(classification_report(y_test, y_pred))
 
-for i, e in enumerate(y_test):
-	print(e, y_pred[i])
+#for i, e in enumerate(y_test): print(e, y_pred[i])
 
 
-
+# IDEA Si model chargé ==== > prédiction d'un fichier test  ou pred + eva si 3 csv données
