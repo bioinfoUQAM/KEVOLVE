@@ -20,26 +20,27 @@ from sklearn import datasets
 
 
 # GENERATE DATA
-k = 4 # Ajouter k_min et k_max
+k_min = 1
+k_max = 7
 print("Loading data")
 data = Data.generateData("Input/data.fasta", "Input/target.csv")
 print("Generating K-mers")
-K_mers = K_mers.generate_K_mers(data, k)
+K_mers = K_mers.generate_K_mers(data, k_min, k_max)
 print("Number of features :", len(K_mers))
-X, y = Matrix.generateMatrice(data, K_mers, k)
+X, y = Matrix.generateMatrice(data, K_mers, k_min, k_max)
 X = numpy.matrix(X)
 
 
 # INITIALIZE VIARIABLES
-n_features = numpy.size(X,1)
+n_features = numpy.size(X, 1)
 n_iterations = 250
 n_results = 100
-n_chromosomes = 200
-n_genes = 3
+n_chromosomes = 100
+n_genes = 100
 crossover_rate = 0.2
 mutation_rate = 1 / n_genes
 objective = False
-objective_score = 0.85
+objective_score = 0.40
 
 
 # MAIN
@@ -48,6 +49,10 @@ temporaryPopulation = []
 genes = Gene.generateGenes(n_features)
 weights = Weight.initialWeights(genes)
 probabilities = Probabilities.calculProbabilities(weights)
+
+# PREPROCESSING
+# MinMaxScaler (Ajouter dans le test)
+# VarianceThreshold
 
 # EVOLUTION
 for n in range(n_iterations):
@@ -106,19 +111,16 @@ print("Number of results =", len(results))
 
 
 
-
-feature_sets = []
-for result in results: 
-	print(result)
-	feature_sets.append(result)
-
-
+# Save selected k-mers and their indexes
 Indexes = []
 Selected_k_mers = []
-
-for f in feature_sets:
+f = open("Output/Indexes.txt", "w")
+	
+	
+for r in results:
+	f.write(str(r) + "\n");
 	index = []
-	for i in f: 
+	for i in r: 
 		if K_mers[i] not in Selected_k_mers: 
 			Selected_k_mers.append(K_mers[i])
 			index.append(Selected_k_mers.index(K_mers[i]))
@@ -126,33 +128,32 @@ for f in feature_sets:
 
 	Indexes.append(index)
 
+f.close()
+
+
+############################"
 print("TRAIN")
 
-for i, indice in enumerate (Indexes):
-	for j, ele in enumerate(indice):
-		print(K_mers[feature_sets[i][j]],  Selected_k_mers[ele])
-
-
-feature_sets = Indexes
 
 # FIT
 print("Number of features :", len(K_mers))
-X, y = Matrix.generateMatrice(data, Selected_k_mers, k)
+X, y = Matrix.generateMatrice(data, Selected_k_mers, k_min, k_max)
 X = numpy.matrix(X)
 
 
-Models = Model.fit(X, y, feature_sets)
+Models = Model.fit(X, y, Indexes)
 targets = Models[0].classes_
 n_targets = len(targets)
 # PREDICT
 
-k = 7
-dataTest = Data.generateData("Data/data_Test.fasta", "Data/target_Test.csv")
+
+dataTest = Data.generateData("Input/data.fasta", "Input/target.csv")
 ################################################
 # GENERATE MATRICE ONLY FOR EXTRACTED FEATURES #
 ################################################
 print("TEST")
-X_test, y_test = Matrix.generateMatrice(dataTest, Selected_k_mers, k)
+X_test, y_test = Matrix.generateMatrice(dataTest, Selected_k_mers, k_min, k_max)
+						
 
 X_test = numpy.matrix(X_test)
 
@@ -173,7 +174,7 @@ for i, x in enumerate(X_test):
 		probabilities = []
 
 		# Calcul les probabilités de prediction de l'instance par rapport à chaque classes
-		for p in model.predict_proba(x[:,feature_sets[j]]): 
+		for p in model.predict_proba(x[:,Indexes[j]]): 
 			# Sauvegarde un de tableau de n_targets probabilités
 			probabilities.append(p.tolist())
 		

@@ -1,5 +1,5 @@
 # FUNCTION
-def generateMatrice(data, K_mers, k):
+def generateMatrice(data, K_mers, k_min, k_max):
 	# Variables
 	X = []
 	y = []
@@ -13,10 +13,15 @@ def generateMatrice(data, K_mers, k):
 		x = []
 		x_dict =  X_dict.copy()
 
-		# Count K-mer occurences (with overlaping)
-		for i in range(0, len(d[1]) - k + 1, 1):
-			try: x_dict[d[1][i:i + k]] = x_dict[d[1][i:i + k]] + 1; 
-			except: pass
+		# For each k-mers length
+		for k in range(k_min, k_max + 1):
+			# Count K-mer occurences (with overlaping)
+			for i in range(0, len(d[1]) - k + 1, 1):
+				#print("Nucleotide : ", i)
+				try: 
+					x_dict[d[1][i:i + k]] = x_dict[d[1][i:i + k]] + 1; 
+					#print(d[1][i:i + k])
+				except: pass
 		
 		# Get only occurences from dictionnary
 		for value in x_dict:
