@@ -1,4 +1,5 @@
 # IMPORT
+import csv
 import Gene
 import Data
 import numpy
@@ -16,19 +17,21 @@ import Crossover
 import Population
 import statistics
 import Probabilities
-
+import Preprocessing
 
 # GENERATE DATA
 k_min = 2
-k_max = 4
+k_max = 5
 print("Loading data")
 data = Data.generateData("Input/data.fasta", "Input/target.csv")
+
+"""
 print("Generating K-mers")
 K_mers = K_mers.generate_K_mers(data, k_min, k_max)
 print("Number of features :", len(K_mers))
 X, y = Matrix.generateMatrice(data, K_mers, k_min, k_max)
+X = Preprocessing.minMaxScaling(X)
 X = numpy.matrix(X)
-
 
 # INITIALIZE VIARIABLES
 n_features = numpy.size(X, 1)
@@ -41,7 +44,6 @@ mutation_rate = 1 / n_genes
 objective = False
 objective_score = 0.40
 
-
 # MAIN
 results = []
 temporaryPopulation = []
@@ -50,8 +52,7 @@ weights = Weight.initialWeights(genes)
 probabilities = Probabilities.calculProbabilities(weights)
 
 # PREPROCESSING
-# MinMaxScaler (Ajouter dans le test)
-# VarianceThreshold
+# VarianceThreshold or other filter method
 
 # EVOLUTION
 for n in range(n_iterations):
@@ -109,12 +110,10 @@ for n in range(n_iterations):
 print("Number of results =", len(results))
 
 
-
 # Save selected k-mers and their indexes
 Indexes = []
 Selected_k_mers = []
-f = open("Output/Model/indexes.txt", "w")
-	
+
 for r in results:
 	index = []
 	for i in r: 
@@ -122,21 +121,62 @@ for r in results:
 			Selected_k_mers.append(K_mers[i])
 			index.append(Selected_k_mers.index(K_mers[i]))
 		else: index.append(Selected_k_mers.index(K_mers[i]))
-	f.write(str(index) + "\n");
+	
 	Indexes.append(index)
+
+# Save indexes
+f = open("Output/Model/indexes.csv", "w")
+for i in Indexes:
+	for j in i: f.write(str(j) + ",")
+	f.write("\n")
+
 f.close()
 
+# Save k-mers
+f = open("Output/Model/k_mers.csv", "w")
+for k_mer in Selected_k_mers: 
+	f.write(k_mer + "\n");
+f.close()
 
-############################"
-print("TRAIN")
+"""
 
 
-# FIT
-print("Number of features :", len(K_mers))
+
+# Get indexes
+Indexes = []
+f = open("Output/Model/indexes.csv", "r")
+reader =  csv.reader(f, delimiter = ",")
+for r in reader:
+	index = []
+	for i in r: 
+		try: index.append(int(i))
+		except: pass
+	Indexes.append(index)	
+
+# Get k-mers
+Selected_k_mers = []
+f = open("Output/Model/k_mers.csv", "r")
+reader =  csv.reader(f, delimiter = ",")
+for r in reader: Selected_k_mers.append(r[0])
+print("Number of features :", len(Selected_k_mers))
+
+
+# Get value of k_min and k_max
+k_min =  len(min(Selected_k_mers, key = len))
+k_max =  len(max(Selected_k_mers, key = len))
+print("k_min", k_min, "k_max", k_max)
+
+# Generate train matrix
 X, y = Matrix.generateMatrice(data, Selected_k_mers, k_min, k_max)
+X = Preprocessing.minMaxScaling(X)
 X = numpy.matrix(X)
 
 
+#####################
+# Get Model (TO DO) #
+#####################
+
+# Fit
 Models = Model.fit(X, y, Indexes)
 targets = Models[0].classes_
 n_targets = len(targets)
@@ -149,6 +189,7 @@ dataTest = Data.generateData("Input/data.fasta", "Input/target.csv")
 ################################################
 print("TEST")
 X_test, y_test = Matrix.generateMatrice(dataTest, Selected_k_mers, k_min, k_max)
+X_test = Preprocessing.minMaxScaling(X_test)
 X_test = numpy.matrix(X_test)
 
 
@@ -182,7 +223,10 @@ print("f1-score =", f1_score(y_test, y_pred, average ="weighted"))
 from sklearn.metrics import classification_report
 print(classification_report(y_test, y_pred))
 
+#SAVE PREDICTION
 #for i, e in enumerate(y_test): print(e, y_pred[i])
 
+# SAVE SCORE of prediction
 
 # IDEA Si model chargé ==== > prédiction d'un fichier test  ou pred + eva si 3 csv données
+# Ajouter info sur le chargement exemple matrice en cosntruction
