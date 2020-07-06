@@ -20,12 +20,12 @@ import Probabilities
 import Preprocessing
 
 # GENERATE DATA
-k_min = 2
-k_max = 5
+k_min = 3
+k_max = 7
 print("Loading data")
 data = Data.generateData("Input/data.fasta", "Input/target.csv")
 
-"""
+
 print("Generating K-mers")
 K_mers = K_mers.generate_K_mers(data, k_min, k_max)
 print("Number of features :", len(K_mers))
@@ -138,9 +138,6 @@ for k_mer in Selected_k_mers:
 	f.write(k_mer + "\n");
 f.close()
 
-"""
-
-
 
 # Get indexes
 Indexes = []
@@ -166,20 +163,44 @@ k_min =  len(min(Selected_k_mers, key = len))
 k_max =  len(max(Selected_k_mers, key = len))
 print("k_min", k_min, "k_max", k_max)
 
+
 # Generate train matrix
-X, y = Matrix.generateMatrice(data, Selected_k_mers, k_min, k_max)
-X = Preprocessing.minMaxScaling(X)
-X = numpy.matrix(X)
+
 
 
 #####################
 # Get Model (TO DO) #
 #####################
 
-# Fit
-Models = Model.fit(X, y, Indexes)
+
+# Fit with new kmers etc
+X, y = Matrix.generateMatrice(data, Selected_k_mers, k_min, k_max)
+X = Preprocessing.minMaxScaling(X)
+X = numpy.matrix(X)
+Model.fit(X, y, Indexes)
+
+
+##############
+# Load Model #
+##############
+
+print("Load model")
+import os
+import joblib
+Models = []
+path = "Output/Model"
+list_models = os.listdir(path + "/pkl")
+
+
+
+for i, model in enumerate(list_models):
+	Models.append(joblib.load(path + "/pkl/model_" + str(i) + ".pkl"))
+	print(	path + "/pkl/model_" + str(i) + ".pkl")
+
+for m in Models: print(m)
 targets = Models[0].classes_
 n_targets = len(targets)
+
 # PREDICT
 
 
