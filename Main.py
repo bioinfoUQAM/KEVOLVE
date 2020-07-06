@@ -1,5 +1,4 @@
 # IMPORT
-import csv
 import Gene
 import Data
 import numpy
@@ -24,8 +23,6 @@ k_min = 3
 k_max = 7
 print("Loading data")
 data = Data.generateData("Input/data.fasta", "Input/target.csv")
-
-
 print("Generating K-mers")
 K_mers = K_mers.generate_K_mers(data, k_min, k_max)
 print("Number of features :", len(K_mers))
@@ -109,11 +106,9 @@ for n in range(n_iterations):
 
 print("Number of results =", len(results))
 
-
-# Save selected k-mers and their indexes
+# GET INDEXES AND K-MERS 
 Indexes = []
 Selected_k_mers = []
-
 for r in results:
 	index = []
 	for i in r: 
@@ -121,10 +116,9 @@ for r in results:
 			Selected_k_mers.append(K_mers[i])
 			index.append(Selected_k_mers.index(K_mers[i]))
 		else: index.append(Selected_k_mers.index(K_mers[i]))
-	
 	Indexes.append(index)
 
-# Save indexes
+# SAVE INDEXES
 f = open("Output/Model/indexes.csv", "w")
 for i in Indexes:
 	for j in i: f.write(str(j) + ",")
@@ -132,122 +126,22 @@ for i in Indexes:
 
 f.close()
 
-# Save k-mers
+# SAVE K-MERS
 f = open("Output/Model/k_mers.csv", "w")
 for k_mer in Selected_k_mers: 
 	f.write(k_mer + "\n");
 f.close()
 
-
-# Get indexes
-Indexes = []
-f = open("Output/Model/indexes.csv", "r")
-reader =  csv.reader(f, delimiter = ",")
-for r in reader:
-	index = []
-	for i in r: 
-		try: index.append(int(i))
-		except: pass
-	Indexes.append(index)	
-
-# Get k-mers
-Selected_k_mers = []
-f = open("Output/Model/k_mers.csv", "r")
-reader =  csv.reader(f, delimiter = ",")
-for r in reader: Selected_k_mers.append(r[0])
-print("Number of features :", len(Selected_k_mers))
-
-
-# Get value of k_min and k_max
-k_min =  len(min(Selected_k_mers, key = len))
-k_max =  len(max(Selected_k_mers, key = len))
-print("k_min", k_min, "k_max", k_max)
-
-
-# Generate train matrix
-
-
-
-#####################
-# Get Model (TO DO) #
-#####################
-
-
-# Fit with new kmers etc
+# BUILT AND SAVE MODEL
 X, y = Matrix.generateMatrice(data, Selected_k_mers, k_min, k_max)
 X = Preprocessing.minMaxScaling(X)
 X = numpy.matrix(X)
 Model.fit(X, y, Indexes)
 
 
-##############
-# Load Model #
-##############
+Model.predict("Output", "Input/data.fasta", "Input/target.csv")
 
-print("Load model")
-import os
-import joblib
-Models = []
-path = "Output/Model"
-list_models = os.listdir(path + "/pkl")
-
-
-
-for i, model in enumerate(list_models):
-	Models.append(joblib.load(path + "/pkl/model_" + str(i) + ".pkl"))
-	print(	path + "/pkl/model_" + str(i) + ".pkl")
-
-for m in Models: print(m)
-targets = Models[0].classes_
-n_targets = len(targets)
-
-# PREDICT
-
-
-dataTest = Data.generateData("Input/data.fasta", "Input/target.csv")
-################################################
-# GENERATE MATRICE ONLY FOR EXTRACTED FEATURES #
-################################################
-print("TEST")
-X_test, y_test = Matrix.generateMatrice(dataTest, Selected_k_mers, k_min, k_max)
-X_test = Preprocessing.minMaxScaling(X_test)
-X_test = numpy.matrix(X_test)
-
-
-y_pred = []
-
-# Pour chaque instance 
-for i, x in enumerate(X_test):
-	scores = []
-	for n in range(n_targets): scores.append(0)
-	# Pour chaque model
-	for j, model in enumerate(Models):
-		probabilities = []
-
-		# Calcul les probabilités de prediction de l'instance par rapport à chaque classes
-		for p in model.predict_proba(x[:,Indexes[j]]): 
-			# Sauvegarde un de tableau de n_targets probabilités
-			probabilities.append(p.tolist())
-		
-		# Pour chaque tableau de probabilité
-		for p in probabilities:
-			# Sauvegarde les probabilités associées à chaque classes
-			for n in range(n_targets):
-				scores[n] = scores[n] + p[n]
-
-	# Recupère le meilleur score et son index
-	index, value = max(enumerate(scores), key=operator.itemgetter(1))	
-	y_pred.append(targets[index])	
-
-from sklearn.metrics import f1_score
-print("f1-score =", f1_score(y_test, y_pred, average ="weighted"))
-from sklearn.metrics import classification_report
-print(classification_report(y_test, y_pred))
-
-#SAVE PREDICTION
-#for i, e in enumerate(y_test): print(e, y_pred[i])
-
-# SAVE SCORE of prediction
 
 # IDEA Si model chargé ==== > prédiction d'un fichier test  ou pred + eva si 3 csv données
+# AJouter les variables path et model path au début pour les condition 
 # Ajouter info sur le chargement exemple matrice en cosntruction
