@@ -1,4 +1,4 @@
-# FUNCTION
+# Function checking objective
 def checkObjective(objective_score, scores):
 	objective = False
 	for s in scores:

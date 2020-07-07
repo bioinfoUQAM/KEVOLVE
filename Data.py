@@ -3,8 +3,8 @@ import csv
 import numpy
 from Bio import SeqIO
 
-# FUNCTION
-def generateData(fasta_file, csv_file):
+# Function generating the data table 
+def generateTrainData(fasta_file, csv_file):
 	# Variable data 
 	data = []
 
@@ -13,13 +13,27 @@ def generateData(fasta_file, csv_file):
 
 	# Open the sequences file
 	for record in SeqIO.parse(fasta_file, "fasta"):
-		 # Generate table [Id, Sequences, Class]
+		# Generate table [Id, Sequences, Class]
 		if record.id in reader: data.append([record.id, record.seq.upper(), reader[record.id]])
-	
+
 	# Return data
 	return data
 
+# Function generating the data table 
+def generateTestData(fasta_file, csv_file):
+	# Variable data 
+	data = []
 
+	# Call classical function
+	if csv_file: data = generateTrainData(fasta_file, csv_file)
+	else: 
+		# Open the sequences file and generate table [Id, Sequences]
+		for record in SeqIO.parse(fasta_file, "fasta"): data.append([record.id, record.seq.upper()])
+			
+	# Return data
+	return data
+
+# Function generating mutated data
 def generateDataMutated(data, mutation_rate):
 	# Alphabet of nucletotide
 	alphabet = ["A", "C", "G", "T"]

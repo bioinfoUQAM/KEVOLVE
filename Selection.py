@@ -1,7 +1,7 @@
 # IMPORT 
 import heapq
 
-# FUNCTION
+# Function selecting next population
 def selection(scores, population):
 	selection = []
 	n = int(len(scores) / 2)

@@ -17,16 +17,17 @@ def generateMatrice(data, K_mers, k_min, k_max):
 		for k in range(k_min, k_max + 1):
 			# Count K-mer occurences (with overlaping)
 			for i in range(0, len(d[1]) - k + 1, 1):
-				#print("Nucleotide : ", i)
 				try: 
-					x_dict[d[1][i:i + k]] = x_dict[d[1][i:i + k]] + 1; 
-					#print(d[1][i:i + k])
+					x_dict[d[1][i:i + k]] = x_dict[d[1][i:i + k]] + 1;
 				except: pass
 		
 		# Get only occurences from dictionnary
 		for value in x_dict:
 			x.append(x_dict.get(value))
 		X.append(x)
-		y.append(d[2])
+
+	# Generates y (Matrix class) if csv file exist
+	if len(data[0]) == 3: 
+		for i in data: y.append(i[2])
 	# Return matrices X (matrix attributes)
 	return X, y

@@ -1,7 +1,7 @@
 # IMPORTS
 import re
 
-# FUNCTION
+# Function generating k-mers
 def generate_K_mers(data, k_min, k_max):
 	# List of k-mer
 	K_mers = []

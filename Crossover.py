@@ -1,7 +1,9 @@
-# IMPORT
+##############
+### IMPORT ###
+##############
 import numpy
 
-# FUNCTION
+# Function performing uniform crossover 
 def crossover(selection, crossover_rate):
 	# Information variables
 	children = []

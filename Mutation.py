@@ -1,7 +1,7 @@
 # IMPORT
 import numpy
 
-# FUNCTION
+# Function generating mutation
 def mutation(selection, mutation_rate, genes, objective):
 
 	# Scroll through each chormosome 

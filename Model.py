@@ -22,6 +22,7 @@ def fit(X, y, Indexes):
 def predict(model_path, fasta_path, csv_path):
 	# Load model
 	Models = []
+	print("Load model...")
 	list_models = os.listdir(model_path + "/Model/pkl")
 	for i, model in enumerate(list_models): Models.append(joblib.load(model_path + "/Model/pkl/model_" + str(i) + ".pkl"))
 	targets = Models[0].classes_
@@ -48,16 +49,18 @@ def predict(model_path, fasta_path, csv_path):
 	# Get values of k_min and k_max
 	k_min =  len(min(Selected_k_mers, key = len))
 	k_max =  len(max(Selected_k_mers, key = len))
-	print("k_min", k_min, "k_max", k_max)
+	print("k_min", k_min, "| k_max", k_max)
 
 	# Generate testing matrix
-	data_test = Data.generateData(fasta_path, csv_path) ########### GERER le cas du no csv
+	print("Generate data...")
+	data_test = Data.generateTestData(fasta_path, csv_path) ########### GERER le cas du no csv
 	X_test, y_test = Matrix.generateMatrice(data_test, Selected_k_mers, k_min, k_max)
 	X_test = Preprocessing.minMaxScaling(X_test)
 	X_test = numpy.matrix(X_test)
 
 	# Prediction
 	y_pred = []
+	print("Prediction...")
 	# For each instance 
 	for i, x in enumerate(X_test):
 		scores = []
@@ -80,21 +83,30 @@ def predict(model_path, fasta_path, csv_path):
 		# Set the class relative to the retrieved index
 		y_pred.append(targets[index])	
 
-	# Compute performances metrics
-	classificationReport = classification_report(y_test, y_pred, digits = 3)
-	confusionMatrix = confusion_matrix(y_test, y_pred)
-	print("\nClassification report of model evaluation\n", classificationReport)
-	print("Confusion matrix \n", confusionMatrix)
+	# Prediction with evaluation
+	if y_test: 
+		# Compute performances metrics
+		classificationReport = classification_report(y_test, y_pred, digits = 3)
+		confusionMatrix = confusion_matrix(y_test, y_pred)
+		print("\nClassification report of model evaluation\n", classificationReport)
+		print("Confusion matrix \n", confusionMatrix)
 	
-	# Save results of prediction evaluation
-	f = open("Output/Prediction_Evaluation.txt", "w")
-	f.write("Classification report of prediction evaluation\n" +  classificationReport);
-	f.write("\nConfusion matrix \n" + str(confusionMatrix));
-	f.close()
+		# Save results of prediction evaluation
+		f = open("Output/Prediction_Evaluation.txt", "w")
+		f.write("Classification report of prediction evaluation\n" +  classificationReport);
+		f.write("\nConfusion matrix \n" + str(confusionMatrix));
+		f.close()
 
-	# Save prediction 
-	f = open("Output/Prediction_Evaluation.csv", "w")
-	f.write("id,y_pred,y_true\n");
-	for i, y in enumerate(y_pred): f.write(data_test[i][0] + "," + y + "," + y_test[i] + "\n");
-	f.close()
+		# Save prediction with evaluation
+		f = open("Output/Prediction_Evaluation.csv", "w")
+		f.write("id,y_pred,y_true\n");
+		for i, y in enumerate(y_pred): f.write(data_test[i][0] + "," + y + "," + y_test[i] + "\n");
+		f.close()
+	# Prediction without evaluation
+	else:
+		# Save prediction without evaluation
+		f = open("Output/Prediction.csv", "w")
+		f.write("id,y_pred\n");
+		for i, y in enumerate(y_pred): f.write(data_test[i][0] + "," + y + "\n");
+		f.close()
 

@@ -4,7 +4,7 @@ from sklearn.metrics import f1_score
 from sklearn.model_selection import StratifiedKFold
 from sklearn.model_selection import cross_val_predict
 
-# FUNCTION
+# Function calculating fitness score
 def fitnessCalculation(X, y, population):
 	scores = []
 	classifier = svm.SVC(kernel='linear', C = 1)
