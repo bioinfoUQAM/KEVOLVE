@@ -55,9 +55,6 @@ def extraction(training_fasta, training_csv, k_min, k_max):
 	weights = Weight.initialWeights(genes)
 	probabilities = Probabilities.calculProbabilities(weights)
 
-	# PREPROCESSING
-	# VarianceThreshold or other filter method
-
 	# EVOLUTION
 	for n in range(n_iterations):
 
