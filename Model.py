@@ -13,6 +13,12 @@ from sklearn.metrics import classification_report
 
 # Function of building prediction model
 def fit(X, y, Indexes):
+	
+	# Clear model folder
+	filesToRemove = [os.path.join("Output/Model/pkl",f) for f in os.listdir("Output/Model/pkl")]
+	for f in filesToRemove: os.remove(f) 
+
+	# Save model
 	for i, f in enumerate(Indexes):
 		classifier = svm.SVC(kernel = 'linear', C = 1, probability = True, random_state = 0, cache_size = 2000)
 		classifier.fit(X[:,f], y)
@@ -53,7 +59,7 @@ def predict(model_path, fasta_path, csv_path):
 
 	# Generate testing matrix
 	print("Generate data...")
-	data_test = Data.generateTestData(fasta_path, csv_path) ########### GERER le cas du no csv
+	data_test = Data.generateTestData(fasta_path, csv_path) 
 	X_test, y_test = Matrix.generateMatrice(data_test, Selected_k_mers, k_min, k_max)
 	X_test = Preprocessing.minMaxScaling(X_test)
 	X_test = numpy.matrix(X_test)

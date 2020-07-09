@@ -24,7 +24,7 @@ import Preprocessing
 ### CORE ###
 ############
 
-#Function to extract feature subsets
+# Function to extract feature subsets
 def extraction(training_fasta, training_csv, k_min, k_max):
 	# GENERATE TRAINING DATA
 	print("Loading data...")
@@ -36,6 +36,12 @@ def extraction(training_fasta, training_csv, k_min, k_max):
 	X, y = Matrix.generateMatrice(data, k_mers, k_min, k_max)
 	X = Preprocessing.minMaxScaling(X)
 	X = numpy.matrix(X)
+
+	# PREPROCESSING
+	X, k_mers = Preprocessing.varianceThreshold(X, k_mers)
+	print("Number of features after preprocessing :", len(k_mers))
+	
+	print(numpy.size(X, 1))
 
 	# INITIALIZE VARIABLES
 	n_features = numpy.size(X, 1)
