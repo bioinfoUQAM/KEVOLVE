@@ -40,8 +40,6 @@ def extraction(training_fasta, training_csv, k_min, k_max):
 	# PREPROCESSING
 	X, k_mers = Preprocessing.varianceThreshold(X, k_mers)
 	print("Number of features after preprocessing :", len(k_mers))
-	
-	print(numpy.size(X, 1))
 
 	# INITIALIZE VARIABLES
 	n_features = numpy.size(X, 1)
