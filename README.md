@@ -16,7 +16,7 @@
 * [biopython](https://biopython.org/wiki/Download)    
 
 ### Parameters
-List of parameters requiring adjustment in the Main.py and Algorithm.py file :
+List of parameters requiring adjustment should be defined in a config file (see the example config_example.ini):
 * k_min : Minimum length of k-mer(s)
 * k_max : Maximum length of k-mer(s)
 * model_path : Model folder path for prediction
@@ -34,8 +34,11 @@ List of parameters requiring adjustment in the Main.py and Algorithm.py file :
 Specify the parameters of the previous section in the Main.py file.
 Then run the following command :
 ```sh
-$ python -W ignore Main.py 
+$ python -W ignore Main.py config_example.ini
+
 ```
+where config_example.ini is a config file containing the list of the required parameters.
+
 Complementary information : 
 - The training_fasta and training_csv are required for feature extraction and model construction.
 - If the path of a model is filled in, the agorithm will automatically proceed to the prediction step.
