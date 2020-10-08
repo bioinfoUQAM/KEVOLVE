@@ -12,20 +12,21 @@ from sklearn.metrics import confusion_matrix
 from sklearn.metrics import classification_report
 
 # Function of building prediction model
-def fit(X, y, Indexes):
-	
-	# Clear model folder
-	filesToRemove = [os.path.join("Output/Model/pkl",f) for f in os.listdir("Output/Model/pkl")]
-	for f in filesToRemove: os.remove(f) 
+def fit(X, y, Indexes, out_pkl):	
+    # Clear model folder
+    filesToRemove = [os.path.join(out_pkl, f) for f in os.listdir(out_pkl)]
+    for f in filesToRemove: os.remove(f) 
 
-	# Save model
-	for i, f in enumerate(Indexes):
-		classifier = svm.SVC(kernel = 'linear', C = 1, probability = True, random_state = 0, cache_size = 2000)
-		classifier.fit(X[:,f], y)
-		joblib.dump(classifier, "Output/Model/pkl/model_" + str (i) + ".pkl")
+    # Save model
+    for i, f in enumerate(Indexes):
+        classifier = svm.SVC(kernel='linear', C=1, probability=True, 
+                random_state=0, cache_size=2000)
+        classifier.fit(X[:,f], y)
+        joblib.dump(classifier, out_pkl+"/model_" + str (i) + ".pkl")
 
 # Fonction of prediction
 def predict(model_path, fasta_path, csv_path):
+
 	# Load model
 	Models = []
 	print("Load model...")
@@ -98,20 +99,20 @@ def predict(model_path, fasta_path, csv_path):
 		print("Confusion matrix \n", confusionMatrix)
 	
 		# Save results of prediction evaluation
-		f = open("Output/Prediction_Evaluation.txt", "w")
+		f = open(model_path + "/Prediction_Evaluation.txt", "w")
 		f.write("Classification report of prediction evaluation\n" +  classificationReport);
 		f.write("\nConfusion matrix \n" + str(confusionMatrix));
 		f.close()
 
 		# Save prediction with evaluation
-		f = open("Output/Prediction_Evaluation.csv", "w")
+		f = open(model_path + "/Prediction_Evaluation.csv", "w")
 		f.write("id,y_pred,y_true\n");
 		for i, y in enumerate(y_pred): f.write(data_test[i][0] + "," + y + "," + y_test[i] + "\n");
 		f.close()
 	# Prediction without evaluation
 	else:
 		# Save prediction without evaluation
-		f = open("Output/Prediction.csv", "w")
+		f = open(model_path + "/Prediction.csv", "w")
 		f.write("id,y_pred\n");
 		for i, y in enumerate(y_pred): f.write(data_test[i][0] + "," + y + "\n");
 		f.close()
