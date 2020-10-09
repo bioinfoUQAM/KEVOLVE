@@ -9,9 +9,9 @@ def minMaxScaling(X):
 	return X
 
 # Function removing quasi-constant features
-def varianceThreshold(X, k_mers):
-	# Instancies the filter method  
-	varianceThreshold = VarianceThreshold(threshold = 0.01)
+def varianceThreshold(X, k_mers, threshold=0.01):
+	# Instancies the filter method
+	varianceThreshold = VarianceThreshold(threshold=threshold)
 
 	# Apply the filter
 	X = varianceThreshold.fit_transform(X)

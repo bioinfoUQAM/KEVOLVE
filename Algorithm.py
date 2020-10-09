@@ -53,7 +53,7 @@ def extraction(params):
     X = numpy.matrix(X)
 
     # PREPROCESSING
-    X, k_mers = Preprocessing.varianceThreshold(X, k_mers)
+    X, k_mers = Preprocessing.varianceThreshold(X, k_mers, threshold=params["var_threshold"])
     print("Number of features after preprocessing :", len(k_mers))
 
     # INITIALIZE VARIABLES
