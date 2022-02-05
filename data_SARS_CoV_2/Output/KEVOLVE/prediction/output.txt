@@ -1,0 +1,426 @@
+1.fasta
+Classification report
+K-mers = {'ATAGCGCT': 0, 'AAATATCT': 0, 'TAGTTTGA': 0, 'GGTATAGA': 0, 'CCGCAATG': 0, 'AATGTCTG': 0, 'CTTGGTGC': 0, 'AAAATGTC': 0}
+                              precision    recall  f1-score   support
+
+              Alpha_B.1.1.7       1.00      1.00      1.00     49750
+             Beta_(B.1.351)       1.00      0.99      0.99     16876
+Delta_(B.1.617.2+AY.1+AY.2)       1.00      1.00      1.00     49750
+  Epsilon_(B.1.427+B.1.429)       1.00      1.00      1.00     33867
+              Eta_(B.1.525)       0.98      0.99      0.99      2085
+                Gamma_(P.1)       1.00      1.00      1.00     36679
+             Iota_(B.1.526)       1.00      1.00      1.00     28322
+            Kappa_(1.617.1)       0.98      0.99      0.98      3458
+                 Zeta_(P.2)       0.91      0.99      0.95      3496
+
+                   accuracy                           1.00    224283
+                  macro avg       0.98      0.99      0.99    224283
+               weighted avg       1.00      1.00      1.00    224283
+
+{'Alpha_B.1.1.7': {'precision': 0.9995161973108634, 'recall': 0.996643216080402, 'f1-score': 0.9980776392201859, 'support': 49750}, 'Beta_(B.1.351)': {'precision': 0.9965486462362392, 'recall': 0.9923560085328277, 'f1-score': 0.9944479083162615, 'support': 16876}, 'Delta_(B.1.617.2+AY.1+AY.2)': {'precision': 0.9993557479363802, 'recall': 0.997748743718593, 'f1-score': 0.9985515992757996, 'support': 49750}, 'Epsilon_(B.1.427+B.1.429)': {'precision': 0.997491145218418, 'recall': 0.9978740366728674, 'f1-score': 0.9976825542090425, 'support': 33867}, 'Eta_(B.1.525)': {'precision': 0.9838709677419355, 'recall': 0.9947242206235012, 'f1-score': 0.9892678273312664, 'support': 2085}, 'Gamma_(P.1)': {'precision': 0.9996446048279067, 'recall': 0.9969192180811909, 'f1-score': 0.9982800513254525, 'support': 36679}, 'Iota_(B.1.526)':
+{'precision': 0.9963988137268748, 'recall': 0.9964691759056564, 'f1-score': 0.9964339935741271, 'support': 28322}, 'Kappa_(1.617.1)': {'precision': 0.9790470723306545, 'recall': 0.9864083285135917, 'f1-score': 0.982713915298185, 'support': 3458}, 'Zeta_(P.2)': {'precision': 0.9082592786199687, 'recall': 0.9939931350114416, 'f1-score': 0.9491942092324502, 'support': 3496}, 'accuracy': 0.9965579201276958, 'macro avg': {'precision': 0.9844591637721378, 'recall': 0.9947928981266746, 'f1-score': 0.9894055219758635, 'support': 224283}, 'weighted avg': {'precision': 0.9966953745483046, 'recall': 0.9965579201276958, 'f1-score': 0.9965947987250674, 'support': 224283}}
+10.fasta
+Classification report
+K-mers = {'CCCACTTA': 0, 'ATAGCGCT': 0, 'AAAATGTC': 0, 'TTCATCTA': 0, 'CAAAATGT': 0, 'TAAACGAA': 0, 'TGTTTACC': 0, 'TGGTTTTA': 0}
+                              precision    recall  f1-score   support
+
+              Alpha_B.1.1.7       1.00      0.99      0.99     49750
+             Beta_(B.1.351)       1.00      0.98      0.99     16876
+Delta_(B.1.617.2+AY.1+AY.2)       1.00      1.00      1.00     49750
+  Epsilon_(B.1.427+B.1.429)       1.00      0.99      1.00     33867
+              Eta_(B.1.525)       0.98      1.00      0.99      2085
+                Gamma_(P.1)       0.98      1.00      0.99     36679
+             Iota_(B.1.526)       0.99      1.00      0.99     28322
+            Kappa_(1.617.1)       0.94      0.99      0.97      3458
+                 Zeta_(P.2)       0.99      0.99      0.99      3496
+
+                   accuracy                           0.99    224283
+                  macro avg       0.99      0.99      0.99    224283
+               weighted avg       0.99      0.99      0.99    224283
+
+{'Alpha_B.1.1.7': {'precision': 0.9996746975703975, 'recall': 0.988321608040201, 'f1-score': 0.993965735078587, 'support': 49750}, 'Beta_(B.1.351)': {'precision': 0.9960715580805029, 'recall': 0.9765939796160228, 'f1-score': 0.9862366106157621, 'support': 16876}, 'Delta_(B.1.617.2+AY.1+AY.2)': {'precision': 0.9991935483870967, 'recall': 0.9961809045226131, 'f1-score': 0.99768495218923, 'support': 49750}, 'Epsilon_(B.1.427+B.1.429)': {'precision': 0.9975678481388106, 'recall': 0.9930906191868191, 'f1-score': 0.9953241987511469, 'support': 33867}, 'Eta_(B.1.525)': {'precision': 0.9838862559241706, 'recall': 0.99568345323741, 'f1-score': 0.9897497020262216, 'support': 2085}, 'Gamma_(P.1)': {'precision': 0.9770721693460236, 'recall': 0.9991820932958914, 'f1-score': 0.9880034506928345, 'support': 36679}, 'Iota_(B.1.526)': {'precision': 0.9911482665355299, 'recall': 0.9962926347009392, 'f1-score': 0.9937137926784174, 'support': 28322}, 'Kappa_(1.617.1)': {'precision': 0.9401475813063679, 'recall': 0.9947946790052054, 'f1-score': 0.966699452016299, 'support': 3458}, 'Zeta_(P.2)': {'precision': 0.994269340974212, 'recall': 0.9925629290617849, 'f1-score': 0.9934154022330376, 'support': 3496}, 'accuracy': 0.992919659537281, 'macro avg': {'precision': 0.9865590295847902, 'recall': 0.992522544518543, 'f1-score': 0.989421477364615, 'support': 224283}, 'weighted avg': {'precision': 0.9930568044102149, 'recall': 0.992919659537281, 'f1-score': 0.9929392377292748, 'support': 224283}}
+11.fasta
+Classification report
+K-mers = {'TTAGAACC': 0, 'TGTTTACC': 0, 'TTTCTCCT': 0, 'CCCACTTA': 0, 'TTCAGAGC': 0, 'AAATGTCT': 0, 'AAATATCT': 0, 'AAAATGTC': 0}
+                              precision    recall  f1-score   support
+
+              Alpha_B.1.1.7       1.00      1.00      1.00     49750
+             Beta_(B.1.351)       0.99      0.98      0.99     16876
+Delta_(B.1.617.2+AY.1+AY.2)       1.00      0.99      0.99     49750
+  Epsilon_(B.1.427+B.1.429)       1.00      0.99      0.99     33867
+              Eta_(B.1.525)       1.00      0.99      1.00      2085
+                Gamma_(P.1)       1.00      1.00      1.00     36679
+             Iota_(B.1.526)       0.98      0.99      0.99     28322
+            Kappa_(1.617.1)       0.91      0.98      0.95      3458
+                 Zeta_(P.2)       0.91      0.99      0.95      3496
+
+                   accuracy                           0.99    224283
+                  macro avg       0.98      0.99      0.98    224283
+               weighted avg       0.99      0.99      0.99    224283
+
+{'Alpha_B.1.1.7': {'precision': 0.9979660880422087, 'recall': 0.9961206030150753, 'f1-score': 0.9970424915499757, 'support': 49750}, 'Beta_(B.1.351)': {'precision': 0.9925730713943459, 'recall': 0.9819862526665086, 'f1-score': 0.9872512808292625, 'support': 16876}, 'Delta_(B.1.617.2+AY.1+AY.2)': {'precision': 0.9996545557993985, 'recall': 0.9888442211055276, 'f1-score': 0.99422000363776, 'support': 49750}, 'Epsilon_(B.1.427+B.1.429)': {'precision': 0.9950241388502207, 'recall': 0.9919685829863879, 'f1-score': 0.9934940115333432, 'support': 33867}, 'Eta_(B.1.525)': {'precision': 0.9995178399228544, 'recall': 0.9942446043165467, 'f1-score': 0.9968742486174561, 'support': 2085}, 'Gamma_(P.1)': {'precision': 0.9994251772370186, 'recall': 0.9954469860137953, 'f1-score': 0.9974321149538327, 'support': 36679}, 'Iota_(B.1.526)': {'precision': 0.9770186766645838, 'recall': 0.9937151331120684, 'f1-score': 0.9852961770060216, 'support': 28322}, 'Kappa_(1.617.1)': {'precision': 0.911134903640257, 'recall': 0.9843840370156159, 'f1-score': 0.9463441757019738, 'support': 3458}, 'Zeta_(P.2)': {'precision': 0.9103810775295663, 'recall': 0.9908466819221968, 'f1-score': 0.948911108067388, 'support': 3496}, 'accuracy': 0.9921215607067856, 'macro avg': {'precision': 0.9758550587867172, 'recall': 0.9908396780170803, 'f1-score': 0.9829850679885571, 'support': 224283}, 'weighted avg': {'precision': 0.9923944443887983, 'recall': 0.9921215607067856, 'f1-score': 0.9921907969430086, 'support': 224283}}
+12.fasta
+Classification report
+K-mers = {'GTCCGTTT': 0, 'TTTGCATG': 0, 'CCGCAATG': 0, 'CTGGTTTT': 0, 'ATAGCGCT': 0, 'ATACCTGG': 0, 'AAAATGTC': 0, 'GGGAATTT': 0}
+                              precision    recall  f1-score   support
+
+              Alpha_B.1.1.7       1.00      0.97      0.98     49750
+             Beta_(B.1.351)       1.00      0.98      0.99     16876
+Delta_(B.1.617.2+AY.1+AY.2)       1.00      1.00      1.00     49750
+  Epsilon_(B.1.427+B.1.429)       1.00      0.99      0.99     33867
+              Eta_(B.1.525)       1.00      1.00      1.00      2085
+                Gamma_(P.1)       1.00      0.99      0.99     36679
+             Iota_(B.1.526)       0.98      1.00      0.99     28322
+            Kappa_(1.617.1)       0.80      0.98      0.88      3458
+                 Zeta_(P.2)       0.76      0.99      0.86      3496
+
+                   accuracy                           0.99    224283
+                  macro avg       0.95      0.99      0.97    224283
+               weighted avg       0.99      0.99      0.99    224283
+
+{'Alpha_B.1.1.7': {'precision': 0.9986971357667253, 'recall': 0.9706934673366834, 'f1-score': 0.9844962030477549, 'support': 49750}, 'Beta_(B.1.351)': {'precision': 0.9978900409934893, 'recall': 0.9808603934581654, 'f1-score': 0.9893019364092756, 'support': 16876}, 'Delta_(B.1.617.2+AY.1+AY.2)': {'precision': 0.9990549724534523, 'recall': 0.9987336683417085, 'f1-score': 0.9988942945599292, 'support': 49750}, 'Epsilon_(B.1.427+B.1.429)': {'precision': 0.9983340770489365, 'recall': 0.9909056013228216, 'f1-score': 0.9946059689991406, 'support': 33867}, 'Eta_(B.1.525)': {'precision': 0.9990384615384615, 'recall': 0.996642685851319, 'f1-score': 0.9978391356542616, 'support': 2085}, 'Gamma_(P.1)': {'precision': 0.9993390796684383, 'recall': 0.989367212846588, 'f1-score': 0.9943281455501973, 'support': 36679}, 'Iota_(B.1.526)': {'precision': 0.978523350218583, 'recall': 0.9957983193277311, 'f1-score': 0.9870852582948341, 'support': 28322}, 'Kappa_(1.617.1)': {'precision': 0.8033641317223407, 'recall': 0.9806246385193753, 'f1-score': 0.883187915093111, 'support': 3458}, 'Zeta_(P.2)': {'precision': 0.7607025246981339, 'recall': 0.9911327231121282, 'f1-score': 0.8607626381815924, 'support': 3496}, 'accuracy': 0.9876673666751381, 'macro avg': {'precision': 0.9483270860120623, 'recall': 0.9883065233462802, 'f1-score': 0.9656112773100107, 'support': 224283}, 'weighted avg': {'precision': 0.989500232819134, 'recall': 0.9876673666751381, 'f1-score': 0.988146370497519, 'support': 224283}}
+13.fasta
+Classification report
+K-mers = {'ATAACTGT': 0, 'TTTCTCTG': 0, 'CTATCGCA': 0, 'AAATATCT': 0, 'AAAATGTC': 0, 'AGCAGTAA': 0, 'ATAGCGCT': 0, 'AATCTTAC': 0}
+                              precision    recall  f1-score   support
+
+              Alpha_B.1.1.7       1.00      0.99      0.99     49750
+             Beta_(B.1.351)       0.99      0.98      0.99     16876
+Delta_(B.1.617.2+AY.1+AY.2)       1.00      1.00      1.00     49750
+  Epsilon_(B.1.427+B.1.429)       1.00      0.99      1.00     33867
+              Eta_(B.1.525)       0.98      0.99      0.99      2085
+                Gamma_(P.1)       1.00      0.99      1.00     36679
+             Iota_(B.1.526)       0.99      1.00      1.00     28322
+            Kappa_(1.617.1)       0.81      0.99      0.89      3458
+                 Zeta_(P.2)       0.87      0.99      0.93      3496
+
+                   accuracy                           0.99    224283
+                  macro avg       0.96      0.99      0.97    224283
+               weighted avg       0.99      0.99      0.99    224283
+
+{'Alpha_B.1.1.7': {'precision': 0.9996533300705576, 'recall': 0.9853467336683417, 'f1-score': 0.9924484755233429, 'support': 49750}, 'Beta_(B.1.351)': {'precision': 0.9922452660054103, 'recall': 0.9780753733112112, 'f1-score': 0.9851093670734983, 'support': 16876}, 'Delta_(B.1.617.2+AY.1+AY.2)': {'precision': 0.9994146262691508, 'recall': 0.99521608040201, 'f1-score': 0.9973109345257879, 'support': 49750}, 'Epsilon_(B.1.427+B.1.429)': {'precision': 0.9979268473271139, 'recall': 0.9949213098296277, 'f1-score': 0.9964218121599243, 'support': 33867}, 'Eta_(B.1.525)': {'precision': 0.9828162291169451, 'recall': 0.9875299760191847, 'f1-score': 0.9851674641148326, 'support': 2085}, 'Gamma_(P.1)': {'precision': 0.9982493571858416, 'recall': 0.9949562419913301, 'f1-score': 0.9966000791949423, 'support': 36679}, 'Iota_(B.1.526)': {'precision': 0.9931485190260356, 'recall': 0.9980227385071676, 'f1-score': 0.9955796629272845, 'support': 28322}, 'Kappa_(1.617.1)': {'precision': 0.8140251125325753, 'recall': 0.993637941006362, 'f1-score': 0.8949081911707253, 'support': 3458}, 'Zeta_(P.2)': {'precision': 0.8704963466868229, 'recall': 0.9882723112128147, 'f1-score': 0.925653047555258, 'support': 3496}, 'accuracy': 0.9918005377135137, 'macro avg': {'precision': 0.9608861815800503, 'recall': 0.9906643006608944, 'f1-score': 0.9743554482495106, 'support': 224283}, 'weighted avg': {'precision': 0.9926994774832405, 'recall': 0.9918005377135137, 'f1-score': 0.9920364231855093, 'support': 224283}}
+14.fasta
+Classification report
+K-mers = {'CCCACTTA': 0, 'AGTGCTAT': 0, 'ACAAGTTT': 0, 'ATAGCGCT': 0, 'AAAATGTC': 0, 'CGGTTCAC': 0, 'CCTTAAAC': 0, 'TGACATCT': 0}
+                              precision    recall  f1-score   support
+
+              Alpha_B.1.1.7       1.00      0.98      0.99     49750
+             Beta_(B.1.351)       1.00      0.99      0.99     16876
+Delta_(B.1.617.2+AY.1+AY.2)       0.99      1.00      0.99     49750
+  Epsilon_(B.1.427+B.1.429)       0.99      0.99      0.99     33867
+              Eta_(B.1.525)       0.97      0.99      0.98      2085
+                Gamma_(P.1)       1.00      1.00      1.00     36679
+             Iota_(B.1.526)       0.98      0.99      0.99     28322
+            Kappa_(1.617.1)       0.99      0.98      0.99      3458
+                 Zeta_(P.2)       0.99      0.99      0.99      3496
+
+                   accuracy                           0.99    224283
+                  macro avg       0.99      0.99      0.99    224283
+               weighted avg       0.99      0.99      0.99    224283
+
+{'Alpha_B.1.1.7': {'precision': 0.9997753956100051, 'recall': 0.9842010050251256, 'f1-score': 0.9919270701443403, 'support': 49750}, 'Beta_(B.1.351)': {'precision': 0.9958948119942884, 'recall': 0.9918819625503674, 'f1-score': 0.993884336777105, 'support': 16876}, 'Delta_(B.1.617.2+AY.1+AY.2)': {'precision': 0.9859476864366354, 'recall': 0.9970854271356784, 'f1-score': 0.9914852791269413, 'support': 49750}, 'Epsilon_(B.1.427+B.1.429)': {'precision': 0.9909412806137504, 'recall': 0.9916142557651991, 'f1-score': 0.9912776539693315, 'support': 33867}, 'Eta_(B.1.525)': {'precision': 0.9722874589008924, 'recall': 0.9928057553956835, 'f1-score': 0.982439487422876, 'support': 2085}, 'Gamma_(P.1)': {'precision': 0.9977944780264663, 'recall': 0.999073039068677, 'f1-score': 0.998433349226892, 'support': 36679}, 'Iota_(B.1.526)': {'precision': 0.9846245655913224, 'recall': 0.9903608502224419, 'f1-score': 0.9874843774754001, 'support': 28322}, 'Kappa_(1.617.1)': {'precision': 0.9906814210832848, 'recall': 0.9838056680161943, 'f1-score': 0.9872315728380731, 'support': 3458}, 'Zeta_(P.2)': {'precision': 0.9863713798977853, 'recall': 0.9937070938215103, 'f1-score': 0.9900256483328584, 'support': 3496}, 'accuracy': 0.9921884404970506, 'macro avg': {'precision': 0.9893687197949367, 'recall': 0.9916150063334308, 'f1-score': 0.9904654194793131, 'support': 224283}, 'weighted avg': {'precision': 0.9922403534188016, 'recall': 0.9921884404970506, 'f1-score': 0.9921910661198126, 'support': 224283}}
+15.fasta
+Classification report
+K-mers = {'CCCACTTA': 0, 'GACTATGG': 0, 'ACAAGTTT': 0, 'ATAGCGCT': 0, 'AAAATGTC': 0, 'CGGTTCAC': 0, 'CCTTAAAC': 0, 'TGACATCT': 0}
+                              precision    recall  f1-score   support
+
+              Alpha_B.1.1.7       1.00      0.98      0.99     49750
+             Beta_(B.1.351)       1.00      0.99      0.99     16876
+Delta_(B.1.617.2+AY.1+AY.2)       0.99      1.00      1.00     49750
+  Epsilon_(B.1.427+B.1.429)       0.99      0.99      0.99     33867
+              Eta_(B.1.525)       0.97      0.99      0.98      2085
+                Gamma_(P.1)       0.98      1.00      0.99     36679
+             Iota_(B.1.526)       0.99      0.99      0.99     28322
+            Kappa_(1.617.1)       0.99      0.98      0.99      3458
+                 Zeta_(P.2)       0.99      0.99      0.99      3496
+
+                   accuracy                           0.99    224283
+                  macro avg       0.99      0.99      0.99    224283
+               weighted avg       0.99      0.99      0.99    224283
+
+{'Alpha_B.1.1.7': {'precision': 0.9998366646930317, 'recall': 0.9843417085427135, 'f1-score': 0.9920286845810248, 'support': 49750}, 'Beta_(B.1.351)': {'precision': 0.995842983550092, 'recall': 0.9936596349845935, 'f1-score': 0.9947501112264571, 'support': 16876}, 'Delta_(B.1.617.2+AY.1+AY.2)': {'precision': 0.9939302884615384, 'recall': 0.9973266331658291, 'f1-score': 0.9956255643623958, 'support': 49750}, 'Epsilon_(B.1.427+B.1.429)': {'precision': 0.99094074598678, 'recall': 0.9915552012283344, 'f1-score': 0.991247878385359, 'support': 33867}, 'Eta_(B.1.525)': {'precision': 0.9732016925246827, 'recall': 0.9928057553956835, 'f1-score': 0.9829059829059829, 'support': 2085}, 'Gamma_(P.1)': {'precision': 0.9845290215143294, 'recall': 0.9993456746367131, 'f1-score': 0.9918820186713571, 'support': 36679}, 'Iota_(B.1.526)': {'precision': 0.9893834650112867, 'recall': 0.9904314667043288, 'f1-score': 0.9899071884814906, 'support': 28322}, 'Kappa_(1.617.1)': {'precision': 0.9932846715328467, 'recall': 0.9838056680161943, 'f1-score': 0.9885224466075839, 'support': 3458}, 'Zeta_(P.2)': {'precision': 0.9863713798977853, 'recall': 0.9937070938215103, 'f1-score': 0.9900256483328584, 'support': 3496}, 'accuracy': 0.9924515010054262, 'macro avg': {'precision': 0.9897023236858193, 'recall': 0.9918865373884336, 'f1-score': 0.9907661692838343, 'support': 224283}, 'weighted avg': {'precision': 0.9925008096803434, 'recall': 0.9924515010054262, 'f1-score': 0.9924514335709304, 'support': 224283}}
+16.fasta
+Classification report
+K-mers = {'TTTCTCCT': 0, 'ATTCCCAC': 0, 'TGTTAATT': 0, 'AAAATGTC': 0, 'TGCTACCG': 0, 'AATTACCT': 0, 'TTTTCATA': 0, 'AAATATCT': 0}
+                              precision    recall  f1-score   support
+
+              Alpha_B.1.1.7       1.00      0.98      0.99     49750
+             Beta_(B.1.351)       0.99      0.98      0.99     16876
+Delta_(B.1.617.2+AY.1+AY.2)       1.00      1.00      1.00     49750
+  Epsilon_(B.1.427+B.1.429)       0.99      0.99      0.99     33867
+              Eta_(B.1.525)       0.96      0.99      0.97      2085
+                Gamma_(P.1)       1.00      1.00      1.00     36679
+             Iota_(B.1.526)       0.98      0.99      0.99     28322
+            Kappa_(1.617.1)       0.89      0.99      0.94      3458
+                 Zeta_(P.2)       0.82      0.98      0.90      3496
+
+                   accuracy                           0.99    224283
+                  macro avg       0.96      0.99      0.97    224283
+               weighted avg       0.99      0.99      0.99    224283
+
+{'Alpha_B.1.1.7': {'precision': 0.9987940725600408, 'recall': 0.9822311557788945, 'f1-score': 0.9904433747149733, 'support': 49750}, 'Beta_(B.1.351)': {'precision': 0.9920948616600791, 'recall': 0.9816307181796634, 'f1-score': 0.9868350509322691, 'support': 16876}, 'Delta_(B.1.617.2+AY.1+AY.2)': {'precision': 0.9993157714676703, 'recall': 0.9981306532663317, 'f1-score': 0.9987228607918264, 'support': 49750}, 'Epsilon_(B.1.427+B.1.429)': {'precision': 0.9935261626180436, 'recall': 0.9878642926742847, 'f1-score': 0.9906871381827335, 'support': 33867}, 'Eta_(B.1.525)': {'precision': 0.9625818521983162, 'recall': 0.9870503597122302, 'f1-score': 0.9746625621596022, 'support': 2085}, 'Gamma_(P.1)': {'precision': 0.999452519777723, 'recall': 0.9954197224569917, 'f1-score': 0.9974320448026226, 'support': 36679}, 'Iota_(B.1.526)': {'precision': 0.9827067142757124, 'recall': 0.991172939764141, 'f1-score': 0.9869216706511039, 'support': 28322}, 'Kappa_(1.617.1)': {'precision': 0.8867973182052604, 'recall': 0.9945054945054945, 'f1-score': 0.9375681570338059, 'support': 3458}, 'Zeta_(P.2)': {'precision': 0.8220946915351507, 'recall': 0.9834096109839817, 'f1-score': 0.8955457150299557, 'support': 3496}, 'accuracy': 0.9901017910407833, 'macro
+avg': {'precision': 0.9597071071442218, 'recall': 0.9890461052580015, 'f1-score': 0.9732020638109881, 'support': 224283}, 'weighted avg': {'precision': 0.9908687597346986, 'recall': 0.9901017910407833, 'f1-score': 0.9903022757908413, 'support': 224283}}
+17.fasta
+Classification report
+K-mers = {'ATAGCGCT': 0, 'AAAATGTC': 0, 'GATCTAGA': 0, 'CAAAATGT': 0, 'CTAAAATG': 0, 'GCTACCGC': 0, 'CTTGGTGC': 0, 'TGTCTGGT': 0}
+                              precision    recall  f1-score   support
+
+              Alpha_B.1.1.7       1.00      0.99      0.99     49750
+             Beta_(B.1.351)       1.00      0.99      0.99     16876
+Delta_(B.1.617.2+AY.1+AY.2)       1.00      1.00      1.00     49750
+  Epsilon_(B.1.427+B.1.429)       1.00      0.99      1.00     33867
+              Eta_(B.1.525)       0.99      0.99      0.99      2085
+                Gamma_(P.1)       1.00      0.99      1.00     36679
+             Iota_(B.1.526)       0.99      1.00      0.99     28322
+            Kappa_(1.617.1)       0.89      0.99      0.94      3458
+                 Zeta_(P.2)       0.85      0.99      0.92      3496
+
+                   accuracy                           0.99    224283
+                  macro avg       0.97      0.99      0.98    224283
+               weighted avg       0.99      0.99      0.99    224283
+
+{'Alpha_B.1.1.7': {'precision': 0.9975821362537335, 'recall': 0.986894472361809, 'f1-score': 0.9922095243869168, 'support': 49750}, 'Beta_(B.1.351)': {'precision': 0.9969583109679728, 'recall': 0.9905190803507941, 'f1-score': 0.9937282644235057, 'support': 16876}, 'Delta_(B.1.617.2+AY.1+AY.2)': {'precision': 0.9995771755325575, 'recall': 0.9978894472361809, 'f1-score': 0.998732598374507, 'support': 49750}, 'Epsilon_(B.1.427+B.1.429)': {'precision': 0.9990795177860918, 'recall': 0.9935040009448726, 'f1-score': 0.9962839588422534, 'support': 33867}, 'Eta_(B.1.525)': {'precision': 0.9909047391096218, 'recall': 0.9928057553956835, 'f1-score': 0.9918543363679924, 'support': 2085}, 'Gamma_(P.1)': {'precision': 0.999395670805406, 'recall': 0.9919027236293246, 'f1-score': 0.9956350998180151, 'support': 36679}, 'Iota_(B.1.526)':
+{'precision': 0.9886762024961436, 'recall': 0.9957277028458442, 'f1-score': 0.9921894240579813, 'support': 28322}, 'Kappa_(1.617.1)': {'precision': 0.8864223025296851, 'recall': 0.9930595720069404, 'f1-score': 0.9367157665030005, 'support': 3458}, 'Zeta_(P.2)': {'precision': 0.8518700787401575, 'recall': 0.9902745995423341, 'f1-score': 0.9158730158730158, 'support': 3496}, 'accuracy': 0.9927413134299078, 'macro avg': {'precision': 0.9678295704690412, 'recall': 0.9925085949237538, 'f1-score': 0.9792468876274653, 'support': 224283}, 'weighted avg': {'precision': 0.993328580236394, 'recall': 0.9927413134299078, 'f1-score': 0.9928948596268301, 'support': 224283}}
+18.fasta
+Classification report
+K-mers = {'TTACCTTA': 0, 'ATTGCTAT': 0, 'ATAGCGCT': 0, 'TTGTATTA': 0, 'AAAATGTC': 0, 'AAATATCT': 0, 'TTTCTCCT': 0, 'ATAGCCTC': 0}
+                              precision    recall  f1-score   support
+
+              Alpha_B.1.1.7       1.00      0.98      0.99     49750
+             Beta_(B.1.351)       0.99      0.98      0.99     16876
+Delta_(B.1.617.2+AY.1+AY.2)       1.00      1.00      1.00     49750
+  Epsilon_(B.1.427+B.1.429)       1.00      0.99      0.99     33867
+              Eta_(B.1.525)       0.96      0.98      0.97      2085
+                Gamma_(P.1)       1.00      1.00      1.00     36679
+             Iota_(B.1.526)       0.98      0.99      0.99     28322
+            Kappa_(1.617.1)       0.79      0.99      0.88      3458
+                 Zeta_(P.2)       1.00      0.98      0.99      3496
+
+                   accuracy                           0.99    224283
+                  macro avg       0.97      0.99      0.98    224283
+               weighted avg       0.99      0.99      0.99    224283
+
+{'Alpha_B.1.1.7': {'precision': 0.9989190953031631, 'recall': 0.9845226130653266, 'f1-score': 0.9916686069465395, 'support': 49750}, 'Beta_(B.1.351)': {'precision': 0.9920986471926254, 'recall': 0.9821047641621238, 'f1-score': 0.9870764099815378, 'support': 16876}, 'Delta_(B.1.617.2+AY.1+AY.2)': {'precision': 0.9977651156703646, 'recall': 0.9961005025125628, 'f1-score': 0.9969321142259371, 'support': 49750}, 'Epsilon_(B.1.427+B.1.429)': {'precision': 0.9958731666765631, 'recall': 0.9904331650279032, 'f1-score': 0.9931457164428784, 'support': 33867}, 'Eta_(B.1.525)': {'precision': 0.9588977113498365, 'recall': 0.984652278177458, 'f1-score': 0.9716043539990534, 'support': 2085}, 'Gamma_(P.1)': {'precision': 0.99688754197723, 'recall': 0.9954742495705989, 'f1-score': 0.9961803945106813, 'support': 36679}, 'Iota_(B.1.526)':
+{'precision': 0.9807081807081807, 'recall': 0.9925852694018784, 'f1-score': 0.9866109814519102, 'support': 28322}, 'Kappa_(1.617.1)': {'precision': 0.7931034482758621, 'recall': 0.9910352805089647, 'f1-score': 0.8810901144105927, 'support': 3458}, 'Zeta_(P.2)': {'precision': 0.997675094449288, 'recall': 0.9819794050343249, 'f1-score': 0.989765028110134, 'support': 3496}, 'accuracy': 0.9906724985843778, 'macro avg': {'precision': 0.9679920001781238, 'recall': 0.9887652808290157, 'f1-score': 0.9771193022310294, 'support': 224283}, 'weighted avg': {'precision': 0.9914933973171746, 'recall': 0.9906724985843778, 'f1-score': 0.9908917461014936, 'support': 224283}}
+19.fasta
+Classification report
+K-mers = {'AAAATGTC': 0, 'CAAGATGT': 0, 'TTTCATCT': 0, 'TGTCTGGT': 0, 'ATAGCGCT': 0, 'AAATATCT': 0, 'CCCACTTA': 0, 'TATTAAAG': 0}
+                              precision    recall  f1-score   support
+
+              Alpha_B.1.1.7       1.00      1.00      1.00     49750
+             Beta_(B.1.351)       1.00      0.99      0.99     16876
+Delta_(B.1.617.2+AY.1+AY.2)       1.00      0.99      0.99     49750
+  Epsilon_(B.1.427+B.1.429)       1.00      0.99      1.00     33867
+              Eta_(B.1.525)       1.00      0.99      0.99      2085
+                Gamma_(P.1)       1.00      1.00      1.00     36679
+             Iota_(B.1.526)       0.99      0.99      0.99     28322
+            Kappa_(1.617.1)       0.81      0.99      0.89      3458
+                 Zeta_(P.2)       0.99      0.99      0.99      3496
+
+                   accuracy                           0.99    224283
+                  macro avg       0.98      0.99      0.98    224283
+               weighted avg       0.99      0.99      0.99    224283
+
+{'Alpha_B.1.1.7': {'precision': 0.9988932710882164, 'recall': 0.9978090452261307, 'f1-score': 0.9983508637853709, 'support': 49750}, 'Beta_(B.1.351)': {'precision': 0.9952813283956516, 'recall': 0.9873785257169946, 'f1-score': 0.9913141769290261, 'support': 16876}, 'Delta_(B.1.617.2+AY.1+AY.2)': {'precision': 0.9996135776607212, 'recall': 0.9879396984924623, 'f1-score': 0.9937423548559934, 'support': 49750}, 'Epsilon_(B.1.427+B.1.429)': {'precision': 0.9973049015252481, 'recall': 0.9943012371925474, 'f1-score': 0.995800804352969, 'support': 33867}, 'Eta_(B.1.525)': {'precision': 0.9975728155339806, 'recall': 0.9856115107913669, 'f1-score': 0.9915560916767189, 'support': 2085}, 'Gamma_(P.1)': {'precision': 0.9972517754618921, 'recall': 0.999209356852695, 'f1-score': 0.9982296064278905, 'support': 36679}, 'Iota_(B.1.526)': {'precision': 0.9917238950519458, 'recall': 0.9942800649671634, 'f1-score': 0.9930003349965619, 'support': 28322}, 'Kappa_(1.617.1)': {'precision': 0.8134948918983131, 'recall': 0.9901677270098322, 'f1-score': 0.8931785574540239, 'support': 3458}, 'Zeta_(P.2)': {'precision': 0.9902745995423341, 'recall': 0.9902745995423341, 'f1-score': 0.9902745995423341, 'support': 3496}, 'accuracy': 0.993740051631198, 'macro avg': {'precision': 0.9757123395731448, 'recall': 0.991885751754614, 'f1-score': 0.9828274877800988, 'support': 224283}, 'weighted avg': {'precision': 0.9943625473514306, 'recall': 0.993740051631198, 'f1-score': 0.9939079941103307, 'support': 224283}}
+2.fasta
+Classification report
+K-mers = {'ATAGCGCT': 0, 'AAATATCT': 0, 'AATGTCTG': 0, 'CTATCGCA': 0, 'CTTGGTGC': 0, 'ATTCAGTG': 0, 'AATTTCTC': 0, 'CCTTAAAC': 0}
+                              precision    recall  f1-score   support
+
+              Alpha_B.1.1.7       1.00      1.00      1.00     49750
+             Beta_(B.1.351)       0.99      0.98      0.99     16876
+Delta_(B.1.617.2+AY.1+AY.2)       1.00      1.00      1.00     49750
+  Epsilon_(B.1.427+B.1.429)       1.00      0.99      0.99     33867
+              Eta_(B.1.525)       0.98      0.99      0.98      2085
+                Gamma_(P.1)       1.00      1.00      1.00     36679
+             Iota_(B.1.526)       0.98      0.99      0.99     28322
+            Kappa_(1.617.1)       0.99      0.98      0.99      3458
+                 Zeta_(P.2)       0.89      0.99      0.94      3496
+
+                   accuracy                           0.99    224283
+                  macro avg       0.98      0.99      0.99    224283
+               weighted avg       0.99      0.99      0.99    224283
+
+{'Alpha_B.1.1.7': {'precision': 0.9996170049789352, 'recall': 0.99678391959799, 'f1-score': 0.9981984520778188, 'support': 49750}, 'Beta_(B.1.351)': {'precision': 0.9946610677864427, 'recall': 0.9825195543967765, 'f1-score': 0.9885530316580218, 'support': 16876}, 'Delta_(B.1.617.2+AY.1+AY.2)': {'precision': 0.9990334467690944, 'recall': 0.9972462311557789, 'f1-score': 0.9981390389393527, 'support': 49750}, 'Epsilon_(B.1.427+B.1.429)': {'precision': 0.9963453767530307, 'recall': 0.9901378923435793, 'f1-score': 0.9932319357848436, 'support': 33867}, 'Eta_(B.1.525)': {'precision': 0.9790276453765491, 'recall': 0.9851318944844125, 'f1-score': 0.9820702844848194, 'support': 2085}, 'Gamma_(P.1)': {'precision': 0.9982547993019197, 'recall': 0.998064287466943, 'f1-score': 0.998159534294011, 'support': 36679}, 'Iota_(B.1.526)': {'precision': 0.9847149352920601, 'recall': 0.9940329072805593, 'f1-score': 0.9893519820073094, 'support': 28322}, 'Kappa_(1.617.1)': {'precision': 0.9947260474655728, 'recall': 0.9817813765182186, 'f1-score': 0.9882113229515355, 'support': 3458}, 'Zeta_(P.2)': {'precision': 0.887583035258048, 'recall': 0.9937070938215103, 'f1-score': 0.9376518218623481, 'support': 3496}, 'accuracy': 0.9942840072586866, 'macro avg': {'precision': 0.9815514843312947, 'recall': 0.9910450174517522, 'f1-score': 0.9859519337844511, 'support': 224283}, 'weighted avg': {'precision': 0.9945029218169386, 'recall': 0.9942840072586866, 'f1-score': 0.994338400902072, 'support': 224283}}
+20.fasta
+Classification report
+K-mers = {'CAAAATGT': 0, 'GACCTTAA': 0, 'GGGAATTT': 0, 'TATCGCAA': 0, 'CTTGGTGC': 0, 'TTTCAGAG': 0, 'AAATATCT': 0, 'TGTTTACC': 0}
+                              precision    recall  f1-score   support
+
+              Alpha_B.1.1.7       1.00      0.98      0.99     49750
+             Beta_(B.1.351)       0.99      0.98      0.99     16876
+Delta_(B.1.617.2+AY.1+AY.2)       1.00      0.99      1.00     49750
+  Epsilon_(B.1.427+B.1.429)       1.00      0.98      0.99     33867
+              Eta_(B.1.525)       1.00      0.99      1.00      2085
+                Gamma_(P.1)       1.00      0.99      0.99     36679
+             Iota_(B.1.526)       0.97      0.99      0.98     28322
+            Kappa_(1.617.1)       0.67      0.99      0.80      3458
+                 Zeta_(P.2)       0.96      0.99      0.98      3496
+
+                   accuracy                           0.99    224283
+                  macro avg       0.95      0.99      0.97    224283
+               weighted avg       0.99      0.99      0.99    224283
+
+{'Alpha_B.1.1.7': {'precision': 0.9991382847763643, 'recall': 0.9788542713567839, 'f1-score': 0.9888922733272413, 'support': 49750}, 'Beta_(B.1.351)': {'precision': 0.9947140797693417, 'recall': 0.9812751836928182, 'f1-score': 0.9879489321083403, 'support': 16876}, 'Delta_(B.1.617.2+AY.1+AY.2)': {'precision': 0.9986458901756301, 'recall': 0.9932060301507538, 'f1-score': 0.9959185318808009, 'support': 49750}, 'Epsilon_(B.1.427+B.1.429)': {'precision': 0.9961680088614795, 'recall': 0.9825198570880208, 'f1-score': 0.9892968633863534, 'support': 33867}, 'Eta_(B.1.525)': {'precision': 0.9985549132947977, 'recall': 0.9942446043165467, 'f1-score': 0.996395097332372, 'support': 2085}, 'Gamma_(P.1)': {'precision': 0.9996966939642099, 'recall': 0.9884675154720685, 'f1-score': 0.9940503934417241, 'support': 36679}, 'Iota_(B.1.526)': {'precision': 0.9748771541283133, 'recall': 0.9947037638584846, 'f1-score': 0.9846906675987417, 'support': 28322}, 'Kappa_(1.617.1)': {'precision': 0.6650513665439038, 'recall': 0.992192018507808, 'f1-score': 0.7963328304514332, 'support': 3458}, 'Zeta_(P.2)': {'precision': 0.9612510379186272, 'recall': 0.993421052631579, 'f1-score': 0.9770713180475454, 'support': 3496}, 'accuracy': 0.9869227716768547, 'macro avg': {'precision': 0.9542330477147409, 'recall': 0.988764921897207, 'f1-score': 0.967844100841617, 'support': 224283}, 'weighted avg': {'precision': 0.989528379393838, 'recall': 0.9869227716768547, 'f1-score': 0.9876705239005181, 'support': 224283}}
+21.fasta
+Classification report
+K-mers = {'TGTTGAAG': 0, 'ATCGCAAT': 0, 'GGGAATTT': 0, 'AATGTCTG': 0, 'ATAGCGCT': 0, 'AAAATGTC': 0, 'CCCACTTA': 0, 'TATCTTAA': 0}
+                              precision    recall  f1-score   support
+
+              Alpha_B.1.1.7       1.00      1.00      1.00     49750
+             Beta_(B.1.351)       1.00      0.99      0.99     16876
+Delta_(B.1.617.2+AY.1+AY.2)       1.00      1.00      1.00     49750
+  Epsilon_(B.1.427+B.1.429)       0.99      0.99      0.99     33867
+              Eta_(B.1.525)       0.98      0.99      0.98      2085
+                Gamma_(P.1)       1.00      0.99      0.99     36679
+             Iota_(B.1.526)       0.99      0.99      0.99     28322
+            Kappa_(1.617.1)       0.92      0.99      0.95      3458
+                 Zeta_(P.2)       0.90      0.99      0.94      3496
+
+                   accuracy                           0.99    224283
+                  macro avg       0.97      0.99      0.98    224283
+               weighted avg       0.99      0.99      0.99    224283
+
+{'Alpha_B.1.1.7': {'precision': 0.9995368785615045, 'recall': 0.9977889447236181, 'f1-score': 0.9986621468017262, 'support': 49750}, 'Beta_(B.1.351)': {'precision': 0.9976100854394455, 'recall': 0.9893932211424508, 'f1-score': 0.9934846636717936, 'support': 16876}, 'Delta_(B.1.617.2+AY.1+AY.2)': {'precision': 0.9991547254870391, 'recall': 0.9979095477386934, 'f1-score': 0.9985317484261549, 'support': 49750}, 'Epsilon_(B.1.427+B.1.429)': {'precision': 0.9921043293115684, 'recall': 0.9906103286384976, 'f1-score': 0.9913567661007934, 'support': 33867}, 'Eta_(B.1.525)': {'precision': 0.9773264052905054, 'recall': 0.992326139088729, 'f1-score': 0.9847691575440266, 'support': 2085}, 'Gamma_(P.1)': {'precision': 0.999669439700292, 'recall': 0.9893944764033916, 'f1-score': 0.9945054192187008, 'support': 36679}, 'Iota_(B.1.526)': {'precision': 0.9889010253338502, 'recall': 0.9909610903184803, 'f1-score': 0.9899299860677565, 'support': 28322}, 'Kappa_(1.617.1)': {'precision': 0.92040871201936, 'recall': 0.9898785425101214, 'f1-score': 0.9538804514421068, 'support': 3458}, 'Zeta_(P.2)': {'precision': 0.8981865284974093, 'recall': 0.9917048054919908, 'f1-score': 0.9426318651441, 'support': 3496}, 'accuracy': 0.9935973747452994, 'macro avg': {'precision': 0.9747664588489973, 'recall': 0.9922185662284413, 'f1-score': 0.9830835782685732, 'support': 224283}, 'weighted avg': {'precision': 0.9938571431057144, 'recall': 0.9935973747452994, 'f1-score': 0.9936650914304315, 'support': 224283}}
+3.fasta
+Classification report
+K-mers = {'ATAGCGCT': 0, 'AAATATCT': 0, 'AATGTCTG': 0, 'CTATCGCA': 0, 'CTTGGTGC': 0, 'CTAGGTTG': 0, 'AATTTCTC': 0, 'CCTTAAAC': 0}
+                              precision    recall  f1-score   support
+
+              Alpha_B.1.1.7       1.00      1.00      1.00     49750
+             Beta_(B.1.351)       0.99      0.98      0.99     16876
+Delta_(B.1.617.2+AY.1+AY.2)       1.00      1.00      1.00     49750
+  Epsilon_(B.1.427+B.1.429)       1.00      0.99      0.99     33867
+              Eta_(B.1.525)       0.98      0.99      0.99      2085
+                Gamma_(P.1)       1.00      1.00      1.00     36679
+             Iota_(B.1.526)       0.98      0.99      0.99     28322
+            Kappa_(1.617.1)       0.99      0.98      0.99      3458
+                 Zeta_(P.2)       0.89      0.99      0.94      3496
+
+                   accuracy                           0.99    224283
+                  macro avg       0.98      0.99      0.99    224283
+               weighted avg       0.99      0.99      0.99    224283
+
+{'Alpha_B.1.1.7': {'precision': 0.9997576589858028, 'recall': 0.9950753768844222, 'f1-score': 0.9974110227971029, 'support': 49750}, 'Beta_(B.1.351)': {'precision': 0.9947207390965265, 'recall': 0.9825195543967765, 'f1-score': 0.9885825011179012, 'support': 16876}, 'Delta_(B.1.617.2+AY.1+AY.2)': {'precision': 0.9987921246527358, 'recall': 0.9972663316582915, 'f1-score': 0.9980286449951722, 'support': 49750}, 'Epsilon_(B.1.427+B.1.429)': {'precision': 0.9960322195704058, 'recall': 0.9858269111524492, 'f1-score': 0.990903289952068, 'support': 33867}, 'Eta_(B.1.525)': {'precision': 0.9791666666666666, 'recall': 0.9918465227817745, 'f1-score': 0.985465808911127, 'support': 2085}, 'Gamma_(P.1)': {'precision': 0.9968142460382291, 'recall': 0.9980915510237466, 'f1-score': 0.9974524896124243, 'support': 36679}, 'Iota_(B.1.526)': {'precision': 0.9794768331710032, 'recall': 0.9942094484852765, 'f1-score': 0.9867881548974944, 'support': 28322}, 'Kappa_(1.617.1)': {'precision': 0.9921029540801404, 'recall': 0.9809138230190861, 'f1-score': 0.9864766613348843, 'support': 3458}, 'Zeta_(P.2)': {'precision': 0.8912262698819907, 'recall': 0.9937070938215103, 'f1-score': 0.9396808222883419, 'support': 3496}, 'accuracy': 0.9933343142369239, 'macro
+avg': {'precision': 0.9808988569048334, 'recall': 0.9910507348025926, 'f1-score': 0.9856432662118352, 'support': 224283}, 'weighted avg': {'precision': 0.99355838946074, 'recall': 0.9933343142369239, 'f1-score': 0.993386900179839, 'support': 224283}}
+4.fasta
+Classification report
+K-mers = {'ATAGCGCT': 0, 'AAATATCT': 0, 'CCTGTATA': 0, 'CAAAATGT': 0, 'GCAGTAGG': 0, 'AGGGGAAT': 0, 'AAAATGTC': 0, 'CCGCAATG': 0}
+                              precision    recall  f1-score   support
+
+              Alpha_B.1.1.7       1.00      0.98      0.99     49750
+             Beta_(B.1.351)       0.99      0.99      0.99     16876
+Delta_(B.1.617.2+AY.1+AY.2)       1.00      1.00      1.00     49750
+  Epsilon_(B.1.427+B.1.429)       1.00      0.99      0.99     33867
+              Eta_(B.1.525)       0.98      0.99      0.98      2085
+                Gamma_(P.1)       1.00      1.00      1.00     36679
+             Iota_(B.1.526)       0.99      0.99      0.99     28322
+            Kappa_(1.617.1)       0.94      0.99      0.97      3458
+                 Zeta_(P.2)       0.87      0.99      0.92      3496
+
+                   accuracy                           0.99    224283
+                  macro avg       0.97      0.99      0.98    224283
+               weighted avg       0.99      0.99      0.99    224283
+
+{'Alpha_B.1.1.7': {'precision': 0.9995102540557086, 'recall': 0.9845427135678392, 'f1-score': 0.9919700268340843, 'support': 49750}, 'Beta_(B.1.351)': {'precision': 0.9911969750679428, 'recall': 0.9941336809670538, 'f1-score': 0.9926631560262706, 'support': 16876}, 'Delta_(B.1.617.2+AY.1+AY.2)': {'precision': 0.9996577824301474, 'recall': 0.9981708542713568, 'f1-score': 0.9989137650111641, 'support': 49750}, 'Epsilon_(B.1.427+B.1.429)': {'precision': 0.9960618263650362, 'recall': 0.9932677827974135, 'f1-score': 0.9946628424429694, 'support': 33867}, 'Eta_(B.1.525)': {'precision': 0.9785612196283945, 'recall': 0.9851318944844125, 'f1-score': 0.9818355640535373, 'support': 2085}, 'Gamma_(P.1)': {'precision': 0.9979555676707101, 'recall': 0.9981188145805502, 'f1-score': 0.998037184450139, 'support': 36679}, 'Iota_(B.1.526)': {'precision': 0.987863907400912, 'recall': 0.994421297930937, 'f1-score': 0.9911317567567568, 'support': 28322}, 'Kappa_(1.617.1)': {'precision': 0.942048887668223, 'recall': 0.9919028340080972, 'f1-score': 0.9663332863783631, 'support': 3458}, 'Zeta_(P.2)': {'precision': 0.8692365835222978, 'recall': 0.9868421052631579, 'f1-score': 0.9243134628265238, 'support': 3496}, 'accuracy': 0.9932273065724999, 'macro avg': {'precision': 0.9735658893121525, 'recall': 0.9918368864300908, 'f1-score': 0.9822067827533121, 'support': 224283}, 'weighted avg': {'precision': 0.9935604837834392, 'recall': 0.9932273065724999, 'f1-score': 0.9933113324465855, 'support': 224283}}
+5.fasta
+Classification report
+K-mers = {'CAGAAGCT': 0, 'AAATATCT': 0, 'CGTTTTAG': 0, 'AAAATGTC': 0, 'AGGGGAAT': 0, 'GCTACCGC': 0, 'ATAGCGCT': 0, 'ACTACAGA': 0}
+                              precision    recall  f1-score   support
+
+              Alpha_B.1.1.7       1.00      0.99      0.99     49750
+             Beta_(B.1.351)       1.00      0.99      0.99     16876
+Delta_(B.1.617.2+AY.1+AY.2)       1.00      0.99      1.00     49750
+  Epsilon_(B.1.427+B.1.429)       1.00      0.99      0.99     33867
+              Eta_(B.1.525)       0.98      0.99      0.98      2085
+                Gamma_(P.1)       1.00      1.00      1.00     36679
+             Iota_(B.1.526)       0.99      0.99      0.99     28322
+            Kappa_(1.617.1)       0.80      0.99      0.88      3458
+                 Zeta_(P.2)       0.95      0.99      0.97      3496
+
+                   accuracy                           0.99    224283
+                  macro avg       0.97      0.99      0.98    224283
+               weighted avg       0.99      0.99      0.99    224283
+
+{'Alpha_B.1.1.7': {'precision': 0.999328667914395, 'recall': 0.9873969849246231, 'f1-score': 0.9933269973510201, 'support': 49750}, 'Beta_(B.1.351)': {'precision': 0.9958208955223881, 'recall': 0.9883858734297227, 'f1-score': 0.9920894545887111, 'support': 16876}, 'Delta_(B.1.617.2+AY.1+AY.2)': {'precision': 0.9991913964583164, 'recall': 0.9935276381909548, 'f1-score': 0.9963514684835414, 'support': 49750}, 'Epsilon_(B.1.427+B.1.429)': {'precision': 0.995876349827934, 'recall': 0.9912008740071456, 'f1-score': 0.9935331113577507, 'support': 33867}, 'Eta_(B.1.525)': {'precision': 0.9813753581661891, 'recall': 0.9856115107913669, 'f1-score': 0.9834888729361091, 'support': 2085}, 'Gamma_(P.1)': {'precision': 0.9973031136778446, 'recall': 0.9981188145805502, 'f1-score': 0.9977107974055703, 'support': 36679}, 'Iota_(B.1.526)': {'precision': 0.9898378986602905, 'recall': 0.9939269825577289, 'f1-score': 0.9918782262468949, 'support': 28322}, 'Kappa_(1.617.1)': {'precision': 0.7967441860465116, 'recall': 0.9907460960092539, 'f1-score': 0.883217324052591, 'support': 3458}, 'Zeta_(P.2)': {'precision': 0.9469800491937688, 'recall': 0.9911327231121282, 'f1-score': 0.9685534591194969, 'support': 3496}, 'accuracy': 0.9920769741799423, 'macro avg': {'precision': 0.9669397683852932, 'recall': 0.9911163886226083, 'f1-score': 0.9777944123935206, 'support': 224283}, 'weighted avg': {'precision': 0.9928769104950177, 'recall': 0.9920769741799423, 'f1-score': 0.9922945713887915, 'support': 224283}}
+6.fasta
+Classification report
+K-mers = {'AAATATCT': 0, 'CTTGGTGT': 0, 'AAAATGTC': 0, 'TTCAGAGC': 0, 'ATTTCCAC': 0, 'CCGCAATG': 0, 'CGGTTCAC': 0, 'TGTCTGGT': 0}
+                              precision    recall  f1-score   support
+
+              Alpha_B.1.1.7       1.00      0.99      0.99     49750
+             Beta_(B.1.351)       0.99      0.99      0.99     16876
+Delta_(B.1.617.2+AY.1+AY.2)       1.00      1.00      1.00     49750
+  Epsilon_(B.1.427+B.1.429)       1.00      0.99      0.99     33867
+              Eta_(B.1.525)       0.98      0.98      0.98      2085
+                Gamma_(P.1)       1.00      1.00      1.00     36679
+             Iota_(B.1.526)       0.99      1.00      0.99     28322
+            Kappa_(1.617.1)       0.97      0.98      0.98      3458
+                 Zeta_(P.2)       0.83      0.99      0.90      3496
+
+                   accuracy                           0.99    224283
+                  macro avg       0.97      0.99      0.98    224283
+               weighted avg       0.99      0.99      0.99    224283
+
+{'Alpha_B.1.1.7': {'precision': 0.9985562062794859, 'recall': 0.9870351758793969, 'f1-score': 0.9927622667448396, 'support': 49750}, 'Beta_(B.1.351)': {'precision': 0.9946558992933912, 'recall': 0.9925930315240579, 'f1-score': 0.9936233947266957, 'support': 16876}, 'Delta_(B.1.617.2+AY.1+AY.2)': {'precision': 0.9984918560225217, 'recall': 0.9980904522613065, 'f1-score': 0.9982911137917169, 'support': 49750}, 'Epsilon_(B.1.427+B.1.429)': {'precision': 0.9988093466289626, 'recall': 0.990787492249092, 'f1-score': 0.9947822477839375, 'support': 33867}, 'Eta_(B.1.525)': {'precision': 0.9817570811329813, 'recall': 0.9808153477218226, 'f1-score': 0.9812859884836852, 'support': 2085}, 'Gamma_(P.1)': {'precision': 0.9997263797302104, 'recall': 0.9961285749338858, 'f1-score': 0.9979242345614946, 'support': 36679}, 'Iota_(B.1.526)': {'precision': 0.9860247362168961, 'recall': 0.9964691759056564, 'f1-score': 0.9912194436639507, 'support': 28322}, 'Kappa_(1.617.1)': {'precision': 0.9681274900398407, 'recall': 0.9838056680161943, 'f1-score': 0.9759036144578314, 'support': 3458}, 'Zeta_(P.2)': {'precision': 0.8289820359281437, 'recall': 0.9899885583524027, 'f1-score': 0.9023595359144831, 'support': 3496}, 'accuracy': 0.9930890883392857, 'macro avg': {'precision': 0.9727923368080482, 'recall': 0.9906348307604238, 'f1-score': 0.9809057600142926, 'support': 224283}, 'weighted avg': {'precision': 0.9936270525713824, 'recall': 0.9930890883392857, 'f1-score': 0.9932320750216119, 'support': 224283}}
+7.fasta
+Classification report
+K-mers = {'AAATATCT': 0, 'GAATTTCT': 0, 'GTGAGTTC': 0, 'ATAGCGCT': 0, 'TTGCTACC': 0, 'TGTCTGGT': 0, 'TTCAGAGT': 0, 'AAAATGTC': 0}
+                              precision    recall  f1-score   support
+
+              Alpha_B.1.1.7       1.00      0.99      0.99     49750
+             Beta_(B.1.351)       0.98      0.99      0.99     16876
+Delta_(B.1.617.2+AY.1+AY.2)       1.00      1.00      1.00     49750
+  Epsilon_(B.1.427+B.1.429)       1.00      0.99      1.00     33867
+              Eta_(B.1.525)       0.98      1.00      0.99      2085
+                Gamma_(P.1)       1.00      0.99      1.00     36679
+             Iota_(B.1.526)       0.99      1.00      0.99     28322
+            Kappa_(1.617.1)       0.96      0.98      0.97      3458
+                 Zeta_(P.2)       0.82      0.99      0.90      3496
+
+                   accuracy                           0.99    224283
+                  macro avg       0.97      0.99      0.98    224283
+               weighted avg       0.99      0.99      0.99    224283
+
+{'Alpha_B.1.1.7': {'precision': 0.9982935153583617, 'recall': 0.9877386934673367, 'f1-score': 0.9929880574696385, 'support': 49750}, 'Beta_(B.1.351)': {'precision': 0.9847922192749778, 'recall': 0.9899857786205262, 'f1-score': 0.9873821695576371, 'support': 16876}, 'Delta_(B.1.617.2+AY.1+AY.2)': {'precision': 0.9990142431801722, 'recall': 0.9981708542713568, 'f1-score': 0.998592370648917, 'support': 49750}, 'Epsilon_(B.1.427+B.1.429)': {'precision': 0.9996434407963155, 'recall': 0.993385891871143, 'f1-score': 0.9965048428660289, 'support': 33867}, 'Eta_(B.1.525)': {'precision': 0.9834280303030303, 'recall': 0.9961630695443645, 'f1-score': 0.9897545866094829, 'support': 2085}, 'Gamma_(P.1)': {'precision': 0.9994235520175679, 'recall': 0.9926388396630225, 'f1-score': 0.9960196419045534, 'support': 36679}, 'Iota_(B.1.526)': {'precision': 0.991706785676635, 'recall': 0.996433867664713, 'f1-score': 0.9940647070219624, 'support': 28322}, 'Kappa_(1.617.1)': {'precision': 0.9632248939179632, 'recall': 0.9846732215153268, 'f1-score': 0.9738309738309738, 'support': 3458}, 'Zeta_(P.2)': {'precision': 0.8232070526566595, 'recall': 0.9882723112128147, 'f1-score': 0.8982191602755752, 'support': 3496}, 'accuracy': 0.993013291243652, 'macro avg': {'precision': 0.9714148592424093, 'recall': 0.9919402808700671, 'f1-score': 0.9808173900205299, 'support': 224283}, 'weighted avg': {'precision': 0.9935863436820859, 'recall': 0.993013291243652, 'f1-score': 0.9931695330823176, 'support': 224283}}
+8.fasta
+Classification report
+K-mers = {'TGTTTACC': 0, 'GCTTATTA': 0, 'ATCGCAAT': 0, 'ATAGCGCT': 0, 'AATTACCT': 0, 'CCCACTTA': 0, 'AAAATGTC': 0, 'GGGAATTT': 0}
+                              precision    recall  f1-score   support
+
+              Alpha_B.1.1.7       1.00      1.00      1.00     49750
+             Beta_(B.1.351)       1.00      0.99      0.99     16876
+Delta_(B.1.617.2+AY.1+AY.2)       1.00      1.00      1.00     49750
+  Epsilon_(B.1.427+B.1.429)       0.99      0.99      0.99     33867
+              Eta_(B.1.525)       0.98      0.99      0.99      2085
+                Gamma_(P.1)       1.00      1.00      1.00     36679
+             Iota_(B.1.526)       0.99      0.99      0.99     28322
+            Kappa_(1.617.1)       0.96      0.98      0.97      3458
+                 Zeta_(P.2)       0.92      0.99      0.95      3496
+
+                   accuracy                           0.99    224283
+                  macro avg       0.98      0.99      0.99    224283
+               weighted avg       0.99      0.99      0.99    224283
+
+{'Alpha_B.1.1.7': {'precision': 0.998851686208147, 'recall': 0.9966030150753769, 'f1-score': 0.9977260836318268, 'support': 49750}, 'Beta_(B.1.351)': {'precision': 0.9976689976689976, 'recall': 0.9890969424034132, 'f1-score': 0.9933644776385873, 'support': 16876}, 'Delta_(B.1.617.2+AY.1+AY.2)': {'precision': 0.9984510782104924, 'recall': 0.9976884422110552, 'f1-score': 0.9980696145261507, 'support': 49750}, 'Epsilon_(B.1.427+B.1.429)': {'precision': 0.991986989946777, 'recall': 0.9906103286384976, 'f1-score': 0.9912981813346727, 'support': 33867}, 'Eta_(B.1.525)': {'precision': 0.9787435049598489, 'recall': 0.9937649880095923, 'f1-score': 0.9861970490242741, 'support': 2085}, 'Gamma_(P.1)': {'precision': 0.9996995684710767, 'recall': 0.9979279696829249, 'f1-score': 0.998812983504564, 'support': 36679}, 'Iota_(B.1.526)':
+{'precision': 0.9878495456786645, 'recall': 0.9903608502224419, 'f1-score': 0.989103603921292, 'support': 28322}, 'Kappa_(1.617.1)': {'precision': 0.9645289443813848, 'recall': 0.9829381145170619, 'f1-score': 0.973646519621885, 'support': 3458}, 'Zeta_(P.2)': {'precision': 0.9236538976694347, 'recall': 0.9862700228832952, 'f1-score': 0.9539355374187302, 'support': 3496}, 'accuracy': 0.9944043908811635, 'macro avg': {'precision': 0.9823815792438693, 'recall': 0.9916956304048509, 'f1-score': 0.9869060056246648, 'support': 224283}, 'weighted avg': {'precision': 0.9944983282346099, 'recall': 0.9944043908811635, 'f1-score': 0.9944313802577824, 'support': 224283}}
+9.fasta
+Classification report
+K-mers = {'AAAATGTC': 0, 'TGTTTACC': 0, 'ATAGCGCT': 0, 'AAAGTGGA': 0, 'TGTATCAA': 0, 'AAATATCT': 0, 'TGTCTGGT': 0, 'CCCACTTA': 0}
+                              precision    recall  f1-score   support
+
+              Alpha_B.1.1.7       1.00      1.00      1.00     49750
+             Beta_(B.1.351)       0.99      0.99      0.99     16876
+Delta_(B.1.617.2+AY.1+AY.2)       0.99      1.00      1.00     49750
+  Epsilon_(B.1.427+B.1.429)       1.00      0.99      0.99     33867
+              Eta_(B.1.525)       1.00      0.98      0.99      2085
+                Gamma_(P.1)       1.00      1.00      1.00     36679
+             Iota_(B.1.526)       0.99      1.00      0.99     28322
+            Kappa_(1.617.1)       1.00      0.97      0.98      3458
+                 Zeta_(P.2)       0.97      1.00      0.98      3496
+
+                   accuracy                           1.00    224283
+                  macro avg       0.99      0.99      0.99    224283
+               weighted avg       1.00      1.00      1.00    224283
+
+{'Alpha_B.1.1.7': {'precision': 0.9995374653098983, 'recall': 0.9990552763819095, 'f1-score': 0.9992963126784349, 'support': 49750}, 'Beta_(B.1.351)': {'precision': 0.9935238547917533, 'recall': 0.9908746148376393, 'f1-score': 0.9921974664016376, 'support': 16876}, 'Delta_(B.1.617.2+AY.1+AY.2)': {'precision': 0.9940701564597232, 'recall': 0.9974070351758794, 'f1-score': 0.9957358002147149, 'support': 49750}, 'Epsilon_(B.1.427+B.1.429)': {'precision': 0.9990155131264916, 'recall': 0.988779637995689, 'f1-score': 0.9938712214522089, 'support': 33867}, 'Eta_(B.1.525)': {'precision': 0.9980440097799511, 'recall': 0.9788968824940047, 'f1-score': 0.9883777239709441, 'support': 2085}, 'Gamma_(P.1)': {'precision': 0.9987448840381992, 'recall': 0.9979552332397285, 'f1-score': 0.9983499024942384, 'support': 36679}, 'Iota_(B.1.526)': {'precision': 0.98575767096031, 'recall': 0.9970694160016947, 'f1-score': 0.991381277536906, 'support': 28322}, 'Kappa_(1.617.1)': {'precision': 0.9970158161742764, 'recall': 0.9661654135338346, 'f1-score': 0.981348215597004, 'support': 3458}, 'Zeta_(P.2)': {'precision': 0.9699666295884316, 'recall': 0.9977116704805492, 'f1-score': 0.9836435420191766, 'support': 3496}, 'accuracy': 0.9953763771663479, 'macro avg': {'precision': 0.9928528889143373, 'recall': 0.9904350200156588, 'f1-score': 0.9915779402628073, 'support': 224283}, 'weighted avg': {'precision': 0.995410014525832, 'recall': 0.9953763771663479, 'f1-score': 0.9953767019312633, 'support': 224283}}

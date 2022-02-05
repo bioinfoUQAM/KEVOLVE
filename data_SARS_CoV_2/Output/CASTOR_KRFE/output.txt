@@ -1,0 +1,86 @@
+#######################
+##### CASTOR-KRFE #####
+#######################
+
+1) Extract k-mers
+2) Fit a model
+3) Predict a sequences
+4) Exit/Quit
+
+CASTOR-KRFE: extraction mode
+
+Analysis of the 1-mers
+Analysis of the 2-mers
+Analysis of the 3-mers
+Analysis of the 4-mers
+Analysis of the 5-mers
+Analysis of the 6-mers
+Analysis of the 7-mers
+Analysis of the 8-mers
+Analysis of the 9-mers
+Analysis of the 10-mers
+Analysis of the 11-mers
+Analysis of the 12-mers
+Analysis of the 13-mers
+Analysis of the 14-mers
+Analysis of the 15-mers
+Analysis of the 16-mers
+Analysis of the 17-mers
+Analysis of the 18-mers
+Analysis of the 19-mers
+Analysis of the 20-mers
+
+Identified solution:
+Evaluation score (F1 score) = 1.0
+Length of k = 8
+Number of k-mers = 9
+Extracted k-mers = ['AACTAAAA', 'ATATCTGG', 'AATTTCTC', 'ATAGAATG', 'CCGGTATA', 'CATAGCGC', 'TAGTGAAT', 'TCTTGCAT', 'CAAAGTAG']
+Extracted k-mers saved at the path: output/k_mers.fasta
+
+CASTOR-KRFE: training mode
+
+Model saved at the path: output/model.pkl
+
+CASTOR-KRFE: testing mode
+
+Classification report 
+                              precision    recall  f1-score   support
+
+              Alpha_B.1.1.7       1.00      0.99      0.99     49750
+             Beta_(B.1.351)       0.99      0.98      0.99     16876
+Delta_(B.1.617.2+AY.1+AY.2)       1.00      1.00      1.00     49750
+  Epsilon_(B.1.427+B.1.429)       1.00      0.99      0.99     33867
+              Eta_(B.1.525)       0.99      1.00      0.99      2085
+                Gamma_(P.1)       1.00      0.98      0.99     36679
+             Iota_(B.1.526)       0.94      0.99      0.97     28322
+            Kappa_(1.617.1)       0.97      0.98      0.98      3458
+                 Zeta_(P.2)       0.98      1.00      0.99      3496
+
+                   accuracy                           0.99    224283
+                  macro avg       0.99      0.99      0.99    224283
+               weighted avg       0.99      0.99      0.99    224283
+
+Predictions saved at the path: output/prediction.csv
+
+CASTOR-KRFE: testing mode
+
+Classification report 
+                              precision    recall  f1-score   support
+
+              Alpha_B.1.1.7       1.00      1.00      1.00       250
+             Beta_(B.1.351)       1.00      1.00      1.00       250
+Delta_(B.1.617.2+AY.1+AY.2)       1.00      1.00      1.00       250
+  Epsilon_(B.1.427+B.1.429)       1.00      1.00      1.00       250
+              Eta_(B.1.525)       1.00      1.00      1.00       250
+                Gamma_(P.1)       1.00      1.00      1.00       250
+             Iota_(B.1.526)       1.00      1.00      1.00       250
+            Kappa_(1.617.1)       1.00      1.00      1.00       250
+                 Zeta_(P.2)       1.00      1.00      1.00       250
+
+                   accuracy                           1.00      2250
+                  macro avg       1.00      1.00      1.00      2250
+               weighted avg       1.00      1.00      1.00      2250
+
+Predictions saved at the path: output/prediction.csv
+
+
