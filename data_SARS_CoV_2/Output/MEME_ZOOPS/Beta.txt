@@ -1,0 +1,2939 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.4.1 (Release date: Sat Aug 21 19:23:23 2021 -0700)
+
+For further information on how to interpret these results please access https://meme-suite.org/meme.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= Beta_B.1.351_primary.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+hCoV-19/Portugal/PT4895/ 1.0000  29779  hCoV-19/Philippines/PH-P 1.0000  29820  
+hCoV-19/Zambia/ZMB-85345 1.0000  29720  hCoV-19/Qatar/QA-QU_18-3 1.0000  29764  
+hCoV-19/South_Africa/Tyg 1.0000  29764  hCoV-19/South_Africa/NHL 1.0000  29890  
+hCoV-19/Canada/ON-PHL-21 1.0000  29764  hCoV-19/England/MILK-11A 1.0000  29761  
+hCoV-19/Belgium/UGent-35 1.0000  29764  hCoV-19/Botswana/R17B52_ 1.0000  29836  
+hCoV-19/Sweden/191954916 1.0000  29849  hCoV-19/USA/MI-CDC-STM-0 1.0000  29814  
+hCoV-19/Canada/MB-NML-17 1.0000  29696  hCoV-19/Netherlands/ZH-R 1.0000  29764  
+hCoV-19/England/CAMC-148 1.0000  29764  hCoV-19/France/IDF-SLS76 1.0000  29817  
+hCoV-19/Zimbabwe/ZW-4621 1.0000  29779  hCoV-19/USA/PA-CDC-QDX24 1.0000  29764  
+hCoV-19/Finland/THL-2021 1.0000  29851  hCoV-19/Sweden/10063024/ 1.0000  29811  
+hCoV-19/South_Africa/NHL 1.0000  29844  hCoV-19/Turkey/HSGM-8306 1.0000  29795  
+hCoV-19/Canada/BC-BCCDC- 1.0000  29696  hCoV-19/Sweden/191957976 1.0000  29849  
+hCoV-19/France/BFC-HMN-2 1.0000  29827  hCoV-19/South_Africa/Tyg 1.0000  29829  
+hCoV-19/Luxembourg/LNS78 1.0000  29645  hCoV-19/Netherlands/NB-R 1.0000  29764  
+hCoV-19/France/IDF-HMN-2 1.0000  29785  hCoV-19/Canada/ON-PHL-21 1.0000  29764  
+hCoV-19/Belgium/Jessa_55 1.0000  29800  hCoV-19/Germany/BW-RKI-I 1.0000  29843  
+hCoV-19/South_Africa/KRI 1.0000  29846  hCoV-19/Philippines/PH-P 1.0000  29797  
+hCoV-19/South_Africa/KRI 1.0000  29852  hCoV-19/Malaysia/IMR_WC7 1.0000  29854  
+hCoV-19/Germany/BE-RKI-I 1.0000  29798  hCoV-19/Netherlands/ZH-R 1.0000  29764  
+hCoV-19/France/IDF-HMN-2 1.0000  29797  hCoV-19/South_Africa/VID 1.0000  29571  
+hCoV-19/Switzerland/SG-C 1.0000  29764  hCoV-19/Sweden/20273369P 1.0000  29811  
+hCoV-19/Germany/HH-HPI-p 1.0000  29792  hCoV-19/Netherlands/NB-R 1.0000  29745  
+hCoV-19/Zambia/RC-060/20 1.0000  29696  hCoV-19/South_Africa/NIC 1.0000  29751  
+hCoV-19/Luxembourg/LNS01 1.0000  29702  hCoV-19/Philippines/PH-P 1.0000  29828  
+hCoV-19/Germany/BY-RKI-I 1.0000  29789  hCoV-19/Sweden/191456016 1.0000  29674  
+hCoV-19/France/IDF-IPP04 1.0000  29764  hCoV-19/Germany/BW-RKI-I 1.0000  29820  
+hCoV-19/USA/GA-CDC-ASC21 1.0000  29857  hCoV-19/France/IDF-HMN-2 1.0000  29796  
+hCoV-19/France/IDF-HMN-2 1.0000  29644  hCoV-19/France/NOR-HMN-2 1.0000  29811  
+hCoV-19/Belgium/rega-848 1.0000  29764  hCoV-19/Germany/NI-RKI-I 1.0000  29788  
+hCoV-19/Germany/RP-USAFS 1.0000  29790  hCoV-19/Sweden/190819996 1.0000  29817  
+hCoV-19/South_Africa/KRI 1.0000  29797  hCoV-19/Belgium/UGent-44 1.0000  29764  
+hCoV-19/France/IDF-HMN-2 1.0000  29792  hCoV-19/Finland/THL-2021 1.0000  29848  
+hCoV-19/Portugal/PT2276/ 1.0000  29772  hCoV-19/Portugal/PT4078/ 1.0000  29779  
+hCoV-19/Finland/6097/202 1.0000  29861  hCoV-19/Sweden/SE0019403 1.0000  29633  
+hCoV-19/Germany/BW-RKI-I 1.0000  29820  hCoV-19/Belgium/ULG-1338 1.0000  29696  
+hCoV-19/Luxembourg/LNS88 1.0000  29673  hCoV-19/England/CAMC-150 1.0000  29764  
+hCoV-19/Luxembourg/LNS54 1.0000  29714  hCoV-19/Germany/NW-RKI-I 1.0000  29837  
+hCoV-19/South_Africa/KRI 1.0000  29807  hCoV-19/Sweden/SE1410276 1.0000  29813  
+hCoV-19/Kenya/C86741/202 1.0000  29764  hCoV-19/Sweden/394131216 1.0000  29849  
+hCoV-19/Germany/un-RKI-I 1.0000  29849  hCoV-19/South_Africa/NHL 1.0000  29796  
+hCoV-19/France/IDF-HMN-2 1.0000  29817  hCoV-19/USA/OH-CDC-QDX23 1.0000  29764  
+hCoV-19/Finland/THL-2021 1.0000  29819  hCoV-19/Sweden/SE0020406 1.0000  29637  
+hCoV-19/France/IDF-HB_11 1.0000  29764  hCoV-19/Belgium/UZA-UA-4 1.0000  29878  
+hCoV-19/Sweden/191920416 1.0000  29849  hCoV-19/Norway/4577/2021 1.0000  29810  
+hCoV-19/Finland/3386/202 1.0000  29836  hCoV-19/Sweden/DC1098782 1.0000  29811  
+hCoV-19/Malawi/CERI-KRIS 1.0000  29785  hCoV-19/Wales/PHWC-4B982 1.0000  29847  
+hCoV-19/Denmark/DCGC-973 1.0000  29764  hCoV-19/South_Africa/NIC 1.0000  29751  
+hCoV-19/Zambia/ZMB-89114 1.0000  29720  hCoV-19/Sweden/259445549 1.0000  29811  
+hCoV-19/USA/PA-CDC-STM-0 1.0000  29813  hCoV-19/Belgium/rega-359 1.0000  29764  
+hCoV-19/Finland/5922/202 1.0000  29831  hCoV-19/Israel/CVL-6616/ 1.0000  29850  
+hCoV-19/France/PDL-IPP01 1.0000  29755  hCoV-19/Canada/ON-PHL-21 1.0000  29764  
+hCoV-19/England/MILK-156 1.0000  29764  hCoV-19/France/IDF-IPP14 1.0000  29764  
+hCoV-19/Sweden/10048365/ 1.0000  29811  hCoV-19/Canada/ON-PHL-21 1.0000  29764  
+hCoV-19/Philippines/PH-P 1.0000  29830  hCoV-19/USA/MN-MDH-4453/ 1.0000  29794  
+hCoV-19/Turkey/HSGM-3199 1.0000  29795  hCoV-19/Belgium/ULG-1245 1.0000  29696  
+hCoV-19/Finland/V8832/20 1.0000  29848  hCoV-19/South_Africa/NHL 1.0000  29847  
+hCoV-19/Germany/SN-RKI-I 1.0000  29877  hCoV-19/Philippines/PH-P 1.0000  29801  
+hCoV-19/Sweden/16661167P 1.0000  29811  hCoV-19/South_Africa/NHL 1.0000  29847  
+hCoV-19/Sweden/394734726 1.0000  29819  hCoV-19/South_Africa/NHL 1.0000  29816  
+hCoV-19/Belgium/Jessa_55 1.0000  29782  hCoV-19/Canada/MB-NML-17 1.0000  29696  
+hCoV-19/Czech_Republic/1 1.0000  29764  hCoV-19/Finland/3488/202 1.0000  29822  
+hCoV-19/Sweden/DC1095372 1.0000  29811  hCoV-19/South_Africa/UFS 1.0000  29792  
+hCoV-19/USA/MN-MDH-4258/ 1.0000  29764  hCoV-19/Finland/THL-2021 1.0000  29837  
+hCoV-19/Finland/THL-2021 1.0000  29825  hCoV-19/Denmark/DCGC-122 1.0000  29767  
+hCoV-19/Finland/THL-2021 1.0000  29820  hCoV-19/Finland/V8839/20 1.0000  29837  
+hCoV-19/Qatar/QA.QU_18.1 1.0000  29764  hCoV-19/Denmark/DCGC-691 1.0000  29764  
+hCoV-19/Philippines/PH-P 1.0000  29833  hCoV-19/Philippines/PH-P 1.0000  29804  
+hCoV-19/Reunion/PIMIT_03 1.0000  29764  hCoV-19/Philippines/PH-P 1.0000  29787  
+hCoV-19/Finland/2875/202 1.0000  29818  hCoV-19/Sweden/21-52060/ 1.0000  29782  
+hCoV-19/Malaysia/IMR_WC2 1.0000  29860  hCoV-19/Finland/5048/202 1.0000  29826  
+hCoV-19/USA/OR-OHSU-1170 1.0000  29831  hCoV-19/South_Africa/NHL 1.0000  29847  
+hCoV-19/Belgium/ULG-1222 1.0000  29696  hCoV-19/Switzerland/GE-3 1.0000  29802  
+hCoV-19/Netherlands/GE-R 1.0000  29764  hCoV-19/Reunion/HCL02111 1.0000  29764  
+hCoV-19/Rwanda/NRLNAT403 1.0000  29696  hCoV-19/Singapore/320/20 1.0000  29869  
+hCoV-19/Belgium/AZDelta- 1.0000  29834  hCoV-19/Sweden/608106671 1.0000  29811  
+hCoV-19/France/IDF-HMN-2 1.0000  29768  hCoV-19/Sweden/191660786 1.0000  29582  
+hCoV-19/France/HDF-P104- 1.0000  29875  hCoV-19/Kenya/AFI-LAM-20 1.0000  29893  
+hCoV-19/USA/MD-CDC-ASC21 1.0000  29868  hCoV-19/South_Africa/KRI 1.0000  29855  
+hCoV-19/South_Africa/NIC 1.0000  29770  hCoV-19/USA/PA-CDC-STM-0 1.0000  29818  
+hCoV-19/Canada/ON-PHL-21 1.0000  29764  hCoV-19/Sweden/20244314P 1.0000  29811  
+hCoV-19/Austria/MUW_1377 1.0000  29811  hCoV-19/Luxembourg/LNS22 1.0000  29685  
+hCoV-19/Sweden/401329316 1.0000  29819  hCoV-19/South_Africa/KRI 1.0000  29795  
+hCoV-19/Belgium/CHUNamur 1.0000  29764  hCoV-19/Finland/6477/202 1.0000  29822  
+hCoV-19/France/IDF-SLS76 1.0000  29885  hCoV-19/South_Africa/NHL 1.0000  29822  
+hCoV-19/Germany/BY-RKI-I 1.0000  29811  hCoV-19/Germany/un-RKI-I 1.0000  29818  
+hCoV-19/Hong_Kong/CM2100 1.0000  29764  hCoV-19/South_Africa/NIC 1.0000  29751  
+hCoV-19/South_Africa/KRI 1.0000  29816  hCoV-19/Belgium/rega-527 1.0000  29764  
+hCoV-19/Finland/5697/202 1.0000  29842  hCoV-19/England/CAMC-13E 1.0000  29764  
+hCoV-19/Belgium/rega-351 1.0000  29476  hCoV-19/Philippines/PH-P 1.0000  29806  
+hCoV-19/Thailand/Narathi 1.0000  29846  hCoV-19/South_Africa/NHL 1.0000  29847  
+hCoV-19/France/PDL-IPP00 1.0000  29752  hCoV-19/France/IDF-IPP11 1.0000  29764  
+hCoV-19/Belgium/rega-690 1.0000  29764  hCoV-19/Netherlands/ZH-E 1.0000  29755  
+hCoV-19/South_Africa/KRI 1.0000  29798  hCoV-19/Belgium/ULG-1388 1.0000  29696  
+hCoV-19/Germany/SL-RKI-I 1.0000  29855  hCoV-19/South_Africa/NIC 1.0000  29751  
+hCoV-19/USA/WI-CDC-LC003 1.0000  29695  hCoV-19/Sweden/394245706 1.0000  29849  
+hCoV-19/Canada/BC-BCCDC- 1.0000  29696  hCoV-19/Sweden/10024124/ 1.0000  29811  
+hCoV-19/Luxembourg/LNS39 1.0000  29736  hCoV-19/Finland/THL-2021 1.0000  29847  
+hCoV-19/Philippines/PH-P 1.0000  29802  hCoV-19/Switzerland/BE-E 1.0000  29816  
+hCoV-19/USA/WA-CDC-UW210 1.0000  29522  hCoV-19/Belgium/AZKLINA1 1.0000  29792  
+hCoV-19/France/IDF-SLS76 1.0000  29894  hCoV-19/Belgium/ULG-1619 1.0000  29696  
+hCoV-19/South_Africa/KRI 1.0000  29813  hCoV-19/USA/WA-UW-210410 1.0000  29522  
+hCoV-19/USA/GA-CDC-ASC21 1.0000  29858  hCoV-19/Canada/ON-PHL-21 1.0000  29764  
+hCoV-19/Sweden/14176380P 1.0000  29725  hCoV-19/Belgium/rega-952 1.0000  29761  
+hCoV-19/Portugal/PT4077/ 1.0000  29779  hCoV-19/Germany/NW-RKI-I 1.0000  29810  
+hCoV-19/Austria/CeMM4045 1.0000  29764  hCoV-19/Netherlands/NH-R 1.0000  29764  
+hCoV-19/Finland/THL-2021 1.0000  29820  hCoV-19/France/IDF-HCL02 1.0000  29764  
+hCoV-19/Germany/BY-RKI-I 1.0000  29802  hCoV-19/Belgium/rega-343 1.0000  29764  
+hCoV-19/Norway/5552/2021 1.0000  29810  hCoV-19/Finland/THL-2021 1.0000  29836  
+hCoV-19/South_Africa/KRI 1.0000  29847  hCoV-19/USA/MN-1615/2021 1.0000  29764  
+hCoV-19/South_Africa/KRI 1.0000  29849  hCoV-19/Reunion/PIMIT_06 1.0000  29764  
+hCoV-19/South_Africa/NIC 1.0000  29733  hCoV-19/South_Africa/KRI 1.0000  29880  
+hCoV-19/France/IDF-SLS76 1.0000  29811  hCoV-19/France/ARA-HCL02 1.0000  29855  
+hCoV-19/USA/CA-SC-210835 1.0000  29764  hCoV-19/South_Africa/NIC 1.0000  29741  
+hCoV-19/Netherlands/OV-R 1.0000  29764  hCoV-19/Germany/un-RKI-I 1.0000  29764  
+hCoV-19/South_Africa/NIC 1.0000  29751  hCoV-19/Germany/MV-RKI-I 1.0000  29812  
+hCoV-19/South_Africa/NHL 1.0000  29809  hCoV-19/South_Africa/NHL 1.0000  29798  
+hCoV-19/USA/MN-MDH-4408/ 1.0000  29764  hCoV-19/Spain/CT-HUGTiPM 1.0000  29803  
+hCoV-19/Zimbabwe/ZW-5168 1.0000  29780  hCoV-19/South_Africa/NHL 1.0000  29847  
+hCoV-19/Sweden/392462166 1.0000  29726  hCoV-19/Finland/5754/202 1.0000  29852  
+hCoV-19/Ireland/CW-NVRL- 1.0000  29764  hCoV-19/South_Africa/KRI 1.0000  29875  
+hCoV-19/South_Africa/NIC 1.0000  29770  hCoV-19/Sweden/644314828 1.0000  29811  
+hCoV-19/Sweden/16859012P 1.0000  29820  hCoV-19/France/IDF-HMN-2 1.0000  29767  
+hCoV-19/Sweden/DC1083473 1.0000  29819  hCoV-19/Norway/5431/2021 1.0000  29810  
+hCoV-19/South_Africa/NIC 1.0000  29751  hCoV-19/Sweden/16141208P 1.0000  29811  
+hCoV-19/Sweden/DC1083599 1.0000  29819  hCoV-19/Norway/4412/2021 1.0000  29810  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme Beta_B.1.351_primary.fasta -dna -oc . -nostatus -time 14269 -mod zoops -nmotifs 5 -minw 8 -maxw 8 -objfun classic -revcomp -markov_order 0 -psp priors.psp 
+
+model:  mod=         zoops    nmotifs=         5    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: + -
+width:  minw=            8    maxw=            8
+nsites: minsites=        2    maxsites=      250    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=         7446743    N=             250
+sample: seed=            0    hsfrac=          0
+        searchsize= 100000    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.31 C 0.19 G 0.19 T 0.31 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.31 C 0.19 G 0.19 T 0.31 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF GCTGGCAC MEME-1	width =   8  sites =  89  llr = 1096  E-value = 4.8e+007
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif GCTGGCAC MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::::::a:
+pos.-specific     C  :a:::a:a
+probability       G  a::aa:::
+matrix            T  ::a:::::
+
+         bits    2.4 ** *** *
+                 2.2 ** *** *
+                 1.9 ** *** *
+                 1.7 ********
+Relative         1.4 ********
+Entropy          1.2 ********
+(17.8 bits)      1.0 ********
+                 0.7 ********
+                 0.5 ********
+                 0.2 ********
+                 0.0 --------
+
+Multilevel           GCTGGCAC
+consensus                    
+sequence                     
+                             
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCTGGCAC MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name            Strand  Start   P-value              Site
+-------------            ------  ----- ---------            --------
+hCoV-19/Sweden/DC1083599     +  10541  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Sweden/16141208P     +  10548  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/South_Africa/NIC     +  10511  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Sweden/DC1083473     +  10541  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Sweden/16859012P     +  10548  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Sweden/644314828     +  10548  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/South_Africa/NIC     +  10511  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Sweden/392462166     +  10536  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Netherlands/OV-R     +  10517  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/South_Africa/NIC     +  10511  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/France/IDF-SLS76     +  10532  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/South_Africa/NIC     +  10493  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Netherlands/NH-R     +  10517  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Sweden/14176380P     +  10539  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/USA/WA-UW-210410     +  10370  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Belgium/ULG-1619     +  10517  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/USA/WA-CDC-UW210     +  10370  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Finland/THL-2021     +  10566  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Luxembourg/LNS39     +  10517  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Sweden/10024124/     +  10548  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Canada/BC-BCCDC-     +  10517  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/USA/WI-CDC-LC003     +  10517  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/South_Africa/NIC     +  10511  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Germany/SL-RKI-I     +  10547  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Belgium/ULG-1388     +  10517  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Thailand/Narathi     +  10532  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Belgium/rega-351     +  10229  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/South_Africa/KRI     +  10535  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/South_Africa/NIC     +  10511  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Germany/un-RKI-I     +  10540  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/France/IDF-SLS76     +  10571  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Sweden/401329316     +  10541  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Luxembourg/LNS22     +  10500  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Austria/MUW_1377     +  10536  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Sweden/20244314P     +  10548  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/USA/PA-CDC-STM-0     +  10541  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Sweden/191660786     +  10534  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Rwanda/NRLNAT403     +  10517  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Netherlands/GE-R     +  10517  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Belgium/ULG-1222     +  10517  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Malaysia/IMR_WC2     +  10561  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Finland/2875/202     +  10541  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Denmark/DCGC-691     +  10517  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Finland/V8839/20     +  10556  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Sweden/DC1095372     +  10548  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Canada/MB-NML-17     +  10517  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Belgium/Jessa_55     +  10529  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Finland/V8832/20     +  10567  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Belgium/ULG-1245     +  10517  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Turkey/HSGM-3199     +  10539  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Sweden/10048365/     +  10548  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Finland/5922/202     +  10550  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/USA/PA-CDC-STM-0     +  10541  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Sweden/259445549     +  10548  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Zambia/ZMB-89114     +  10515  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/South_Africa/NIC     +  10511  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Denmark/DCGC-973     +  10517  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Sweden/DC1098782     +  10548  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Sweden/SE0020406     +  10541  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/USA/OH-CDC-QDX23     +  10517  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Kenya/C86741/202     +  10517  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Luxembourg/LNS54     +  10500  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Luxembourg/LNS88     +  10500  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Belgium/ULG-1338     +  10517  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Sweden/SE0019403     +  10539  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Portugal/PT2276/     +  10522  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/France/IDF-IPP04     +  10517  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Germany/BY-RKI-I     +  10546  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Luxembourg/LNS01     +  10505  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/South_Africa/NIC     +  10511  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Zambia/RC-060/20     +  10517  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Sweden/20273369P     +  10548  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Switzerland/SG-C     +  10517  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/South_Africa/VID     +  10389  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Netherlands/ZH-R     +  10517  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Malaysia/IMR_WC7     +  10563  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Belgium/Jessa_55     +  10529  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/France/IDF-HMN-2     +  10538  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Netherlands/NB-R     +  10517  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Luxembourg/LNS78     +  10500  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Canada/BC-BCCDC-     +  10517  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Turkey/HSGM-8306     +  10539  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Sweden/10063024/     +  10548  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/France/IDF-SLS76     +  10532  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Netherlands/ZH-R     +  10517  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Canada/MB-NML-17     +  10517  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/USA/MI-CDC-STM-0     +  10541  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/England/MILK-11A     +  10517  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+hCoV-19/Philippines/PH-P     +  10548  4.52e-06 TGGAGTTCAT GCTGGCAC AGACTTAGAA
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCTGGCAC MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+hCoV-19/Sweden/DC1083599          4.5e-06  10540_[+1]_19271
+hCoV-19/Sweden/16141208P          4.5e-06  10547_[+1]_19256
+hCoV-19/South_Africa/NIC          4.5e-06  10510_[+1]_19233
+hCoV-19/Sweden/DC1083473          4.5e-06  10540_[+1]_19271
+hCoV-19/Sweden/16859012P          4.5e-06  10547_[+1]_19265
+hCoV-19/Sweden/644314828          4.5e-06  10547_[+1]_19256
+hCoV-19/South_Africa/NIC          4.5e-06  10510_[+1]_19252
+hCoV-19/Sweden/392462166          4.5e-06  10535_[+1]_19183
+hCoV-19/Netherlands/OV-R          4.5e-06  10516_[+1]_19240
+hCoV-19/South_Africa/NIC          4.5e-06  10510_[+1]_19223
+hCoV-19/France/IDF-SLS76          4.5e-06  10531_[+1]_19272
+hCoV-19/South_Africa/NIC          4.5e-06  10492_[+1]_19233
+hCoV-19/Netherlands/NH-R          4.5e-06  10516_[+1]_19240
+hCoV-19/Sweden/14176380P          4.5e-06  10538_[+1]_19179
+hCoV-19/USA/WA-UW-210410          4.5e-06  10369_[+1]_19145
+hCoV-19/Belgium/ULG-1619          4.5e-06  10516_[+1]_19172
+hCoV-19/USA/WA-CDC-UW210          4.5e-06  10369_[+1]_19145
+hCoV-19/Finland/THL-2021          4.5e-06  10565_[+1]_19274
+hCoV-19/Luxembourg/LNS39          4.5e-06  10516_[+1]_19212
+hCoV-19/Sweden/10024124/          4.5e-06  10547_[+1]_19256
+hCoV-19/Canada/BC-BCCDC-          4.5e-06  10516_[+1]_19172
+hCoV-19/USA/WI-CDC-LC003          4.5e-06  10516_[+1]_19171
+hCoV-19/South_Africa/NIC          4.5e-06  10510_[+1]_19233
+hCoV-19/Germany/SL-RKI-I          4.5e-06  10546_[+1]_19301
+hCoV-19/Belgium/ULG-1388          4.5e-06  10516_[+1]_19172
+hCoV-19/Thailand/Narathi          4.5e-06  10531_[+1]_19307
+hCoV-19/Belgium/rega-351          4.5e-06  10228_[+1]_19240
+hCoV-19/South_Africa/KRI          4.5e-06  10534_[+1]_19274
+hCoV-19/South_Africa/NIC          4.5e-06  10510_[+1]_19233
+hCoV-19/Germany/un-RKI-I          4.5e-06  10539_[+1]_19271
+hCoV-19/France/IDF-SLS76          4.5e-06  10570_[+1]_19307
+hCoV-19/Sweden/401329316          4.5e-06  10540_[+1]_19271
+hCoV-19/Luxembourg/LNS22          4.5e-06  10499_[+1]_19178
+hCoV-19/Austria/MUW_1377          4.5e-06  10535_[+1]_19268
+hCoV-19/Sweden/20244314P          4.5e-06  10547_[+1]_19256
+hCoV-19/USA/PA-CDC-STM-0          4.5e-06  10540_[+1]_19270
+hCoV-19/Sweden/191660786          4.5e-06  10533_[+1]_19041
+hCoV-19/Rwanda/NRLNAT403          4.5e-06  10516_[+1]_19172
+hCoV-19/Netherlands/GE-R          4.5e-06  10516_[+1]_19240
+hCoV-19/Belgium/ULG-1222          4.5e-06  10516_[+1]_19172
+hCoV-19/Malaysia/IMR_WC2          4.5e-06  10560_[+1]_19292
+hCoV-19/Finland/2875/202          4.5e-06  10540_[+1]_19270
+hCoV-19/Denmark/DCGC-691          4.5e-06  10516_[+1]_19240
+hCoV-19/Finland/V8839/20          4.5e-06  10555_[+1]_19274
+hCoV-19/Sweden/DC1095372          4.5e-06  10547_[+1]_19256
+hCoV-19/Canada/MB-NML-17          4.5e-06  10516_[+1]_19172
+hCoV-19/Belgium/Jessa_55          4.5e-06  10528_[+1]_19246
+hCoV-19/Finland/V8832/20          4.5e-06  10566_[+1]_19274
+hCoV-19/Belgium/ULG-1245          4.5e-06  10516_[+1]_19172
+hCoV-19/Turkey/HSGM-3199          4.5e-06  10538_[+1]_19249
+hCoV-19/Sweden/10048365/          4.5e-06  10547_[+1]_19256
+hCoV-19/Finland/5922/202          4.5e-06  10549_[+1]_19274
+hCoV-19/USA/PA-CDC-STM-0          4.5e-06  10540_[+1]_19265
+hCoV-19/Sweden/259445549          4.5e-06  10547_[+1]_19256
+hCoV-19/Zambia/ZMB-89114          4.5e-06  10514_[+1]_19198
+hCoV-19/South_Africa/NIC          4.5e-06  10510_[+1]_19233
+hCoV-19/Denmark/DCGC-973          4.5e-06  10516_[+1]_19240
+hCoV-19/Sweden/DC1098782          4.5e-06  10547_[+1]_19256
+hCoV-19/Sweden/SE0020406          4.5e-06  10540_[+1]_19089
+hCoV-19/USA/OH-CDC-QDX23          4.5e-06  10516_[+1]_19240
+hCoV-19/Kenya/C86741/202          4.5e-06  10516_[+1]_19240
+hCoV-19/Luxembourg/LNS54          4.5e-06  10499_[+1]_19207
+hCoV-19/Luxembourg/LNS88          4.5e-06  10499_[+1]_19166
+hCoV-19/Belgium/ULG-1338          4.5e-06  10516_[+1]_19172
+hCoV-19/Sweden/SE0019403          4.5e-06  10538_[+1]_19087
+hCoV-19/Portugal/PT2276/          4.5e-06  10521_[+1]_19243
+hCoV-19/France/IDF-IPP04          4.5e-06  10516_[+1]_19240
+hCoV-19/Germany/BY-RKI-I          4.5e-06  10545_[+1]_19236
+hCoV-19/Luxembourg/LNS01          4.5e-06  10504_[+1]_19190
+hCoV-19/South_Africa/NIC          4.5e-06  10510_[+1]_19233
+hCoV-19/Zambia/RC-060/20          4.5e-06  10516_[+1]_19172
+hCoV-19/Sweden/20273369P          4.5e-06  10547_[+1]_19256
+hCoV-19/Switzerland/SG-C          4.5e-06  10516_[+1]_19240
+hCoV-19/South_Africa/VID          4.5e-06  10388_[+1]_19175
+hCoV-19/Netherlands/ZH-R          4.5e-06  10516_[+1]_19240
+hCoV-19/Malaysia/IMR_WC7          4.5e-06  10562_[+1]_19284
+hCoV-19/Belgium/Jessa_55          4.5e-06  10528_[+1]_19264
+hCoV-19/France/IDF-HMN-2          4.5e-06  10537_[+1]_19240
+hCoV-19/Netherlands/NB-R          4.5e-06  10516_[+1]_19240
+hCoV-19/Luxembourg/LNS78          4.5e-06  10499_[+1]_19138
+hCoV-19/Canada/BC-BCCDC-          4.5e-06  10516_[+1]_19172
+hCoV-19/Turkey/HSGM-8306          4.5e-06  10538_[+1]_19249
+hCoV-19/Sweden/10063024/          4.5e-06  10547_[+1]_19256
+hCoV-19/France/IDF-SLS76          4.5e-06  10531_[+1]_19278
+hCoV-19/Netherlands/ZH-R          4.5e-06  10516_[+1]_19240
+hCoV-19/Canada/MB-NML-17          4.5e-06  10516_[+1]_19172
+hCoV-19/USA/MI-CDC-STM-0          4.5e-06  10540_[+1]_19266
+hCoV-19/England/MILK-11A          4.5e-06  10516_[+1]_19237
+hCoV-19/Philippines/PH-P          4.5e-06  10547_[+1]_19265
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCTGGCAC MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF GCTGGCAC width=8 seqs=89
+hCoV-19/Sweden/DC1083599 ( 10541) GCTGGCAC  1 
+hCoV-19/Sweden/16141208P ( 10548) GCTGGCAC  1 
+hCoV-19/South_Africa/NIC ( 10511) GCTGGCAC  1 
+hCoV-19/Sweden/DC1083473 ( 10541) GCTGGCAC  1 
+hCoV-19/Sweden/16859012P ( 10548) GCTGGCAC  1 
+hCoV-19/Sweden/644314828 ( 10548) GCTGGCAC  1 
+hCoV-19/South_Africa/NIC ( 10511) GCTGGCAC  1 
+hCoV-19/Sweden/392462166 ( 10536) GCTGGCAC  1 
+hCoV-19/Netherlands/OV-R ( 10517) GCTGGCAC  1 
+hCoV-19/South_Africa/NIC ( 10511) GCTGGCAC  1 
+hCoV-19/France/IDF-SLS76 ( 10532) GCTGGCAC  1 
+hCoV-19/South_Africa/NIC ( 10493) GCTGGCAC  1 
+hCoV-19/Netherlands/NH-R ( 10517) GCTGGCAC  1 
+hCoV-19/Sweden/14176380P ( 10539) GCTGGCAC  1 
+hCoV-19/USA/WA-UW-210410 ( 10370) GCTGGCAC  1 
+hCoV-19/Belgium/ULG-1619 ( 10517) GCTGGCAC  1 
+hCoV-19/USA/WA-CDC-UW210 ( 10370) GCTGGCAC  1 
+hCoV-19/Finland/THL-2021 ( 10566) GCTGGCAC  1 
+hCoV-19/Luxembourg/LNS39 ( 10517) GCTGGCAC  1 
+hCoV-19/Sweden/10024124/ ( 10548) GCTGGCAC  1 
+hCoV-19/Canada/BC-BCCDC- ( 10517) GCTGGCAC  1 
+hCoV-19/USA/WI-CDC-LC003 ( 10517) GCTGGCAC  1 
+hCoV-19/South_Africa/NIC ( 10511) GCTGGCAC  1 
+hCoV-19/Germany/SL-RKI-I ( 10547) GCTGGCAC  1 
+hCoV-19/Belgium/ULG-1388 ( 10517) GCTGGCAC  1 
+hCoV-19/Thailand/Narathi ( 10532) GCTGGCAC  1 
+hCoV-19/Belgium/rega-351 ( 10229) GCTGGCAC  1 
+hCoV-19/South_Africa/KRI ( 10535) GCTGGCAC  1 
+hCoV-19/South_Africa/NIC ( 10511) GCTGGCAC  1 
+hCoV-19/Germany/un-RKI-I ( 10540) GCTGGCAC  1 
+hCoV-19/France/IDF-SLS76 ( 10571) GCTGGCAC  1 
+hCoV-19/Sweden/401329316 ( 10541) GCTGGCAC  1 
+hCoV-19/Luxembourg/LNS22 ( 10500) GCTGGCAC  1 
+hCoV-19/Austria/MUW_1377 ( 10536) GCTGGCAC  1 
+hCoV-19/Sweden/20244314P ( 10548) GCTGGCAC  1 
+hCoV-19/USA/PA-CDC-STM-0 ( 10541) GCTGGCAC  1 
+hCoV-19/Sweden/191660786 ( 10534) GCTGGCAC  1 
+hCoV-19/Rwanda/NRLNAT403 ( 10517) GCTGGCAC  1 
+hCoV-19/Netherlands/GE-R ( 10517) GCTGGCAC  1 
+hCoV-19/Belgium/ULG-1222 ( 10517) GCTGGCAC  1 
+hCoV-19/Malaysia/IMR_WC2 ( 10561) GCTGGCAC  1 
+hCoV-19/Finland/2875/202 ( 10541) GCTGGCAC  1 
+hCoV-19/Denmark/DCGC-691 ( 10517) GCTGGCAC  1 
+hCoV-19/Finland/V8839/20 ( 10556) GCTGGCAC  1 
+hCoV-19/Sweden/DC1095372 ( 10548) GCTGGCAC  1 
+hCoV-19/Canada/MB-NML-17 ( 10517) GCTGGCAC  1 
+hCoV-19/Belgium/Jessa_55 ( 10529) GCTGGCAC  1 
+hCoV-19/Finland/V8832/20 ( 10567) GCTGGCAC  1 
+hCoV-19/Belgium/ULG-1245 ( 10517) GCTGGCAC  1 
+hCoV-19/Turkey/HSGM-3199 ( 10539) GCTGGCAC  1 
+hCoV-19/Sweden/10048365/ ( 10548) GCTGGCAC  1 
+hCoV-19/Finland/5922/202 ( 10550) GCTGGCAC  1 
+hCoV-19/USA/PA-CDC-STM-0 ( 10541) GCTGGCAC  1 
+hCoV-19/Sweden/259445549 ( 10548) GCTGGCAC  1 
+hCoV-19/Zambia/ZMB-89114 ( 10515) GCTGGCAC  1 
+hCoV-19/South_Africa/NIC ( 10511) GCTGGCAC  1 
+hCoV-19/Denmark/DCGC-973 ( 10517) GCTGGCAC  1 
+hCoV-19/Sweden/DC1098782 ( 10548) GCTGGCAC  1 
+hCoV-19/Sweden/SE0020406 ( 10541) GCTGGCAC  1 
+hCoV-19/USA/OH-CDC-QDX23 ( 10517) GCTGGCAC  1 
+hCoV-19/Kenya/C86741/202 ( 10517) GCTGGCAC  1 
+hCoV-19/Luxembourg/LNS54 ( 10500) GCTGGCAC  1 
+hCoV-19/Luxembourg/LNS88 ( 10500) GCTGGCAC  1 
+hCoV-19/Belgium/ULG-1338 ( 10517) GCTGGCAC  1 
+hCoV-19/Sweden/SE0019403 ( 10539) GCTGGCAC  1 
+hCoV-19/Portugal/PT2276/ ( 10522) GCTGGCAC  1 
+hCoV-19/France/IDF-IPP04 ( 10517) GCTGGCAC  1 
+hCoV-19/Germany/BY-RKI-I ( 10546) GCTGGCAC  1 
+hCoV-19/Luxembourg/LNS01 ( 10505) GCTGGCAC  1 
+hCoV-19/South_Africa/NIC ( 10511) GCTGGCAC  1 
+hCoV-19/Zambia/RC-060/20 ( 10517) GCTGGCAC  1 
+hCoV-19/Sweden/20273369P ( 10548) GCTGGCAC  1 
+hCoV-19/Switzerland/SG-C ( 10517) GCTGGCAC  1 
+hCoV-19/South_Africa/VID ( 10389) GCTGGCAC  1 
+hCoV-19/Netherlands/ZH-R ( 10517) GCTGGCAC  1 
+hCoV-19/Malaysia/IMR_WC7 ( 10563) GCTGGCAC  1 
+hCoV-19/Belgium/Jessa_55 ( 10529) GCTGGCAC  1 
+hCoV-19/France/IDF-HMN-2 ( 10538) GCTGGCAC  1 
+hCoV-19/Netherlands/NB-R ( 10517) GCTGGCAC  1 
+hCoV-19/Luxembourg/LNS78 ( 10500) GCTGGCAC  1 
+hCoV-19/Canada/BC-BCCDC- ( 10517) GCTGGCAC  1 
+hCoV-19/Turkey/HSGM-8306 ( 10539) GCTGGCAC  1 
+hCoV-19/Sweden/10063024/ ( 10548) GCTGGCAC  1 
+hCoV-19/France/IDF-SLS76 ( 10532) GCTGGCAC  1 
+hCoV-19/Netherlands/ZH-R ( 10517) GCTGGCAC  1 
+hCoV-19/Canada/MB-NML-17 ( 10517) GCTGGCAC  1 
+hCoV-19/USA/MI-CDC-STM-0 ( 10541) GCTGGCAC  1 
+hCoV-19/England/MILK-11A ( 10517) GCTGGCAC  1 
+hCoV-19/Philippines/PH-P ( 10548) GCTGGCAC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCTGGCAC MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 8 n= 7416319 bayes= 18.5443 E= 4.8e+007 
+ -1312  -1312    240  -1312 
+ -1312    240  -1312  -1312 
+ -1312  -1312  -1312    169 
+ -1312  -1312    240  -1312 
+ -1312  -1312    240  -1312 
+ -1312    240  -1312  -1312 
+   169  -1312  -1312  -1312 
+ -1312    240  -1312  -1312 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCTGGCAC MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 8 nsites= 89 E= 4.8e+007 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCTGGCAC MEME-1 regular expression
+--------------------------------------------------------------------------------
+GCTGGCAC
+--------------------------------------------------------------------------------
+
+
+
+
+Time 61.53 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF GGTGCCAC MEME-2	width =   8  sites = 244  llr = 3003  E-value = 4.8e+007
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif GGTGCCAC MEME-2 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::::::a:
+pos.-specific     C  ::::aa:a
+probability       G  aa:a::::
+matrix            T  ::a:::::
+
+         bits    2.4 ** *** *
+                 2.2 ** *** *
+                 1.9 ** *** *
+                 1.7 ********
+Relative         1.4 ********
+Entropy          1.2 ********
+(17.8 bits)      1.0 ********
+                 0.7 ********
+                 0.5 ********
+                 0.2 ********
+                 0.0 --------
+
+Multilevel           GGTGCCAC
+consensus                    
+sequence                     
+                             
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGTGCCAC MEME-2 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name            Strand  Start   P-value              Site
+-------------            ------  ----- ---------            --------
+hCoV-19/Norway/4412/2021     +   3128  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Sweden/DC1083599     +   1292  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Sweden/16141208P     +   3129  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/South_Africa/NIC     +   3092  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Norway/5431/2021     +   3128  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Sweden/DC1083473     +   3122  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/France/IDF-HMN-2     +   3101  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Sweden/16859012P     +   3129  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Sweden/644314828     +   3129  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/South_Africa/NIC     +   3092  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/South_Africa/KRI     +   3143  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGTT
+hCoV-19/Ireland/CW-NVRL-     +   1268  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Finland/5754/202     +   1322  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Sweden/392462166     +   3117  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/South_Africa/NHL     +   1284  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Zimbabwe/ZW-5168     +   3114  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Spain/CT-HUGTiPM     +   1284  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/USA/MN-MDH-4408/     +   3098  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/South_Africa/NHL     +   3114  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/South_Africa/NHL     +   1286  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Germany/MV-RKI-I     +   1292  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/South_Africa/NIC     +   1262  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Germany/un-RKI-I     +   3098  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Netherlands/OV-R     +   3098  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/South_Africa/NIC     +   1262  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/USA/CA-SC-210835     +   3098  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/France/ARA-HCL02     +   3122  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/France/IDF-SLS76     +   1283  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/South_Africa/KRI     +   3147  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/South_Africa/NIC     +   1244  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/South_Africa/KRI     +   3116  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/USA/MN-1615/2021     +   3098  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/South_Africa/KRI     +   1284  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Finland/THL-2021     +   3140  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Norway/5552/2021     +   3128  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Belgium/rega-343     +   1268  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Germany/BY-RKI-I     +   1285  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/France/IDF-HCL02     +   1268  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Finland/THL-2021     +   3123  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Netherlands/NH-R     +   1268  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Austria/CeMM4045     +   1268  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Germany/NW-RKI-I     +   1292  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Portugal/PT4077/     +   1282  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Belgium/rega-952     +   1268  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Sweden/14176380P     +   1290  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Canada/ON-PHL-21     +   1268  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/USA/GA-CDC-ASC21     +   3125  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/USA/WA-UW-210410     +   1121  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/South_Africa/KRI     +   3122  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Belgium/ULG-1619     +   3098  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/France/IDF-SLS76     +   3152  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Belgium/AZKLINA1     +   3117  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/USA/WA-CDC-UW210     +   2951  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Switzerland/BE-E     +   3122  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Philippines/PH-P     +   1286  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Finland/THL-2021     +   1317  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Luxembourg/LNS39     +   3098  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Sweden/10024124/     +   3129  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Canada/BC-BCCDC-     +   3098  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Sweden/394245706     +   3152  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/USA/WI-CDC-LC003     +   3098  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/South_Africa/NIC     +   1262  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Germany/SL-RKI-I     +   3128  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Belgium/ULG-1388     +   1268  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/South_Africa/KRI     +   3114  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Netherlands/ZH-E     +   1268  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Belgium/rega-690     +   3098  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/France/IDF-IPP11     +   1268  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/France/PDL-IPP00     +   3086  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/South_Africa/NHL     +   3114  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Thailand/Narathi     +   1283  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Philippines/PH-P     +   1286  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Belgium/rega-351     +    980  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/England/CAMC-13E     +   1268  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Finland/5697/202     +   1314  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Belgium/rega-527     +   3098  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/South_Africa/KRI     +   1286  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/South_Africa/NIC     +   3092  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Hong_Kong/CM2100     +   1268  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Germany/un-RKI-I     +   3121  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Germany/BY-RKI-I     +   3122  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/South_Africa/NHL     +   1284  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/France/IDF-SLS76     +   3152  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Finland/6477/202     +   3123  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Belgium/CHUNamur     +   3098  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/South_Africa/KRI     +   3114  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Sweden/401329316     +   3122  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Luxembourg/LNS22     +   1251  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Austria/MUW_1377     +   3117  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Sweden/20244314P     +   1299  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Canada/ON-PHL-21     +   3098  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/USA/PA-CDC-STM-0     +   1292  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/South_Africa/NIC     +   3092  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/South_Africa/KRI     +   3122  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/USA/MD-CDC-ASC21     +   3135  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Kenya/AFI-LAM-20     +   1312  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/France/HDF-P104-     +   1312  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Sweden/191660786     +   1285  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/France/IDF-HMN-2     +   1272  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Sweden/608106671     +   1299  4.52e-06 TACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Belgium/AZDelta-     +   1297  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Singapore/320/20     +   1318  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Rwanda/NRLNAT403     +   3098  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Reunion/HCL02111     +   1268  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Netherlands/GE-R     +   1268  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Switzerland/GE-3     +   1287  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Belgium/ULG-1222     +   1268  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/South_Africa/NHL     +   3114  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/USA/OR-OHSU-1170     +   3098  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Malaysia/IMR_WC2     +   3142  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Sweden/21-52060/     +   3110  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Finland/2875/202     +   3122  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Philippines/PH-P     +   1286  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Philippines/PH-P     +   3117  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Philippines/PH-P     +   1316  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Denmark/DCGC-691     +   3098  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Qatar/QA.QU_18.1     +   1268  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Finland/V8839/20     +   1307  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Finland/THL-2021     +   1293  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Denmark/DCGC-122     +   3098  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Finland/THL-2021     +   1308  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/USA/MN-MDH-4258/     +   1268  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/South_Africa/UFS     +   3126  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Sweden/DC1095372     +   3129  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Finland/3488/202     +   1294  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Czech_Republic/1     +   1268  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Canada/MB-NML-17     +   1268  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Belgium/Jessa_55     +   1280  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/South_Africa/NHL     +   3116  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Sweden/394734726     +   1292  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/South_Africa/NHL     +   1284  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Sweden/16661167P     +   1299  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Philippines/PH-P     +   3115  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Germany/SN-RKI-I     +   1314  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/South_Africa/NHL     +   3114  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Finland/V8832/20     +   1318  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Belgium/ULG-1245     +   1268  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Turkey/HSGM-3199     +   3120  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/USA/MN-MDH-4453/     +   3113  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Philippines/PH-P     +   1314  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Canada/ON-PHL-21     +   1268  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Sweden/10048365/     +   1299  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/France/IDF-IPP14     +   1268  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/England/MILK-156     +   1268  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Canada/ON-PHL-21     +   1268  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/France/PDL-IPP01     +   1259  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Israel/CVL-6616/     +   1287  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Finland/5922/202     +   3131  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Belgium/rega-359     +   1268  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/USA/PA-CDC-STM-0     +   1292  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Sweden/259445549     +   3129  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Zambia/ZMB-89114     +   1266  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/South_Africa/NIC     +   1262  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Denmark/DCGC-973     +   3098  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Wales/PHWC-4B982     +   1284  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Malawi/CERI-KRIS     +   1284  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Sweden/DC1098782     +   1299  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Norway/4577/2021     +   3128  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Sweden/191920416     +   1322  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Belgium/UZA-UA-4     +   1316  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/France/IDF-HB_11     +   3098  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Sweden/SE0020406     +   3122  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Finland/THL-2021     +   3123  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/USA/OH-CDC-QDX23     +   1268  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/France/IDF-HMN-2     +   3135  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/South_Africa/NHL     +   3113  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Germany/un-RKI-I     +   1322  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Sweden/394131216     +   3152  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Kenya/C86741/202     +   1268  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Sweden/SE1410276     +   3116  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/South_Africa/KRI     +   1293  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Germany/NW-RKI-I     +   1306  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Luxembourg/LNS54     +   1251  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/England/CAMC-150     +   3098  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Luxembourg/LNS88     +   3081  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Belgium/ULG-1338     +   1268  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Germany/BW-RKI-I     +   1282  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Sweden/SE0019403     +   1290  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Finland/6097/202     +   3152  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Portugal/PT4078/     +   1282  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Portugal/PT2276/     +   3103  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Finland/THL-2021     +   3152  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/France/IDF-HMN-2     +   3111  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Belgium/UGent-44     +   1268  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/South_Africa/KRI     +   1284  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Sweden/190819996     +   1290  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Germany/RP-USAFS     +   1281  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Germany/NI-RKI-I     +   3122  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Belgium/rega-848     +   3098  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/France/NOR-HMN-2     +   1298  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/France/IDF-HMN-2     +   3111  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/France/IDF-HMN-2     +   3114  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/USA/GA-CDC-ASC21     +   3125  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Germany/BW-RKI-I     +   1280  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/France/IDF-IPP04     +   3098  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Sweden/191456016     +   3101  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Germany/BY-RKI-I     +   1297  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Philippines/PH-P     +   3141  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Luxembourg/LNS01     +   3086  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/South_Africa/NIC     +   1262  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Zambia/RC-060/20     +   1268  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Netherlands/NB-R     +   3098  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Germany/HH-HPI-p     +   1289  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Sweden/20273369P     +   3129  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Switzerland/SG-C     +   3098  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/South_Africa/VID     +   1140  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/France/IDF-HMN-2     +   1282  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Netherlands/ZH-R     +   1268  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Germany/BE-RKI-I     +   3114  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Malaysia/IMR_WC7     +   1314  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/South_Africa/KRI     +   3119  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Philippines/PH-P     +   3114  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/South_Africa/KRI     +   3114  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Germany/BW-RKI-I     +   3152  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Belgium/Jessa_55     +   1280  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Canada/ON-PHL-21     +   3098  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/France/IDF-HMN-2     +   1289  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Netherlands/NB-R     +   3098  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Luxembourg/LNS78     +   3081  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/South_Africa/Tyg     +   3130  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/France/BFC-HMN-2     +   1287  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Sweden/191957976     +   3152  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Canada/BC-BCCDC-     +   3098  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Turkey/HSGM-8306     +   1290  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/South_Africa/NHL     +   1284  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Sweden/10063024/     +   1299  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Finland/THL-2021     +   3152  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/USA/PA-CDC-QDX24     +   1268  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Zimbabwe/ZW-4621     +   1283  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/France/IDF-SLS76     +   3113  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/England/CAMC-148     +   3098  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Netherlands/ZH-R     +   3098  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Canada/MB-NML-17     +   3098  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/USA/MI-CDC-STM-0     +   1292  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Sweden/191954916     +   3152  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Belgium/UGent-35     +   3098  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/England/MILK-11A     +   3098  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Canada/ON-PHL-21     +   1268  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/South_Africa/NHL     +   3148  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/South_Africa/Tyg     +   3098  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Qatar/QA-QU_18-3     +   3098  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Zambia/ZMB-85345     +   1266  4.52e-06 GACTAAAGAA GGTGCCAC TACTTGTGGT
+hCoV-19/Philippines/PH-P     +   3129  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+hCoV-19/Portugal/PT4895/     +   3112  4.52e-06 TTTGGAATTT GGTGCCAC TTCTGCTGCT
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGTGCCAC MEME-2 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+hCoV-19/Norway/4412/2021          4.5e-06  3127_[+2]_26675
+hCoV-19/Sweden/DC1083599          4.5e-06  1291_[+2]_28520
+hCoV-19/Sweden/16141208P          4.5e-06  3128_[+2]_26675
+hCoV-19/South_Africa/NIC          4.5e-06  3091_[+2]_26652
+hCoV-19/Norway/5431/2021          4.5e-06  3127_[+2]_26675
+hCoV-19/Sweden/DC1083473          4.5e-06  3121_[+2]_26690
+hCoV-19/France/IDF-HMN-2          4.5e-06  3100_[+2]_26659
+hCoV-19/Sweden/16859012P          4.5e-06  3128_[+2]_26684
+hCoV-19/Sweden/644314828          4.5e-06  3128_[+2]_26675
+hCoV-19/South_Africa/NIC          4.5e-06  3091_[+2]_26671
+hCoV-19/South_Africa/KRI          4.5e-06  3142_[+2]_26725
+hCoV-19/Ireland/CW-NVRL-          4.5e-06  1267_[+2]_28489
+hCoV-19/Finland/5754/202          4.5e-06  1321_[+2]_28523
+hCoV-19/Sweden/392462166          4.5e-06  3116_[+2]_26602
+hCoV-19/South_Africa/NHL          4.5e-06  1283_[+2]_28556
+hCoV-19/Zimbabwe/ZW-5168          4.5e-06  3113_[+2]_26659
+hCoV-19/Spain/CT-HUGTiPM          4.5e-06  1283_[+2]_28512
+hCoV-19/USA/MN-MDH-4408/          4.5e-06  3097_[+2]_26659
+hCoV-19/South_Africa/NHL          4.5e-06  3113_[+2]_26677
+hCoV-19/South_Africa/NHL          4.5e-06  1285_[+2]_28516
+hCoV-19/Germany/MV-RKI-I          4.5e-06  1291_[+2]_28513
+hCoV-19/South_Africa/NIC          4.5e-06  1261_[+2]_28482
+hCoV-19/Germany/un-RKI-I          4.5e-06  3097_[+2]_26659
+hCoV-19/Netherlands/OV-R          4.5e-06  3097_[+2]_26659
+hCoV-19/South_Africa/NIC          4.5e-06  1261_[+2]_28472
+hCoV-19/USA/CA-SC-210835          4.5e-06  3097_[+2]_26659
+hCoV-19/France/ARA-HCL02          4.5e-06  3121_[+2]_26726
+hCoV-19/France/IDF-SLS76          4.5e-06  1282_[+2]_28521
+hCoV-19/South_Africa/KRI          4.5e-06  3146_[+2]_26726
+hCoV-19/South_Africa/NIC          4.5e-06  1243_[+2]_28482
+hCoV-19/South_Africa/KRI          4.5e-06  3115_[+2]_26726
+hCoV-19/USA/MN-1615/2021          4.5e-06  3097_[+2]_26659
+hCoV-19/South_Africa/KRI          4.5e-06  1283_[+2]_28556
+hCoV-19/Finland/THL-2021          4.5e-06  3139_[+2]_26689
+hCoV-19/Norway/5552/2021          4.5e-06  3127_[+2]_26675
+hCoV-19/Belgium/rega-343          4.5e-06  1267_[+2]_28489
+hCoV-19/Germany/BY-RKI-I          4.5e-06  1284_[+2]_28510
+hCoV-19/France/IDF-HCL02          4.5e-06  1267_[+2]_28489
+hCoV-19/Finland/THL-2021          4.5e-06  3122_[+2]_26690
+hCoV-19/Netherlands/NH-R          4.5e-06  1267_[+2]_28489
+hCoV-19/Austria/CeMM4045          4.5e-06  1267_[+2]_28489
+hCoV-19/Germany/NW-RKI-I          4.5e-06  1291_[+2]_28511
+hCoV-19/Portugal/PT4077/          4.5e-06  1281_[+2]_28490
+hCoV-19/Belgium/rega-952          4.5e-06  1267_[+2]_28486
+hCoV-19/Sweden/14176380P          4.5e-06  1289_[+2]_28428
+hCoV-19/Canada/ON-PHL-21          4.5e-06  1267_[+2]_28489
+hCoV-19/USA/GA-CDC-ASC21          4.5e-06  3124_[+2]_26726
+hCoV-19/USA/WA-UW-210410          4.5e-06  1120_[+2]_28394
+hCoV-19/South_Africa/KRI          4.5e-06  3121_[+2]_26684
+hCoV-19/Belgium/ULG-1619          4.5e-06  3097_[+2]_26591
+hCoV-19/France/IDF-SLS76          4.5e-06  3151_[+2]_26735
+hCoV-19/Belgium/AZKLINA1          4.5e-06  3116_[+2]_26668
+hCoV-19/USA/WA-CDC-UW210          4.5e-06  2950_[+2]_26564
+hCoV-19/Switzerland/BE-E          4.5e-06  3121_[+2]_26687
+hCoV-19/Philippines/PH-P          4.5e-06  1285_[+2]_28509
+hCoV-19/Finland/THL-2021          4.5e-06  1316_[+2]_28523
+hCoV-19/Luxembourg/LNS39          4.5e-06  3097_[+2]_26631
+hCoV-19/Sweden/10024124/          4.5e-06  3128_[+2]_26675
+hCoV-19/Canada/BC-BCCDC-          4.5e-06  3097_[+2]_26591
+hCoV-19/Sweden/394245706          4.5e-06  3151_[+2]_26690
+hCoV-19/USA/WI-CDC-LC003          4.5e-06  3097_[+2]_26590
+hCoV-19/South_Africa/NIC          4.5e-06  1261_[+2]_28482
+hCoV-19/Germany/SL-RKI-I          4.5e-06  3127_[+2]_26720
+hCoV-19/Belgium/ULG-1388          4.5e-06  1267_[+2]_28421
+hCoV-19/South_Africa/KRI          4.5e-06  3113_[+2]_26677
+hCoV-19/Netherlands/ZH-E          4.5e-06  1267_[+2]_28480
+hCoV-19/Belgium/rega-690          4.5e-06  3097_[+2]_26659
+hCoV-19/France/IDF-IPP11          4.5e-06  1267_[+2]_28489
+hCoV-19/France/PDL-IPP00          4.5e-06  3085_[+2]_26659
+hCoV-19/South_Africa/NHL          4.5e-06  3113_[+2]_26726
+hCoV-19/Thailand/Narathi          4.5e-06  1282_[+2]_28556
+hCoV-19/Philippines/PH-P          4.5e-06  1285_[+2]_28513
+hCoV-19/Belgium/rega-351          4.5e-06  979_[+2]_28489
+hCoV-19/England/CAMC-13E          4.5e-06  1267_[+2]_28489
+hCoV-19/Finland/5697/202          4.5e-06  1313_[+2]_28521
+hCoV-19/Belgium/rega-527          4.5e-06  3097_[+2]_26659
+hCoV-19/South_Africa/KRI          4.5e-06  1285_[+2]_28523
+hCoV-19/South_Africa/NIC          4.5e-06  3091_[+2]_26652
+hCoV-19/Hong_Kong/CM2100          4.5e-06  1267_[+2]_28489
+hCoV-19/Germany/un-RKI-I          4.5e-06  3120_[+2]_26690
+hCoV-19/Germany/BY-RKI-I          4.5e-06  3121_[+2]_26682
+hCoV-19/South_Africa/NHL          4.5e-06  1283_[+2]_28531
+hCoV-19/France/IDF-SLS76          4.5e-06  3151_[+2]_26726
+hCoV-19/Finland/6477/202          4.5e-06  3122_[+2]_26692
+hCoV-19/Belgium/CHUNamur          4.5e-06  3097_[+2]_26659
+hCoV-19/South_Africa/KRI          4.5e-06  3113_[+2]_26674
+hCoV-19/Sweden/401329316          4.5e-06  3121_[+2]_26690
+hCoV-19/Luxembourg/LNS22          4.5e-06  1250_[+2]_28427
+hCoV-19/Austria/MUW_1377          4.5e-06  3116_[+2]_26687
+hCoV-19/Sweden/20244314P          4.5e-06  1298_[+2]_28505
+hCoV-19/Canada/ON-PHL-21          4.5e-06  3097_[+2]_26659
+hCoV-19/USA/PA-CDC-STM-0          4.5e-06  1291_[+2]_28519
+hCoV-19/South_Africa/NIC          4.5e-06  3091_[+2]_26671
+hCoV-19/South_Africa/KRI          4.5e-06  3121_[+2]_26726
+hCoV-19/USA/MD-CDC-ASC21          4.5e-06  3134_[+2]_26726
+hCoV-19/Kenya/AFI-LAM-20          4.5e-06  1311_[+2]_28574
+hCoV-19/France/HDF-P104-          4.5e-06  1311_[+2]_28556
+hCoV-19/Sweden/191660786          4.5e-06  1284_[+2]_28290
+hCoV-19/France/IDF-HMN-2          4.5e-06  1271_[+2]_28489
+hCoV-19/Sweden/608106671          4.5e-06  1298_[+2]_28505
+hCoV-19/Belgium/AZDelta-          4.5e-06  1296_[+2]_28530
+hCoV-19/Singapore/320/20          4.5e-06  1317_[+2]_28544
+hCoV-19/Rwanda/NRLNAT403          4.5e-06  3097_[+2]_26591
+hCoV-19/Reunion/HCL02111          4.5e-06  1267_[+2]_28489
+hCoV-19/Netherlands/GE-R          4.5e-06  1267_[+2]_28489
+hCoV-19/Switzerland/GE-3          4.5e-06  1286_[+2]_28508
+hCoV-19/Belgium/ULG-1222          4.5e-06  1267_[+2]_28421
+hCoV-19/South_Africa/NHL          4.5e-06  3113_[+2]_26726
+hCoV-19/USA/OR-OHSU-1170          4.5e-06  3097_[+2]_26726
+hCoV-19/Malaysia/IMR_WC2          4.5e-06  3141_[+2]_26711
+hCoV-19/Sweden/21-52060/          4.5e-06  3109_[+2]_26665
+hCoV-19/Finland/2875/202          4.5e-06  3121_[+2]_26689
+hCoV-19/Philippines/PH-P          4.5e-06  1285_[+2]_28494
+hCoV-19/Philippines/PH-P          4.5e-06  3116_[+2]_26680
+hCoV-19/Philippines/PH-P          4.5e-06  1315_[+2]_28510
+hCoV-19/Denmark/DCGC-691          4.5e-06  3097_[+2]_26659
+hCoV-19/Qatar/QA.QU_18.1          4.5e-06  1267_[+2]_28489
+hCoV-19/Finland/V8839/20          4.5e-06  1306_[+2]_28523
+hCoV-19/Finland/THL-2021          4.5e-06  1292_[+2]_28520
+hCoV-19/Denmark/DCGC-122          4.5e-06  3097_[+2]_26662
+hCoV-19/Finland/THL-2021          4.5e-06  1307_[+2]_28522
+hCoV-19/USA/MN-MDH-4258/          4.5e-06  1267_[+2]_28489
+hCoV-19/South_Africa/UFS          4.5e-06  3125_[+2]_26659
+hCoV-19/Sweden/DC1095372          4.5e-06  3128_[+2]_26675
+hCoV-19/Finland/3488/202          4.5e-06  1293_[+2]_28521
+hCoV-19/Czech_Republic/1          4.5e-06  1267_[+2]_28489
+hCoV-19/Canada/MB-NML-17          4.5e-06  1267_[+2]_28421
+hCoV-19/Belgium/Jessa_55          4.5e-06  1279_[+2]_28495
+hCoV-19/South_Africa/NHL          4.5e-06  3115_[+2]_26693
+hCoV-19/Sweden/394734726          4.5e-06  1291_[+2]_28520
+hCoV-19/South_Africa/NHL          4.5e-06  1283_[+2]_28556
+hCoV-19/Sweden/16661167P          4.5e-06  1298_[+2]_28505
+hCoV-19/Philippines/PH-P          4.5e-06  3114_[+2]_26679
+hCoV-19/Germany/SN-RKI-I          4.5e-06  1313_[+2]_28556
+hCoV-19/South_Africa/NHL          4.5e-06  3113_[+2]_26726
+hCoV-19/Finland/V8832/20          4.5e-06  1317_[+2]_28523
+hCoV-19/Belgium/ULG-1245          4.5e-06  1267_[+2]_28421
+hCoV-19/Turkey/HSGM-3199          4.5e-06  3119_[+2]_26668
+hCoV-19/USA/MN-MDH-4453/          4.5e-06  3112_[+2]_26674
+hCoV-19/Philippines/PH-P          4.5e-06  1313_[+2]_28509
+hCoV-19/Canada/ON-PHL-21          4.5e-06  1267_[+2]_28489
+hCoV-19/Sweden/10048365/          4.5e-06  1298_[+2]_28505
+hCoV-19/France/IDF-IPP14          4.5e-06  1267_[+2]_28489
+hCoV-19/England/MILK-156          4.5e-06  1267_[+2]_28489
+hCoV-19/Canada/ON-PHL-21          4.5e-06  1267_[+2]_28489
+hCoV-19/France/PDL-IPP01          4.5e-06  1258_[+2]_28489
+hCoV-19/Israel/CVL-6616/          4.5e-06  1286_[+2]_28556
+hCoV-19/Finland/5922/202          4.5e-06  3130_[+2]_26693
+hCoV-19/Belgium/rega-359          4.5e-06  1267_[+2]_28489
+hCoV-19/USA/PA-CDC-STM-0          4.5e-06  1291_[+2]_28514
+hCoV-19/Sweden/259445549          4.5e-06  3128_[+2]_26675
+hCoV-19/Zambia/ZMB-89114          4.5e-06  1265_[+2]_28447
+hCoV-19/South_Africa/NIC          4.5e-06  1261_[+2]_28482
+hCoV-19/Denmark/DCGC-973          4.5e-06  3097_[+2]_26659
+hCoV-19/Wales/PHWC-4B982          4.5e-06  1283_[+2]_28556
+hCoV-19/Malawi/CERI-KRIS          4.5e-06  1283_[+2]_28494
+hCoV-19/Sweden/DC1098782          4.5e-06  1298_[+2]_28505
+hCoV-19/Norway/4577/2021          4.5e-06  3127_[+2]_26675
+hCoV-19/Sweden/191920416          4.5e-06  1321_[+2]_28520
+hCoV-19/Belgium/UZA-UA-4          4.5e-06  1315_[+2]_28555
+hCoV-19/France/IDF-HB_11          4.5e-06  3097_[+2]_26659
+hCoV-19/Sweden/SE0020406          4.5e-06  3121_[+2]_26508
+hCoV-19/Finland/THL-2021          4.5e-06  3122_[+2]_26689
+hCoV-19/USA/OH-CDC-QDX23          4.5e-06  1267_[+2]_28489
+hCoV-19/France/IDF-HMN-2          4.5e-06  3134_[+2]_26675
+hCoV-19/South_Africa/NHL          4.5e-06  3112_[+2]_26676
+hCoV-19/Germany/un-RKI-I          4.5e-06  1321_[+2]_28520
+hCoV-19/Sweden/394131216          4.5e-06  3151_[+2]_26690
+hCoV-19/Kenya/C86741/202          4.5e-06  1267_[+2]_28489
+hCoV-19/Sweden/SE1410276          4.5e-06  3115_[+2]_26690
+hCoV-19/South_Africa/KRI          4.5e-06  1292_[+2]_28507
+hCoV-19/Germany/NW-RKI-I          4.5e-06  1305_[+2]_28524
+hCoV-19/Luxembourg/LNS54          4.5e-06  1250_[+2]_28456
+hCoV-19/England/CAMC-150          4.5e-06  3097_[+2]_26659
+hCoV-19/Luxembourg/LNS88          4.5e-06  3080_[+2]_26585
+hCoV-19/Belgium/ULG-1338          4.5e-06  1267_[+2]_28421
+hCoV-19/Germany/BW-RKI-I          4.5e-06  1281_[+2]_28531
+hCoV-19/Sweden/SE0019403          4.5e-06  1289_[+2]_28336
+hCoV-19/Finland/6097/202          4.5e-06  3151_[+2]_26702
+hCoV-19/Portugal/PT4078/          4.5e-06  1281_[+2]_28490
+hCoV-19/Portugal/PT2276/          4.5e-06  3102_[+2]_26662
+hCoV-19/Finland/THL-2021          4.5e-06  3151_[+2]_26689
+hCoV-19/France/IDF-HMN-2          4.5e-06  3110_[+2]_26674
+hCoV-19/Belgium/UGent-44          4.5e-06  1267_[+2]_28489
+hCoV-19/South_Africa/KRI          4.5e-06  1283_[+2]_28506
+hCoV-19/Sweden/190819996          4.5e-06  1289_[+2]_28520
+hCoV-19/Germany/RP-USAFS          4.5e-06  1280_[+2]_28502
+hCoV-19/Germany/NI-RKI-I          4.5e-06  3121_[+2]_26659
+hCoV-19/Belgium/rega-848          4.5e-06  3097_[+2]_26659
+hCoV-19/France/NOR-HMN-2          4.5e-06  1297_[+2]_28506
+hCoV-19/France/IDF-HMN-2          4.5e-06  3110_[+2]_26526
+hCoV-19/France/IDF-HMN-2          4.5e-06  3113_[+2]_26675
+hCoV-19/USA/GA-CDC-ASC21          4.5e-06  3124_[+2]_26725
+hCoV-19/Germany/BW-RKI-I          4.5e-06  1279_[+2]_28533
+hCoV-19/France/IDF-IPP04          4.5e-06  3097_[+2]_26659
+hCoV-19/Sweden/191456016          4.5e-06  3100_[+2]_26566
+hCoV-19/Germany/BY-RKI-I          4.5e-06  1296_[+2]_28485
+hCoV-19/Philippines/PH-P          4.5e-06  3140_[+2]_26680
+hCoV-19/Luxembourg/LNS01          4.5e-06  3085_[+2]_26609
+hCoV-19/South_Africa/NIC          4.5e-06  1261_[+2]_28482
+hCoV-19/Zambia/RC-060/20          4.5e-06  1267_[+2]_28421
+hCoV-19/Netherlands/NB-R          4.5e-06  3097_[+2]_26640
+hCoV-19/Germany/HH-HPI-p          4.5e-06  1288_[+2]_28496
+hCoV-19/Sweden/20273369P          4.5e-06  3128_[+2]_26675
+hCoV-19/Switzerland/SG-C          4.5e-06  3097_[+2]_26659
+hCoV-19/South_Africa/VID          4.5e-06  1139_[+2]_28424
+hCoV-19/France/IDF-HMN-2          4.5e-06  1281_[+2]_28508
+hCoV-19/Netherlands/ZH-R          4.5e-06  1267_[+2]_28489
+hCoV-19/Germany/BE-RKI-I          4.5e-06  3113_[+2]_26677
+hCoV-19/Malaysia/IMR_WC7          4.5e-06  1313_[+2]_28533
+hCoV-19/South_Africa/KRI          4.5e-06  3118_[+2]_26726
+hCoV-19/Philippines/PH-P          4.5e-06  3113_[+2]_26676
+hCoV-19/South_Africa/KRI          4.5e-06  3113_[+2]_26725
+hCoV-19/Germany/BW-RKI-I          4.5e-06  3151_[+2]_26684
+hCoV-19/Belgium/Jessa_55          4.5e-06  1279_[+2]_28513
+hCoV-19/Canada/ON-PHL-21          4.5e-06  3097_[+2]_26659
+hCoV-19/France/IDF-HMN-2          4.5e-06  1288_[+2]_28489
+hCoV-19/Netherlands/NB-R          4.5e-06  3097_[+2]_26659
+hCoV-19/Luxembourg/LNS78          4.5e-06  3080_[+2]_26557
+hCoV-19/South_Africa/Tyg          4.5e-06  3129_[+2]_26692
+hCoV-19/France/BFC-HMN-2          4.5e-06  1286_[+2]_28533
+hCoV-19/Sweden/191957976          4.5e-06  3151_[+2]_26690
+hCoV-19/Canada/BC-BCCDC-          4.5e-06  3097_[+2]_26591
+hCoV-19/Turkey/HSGM-8306          4.5e-06  1289_[+2]_28498
+hCoV-19/South_Africa/NHL          4.5e-06  1283_[+2]_28553
+hCoV-19/Sweden/10063024/          4.5e-06  1298_[+2]_28505
+hCoV-19/Finland/THL-2021          4.5e-06  3151_[+2]_26692
+hCoV-19/USA/PA-CDC-QDX24          4.5e-06  1267_[+2]_28489
+hCoV-19/Zimbabwe/ZW-4621          4.5e-06  1282_[+2]_28489
+hCoV-19/France/IDF-SLS76          4.5e-06  3112_[+2]_26697
+hCoV-19/England/CAMC-148          4.5e-06  3097_[+2]_26659
+hCoV-19/Netherlands/ZH-R          4.5e-06  3097_[+2]_26659
+hCoV-19/Canada/MB-NML-17          4.5e-06  3097_[+2]_26591
+hCoV-19/USA/MI-CDC-STM-0          4.5e-06  1291_[+2]_28515
+hCoV-19/Sweden/191954916          4.5e-06  3151_[+2]_26690
+hCoV-19/Belgium/UGent-35          4.5e-06  3097_[+2]_26659
+hCoV-19/England/MILK-11A          4.5e-06  3097_[+2]_26656
+hCoV-19/Canada/ON-PHL-21          4.5e-06  1267_[+2]_28489
+hCoV-19/South_Africa/NHL          4.5e-06  3147_[+2]_26735
+hCoV-19/South_Africa/Tyg          4.5e-06  3097_[+2]_26659
+hCoV-19/Qatar/QA-QU_18-3          4.5e-06  3097_[+2]_26659
+hCoV-19/Zambia/ZMB-85345          4.5e-06  1265_[+2]_28447
+hCoV-19/Philippines/PH-P          4.5e-06  3128_[+2]_26684
+hCoV-19/Portugal/PT4895/          4.5e-06  3111_[+2]_26660
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGTGCCAC MEME-2 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF GGTGCCAC width=8 seqs=244
+hCoV-19/Norway/4412/2021 ( 3128) GGTGCCAC  1 
+hCoV-19/Sweden/DC1083599 ( 1292) GGTGCCAC  1 
+hCoV-19/Sweden/16141208P ( 3129) GGTGCCAC  1 
+hCoV-19/South_Africa/NIC ( 3092) GGTGCCAC  1 
+hCoV-19/Norway/5431/2021 ( 3128) GGTGCCAC  1 
+hCoV-19/Sweden/DC1083473 ( 3122) GGTGCCAC  1 
+hCoV-19/France/IDF-HMN-2 ( 3101) GGTGCCAC  1 
+hCoV-19/Sweden/16859012P ( 3129) GGTGCCAC  1 
+hCoV-19/Sweden/644314828 ( 3129) GGTGCCAC  1 
+hCoV-19/South_Africa/NIC ( 3092) GGTGCCAC  1 
+hCoV-19/South_Africa/KRI ( 3143) GGTGCCAC  1 
+hCoV-19/Ireland/CW-NVRL- ( 1268) GGTGCCAC  1 
+hCoV-19/Finland/5754/202 ( 1322) GGTGCCAC  1 
+hCoV-19/Sweden/392462166 ( 3117) GGTGCCAC  1 
+hCoV-19/South_Africa/NHL ( 1284) GGTGCCAC  1 
+hCoV-19/Zimbabwe/ZW-5168 ( 3114) GGTGCCAC  1 
+hCoV-19/Spain/CT-HUGTiPM ( 1284) GGTGCCAC  1 
+hCoV-19/USA/MN-MDH-4408/ ( 3098) GGTGCCAC  1 
+hCoV-19/South_Africa/NHL ( 3114) GGTGCCAC  1 
+hCoV-19/South_Africa/NHL ( 1286) GGTGCCAC  1 
+hCoV-19/Germany/MV-RKI-I ( 1292) GGTGCCAC  1 
+hCoV-19/South_Africa/NIC ( 1262) GGTGCCAC  1 
+hCoV-19/Germany/un-RKI-I ( 3098) GGTGCCAC  1 
+hCoV-19/Netherlands/OV-R ( 3098) GGTGCCAC  1 
+hCoV-19/South_Africa/NIC ( 1262) GGTGCCAC  1 
+hCoV-19/USA/CA-SC-210835 ( 3098) GGTGCCAC  1 
+hCoV-19/France/ARA-HCL02 ( 3122) GGTGCCAC  1 
+hCoV-19/France/IDF-SLS76 ( 1283) GGTGCCAC  1 
+hCoV-19/South_Africa/KRI ( 3147) GGTGCCAC  1 
+hCoV-19/South_Africa/NIC ( 1244) GGTGCCAC  1 
+hCoV-19/South_Africa/KRI ( 3116) GGTGCCAC  1 
+hCoV-19/USA/MN-1615/2021 ( 3098) GGTGCCAC  1 
+hCoV-19/South_Africa/KRI ( 1284) GGTGCCAC  1 
+hCoV-19/Finland/THL-2021 ( 3140) GGTGCCAC  1 
+hCoV-19/Norway/5552/2021 ( 3128) GGTGCCAC  1 
+hCoV-19/Belgium/rega-343 ( 1268) GGTGCCAC  1 
+hCoV-19/Germany/BY-RKI-I ( 1285) GGTGCCAC  1 
+hCoV-19/France/IDF-HCL02 ( 1268) GGTGCCAC  1 
+hCoV-19/Finland/THL-2021 ( 3123) GGTGCCAC  1 
+hCoV-19/Netherlands/NH-R ( 1268) GGTGCCAC  1 
+hCoV-19/Austria/CeMM4045 ( 1268) GGTGCCAC  1 
+hCoV-19/Germany/NW-RKI-I ( 1292) GGTGCCAC  1 
+hCoV-19/Portugal/PT4077/ ( 1282) GGTGCCAC  1 
+hCoV-19/Belgium/rega-952 ( 1268) GGTGCCAC  1 
+hCoV-19/Sweden/14176380P ( 1290) GGTGCCAC  1 
+hCoV-19/Canada/ON-PHL-21 ( 1268) GGTGCCAC  1 
+hCoV-19/USA/GA-CDC-ASC21 ( 3125) GGTGCCAC  1 
+hCoV-19/USA/WA-UW-210410 ( 1121) GGTGCCAC  1 
+hCoV-19/South_Africa/KRI ( 3122) GGTGCCAC  1 
+hCoV-19/Belgium/ULG-1619 ( 3098) GGTGCCAC  1 
+hCoV-19/France/IDF-SLS76 ( 3152) GGTGCCAC  1 
+hCoV-19/Belgium/AZKLINA1 ( 3117) GGTGCCAC  1 
+hCoV-19/USA/WA-CDC-UW210 ( 2951) GGTGCCAC  1 
+hCoV-19/Switzerland/BE-E ( 3122) GGTGCCAC  1 
+hCoV-19/Philippines/PH-P ( 1286) GGTGCCAC  1 
+hCoV-19/Finland/THL-2021 ( 1317) GGTGCCAC  1 
+hCoV-19/Luxembourg/LNS39 ( 3098) GGTGCCAC  1 
+hCoV-19/Sweden/10024124/ ( 3129) GGTGCCAC  1 
+hCoV-19/Canada/BC-BCCDC- ( 3098) GGTGCCAC  1 
+hCoV-19/Sweden/394245706 ( 3152) GGTGCCAC  1 
+hCoV-19/USA/WI-CDC-LC003 ( 3098) GGTGCCAC  1 
+hCoV-19/South_Africa/NIC ( 1262) GGTGCCAC  1 
+hCoV-19/Germany/SL-RKI-I ( 3128) GGTGCCAC  1 
+hCoV-19/Belgium/ULG-1388 ( 1268) GGTGCCAC  1 
+hCoV-19/South_Africa/KRI ( 3114) GGTGCCAC  1 
+hCoV-19/Netherlands/ZH-E ( 1268) GGTGCCAC  1 
+hCoV-19/Belgium/rega-690 ( 3098) GGTGCCAC  1 
+hCoV-19/France/IDF-IPP11 ( 1268) GGTGCCAC  1 
+hCoV-19/France/PDL-IPP00 ( 3086) GGTGCCAC  1 
+hCoV-19/South_Africa/NHL ( 3114) GGTGCCAC  1 
+hCoV-19/Thailand/Narathi ( 1283) GGTGCCAC  1 
+hCoV-19/Philippines/PH-P ( 1286) GGTGCCAC  1 
+hCoV-19/Belgium/rega-351 (  980) GGTGCCAC  1 
+hCoV-19/England/CAMC-13E ( 1268) GGTGCCAC  1 
+hCoV-19/Finland/5697/202 ( 1314) GGTGCCAC  1 
+hCoV-19/Belgium/rega-527 ( 3098) GGTGCCAC  1 
+hCoV-19/South_Africa/KRI ( 1286) GGTGCCAC  1 
+hCoV-19/South_Africa/NIC ( 3092) GGTGCCAC  1 
+hCoV-19/Hong_Kong/CM2100 ( 1268) GGTGCCAC  1 
+hCoV-19/Germany/un-RKI-I ( 3121) GGTGCCAC  1 
+hCoV-19/Germany/BY-RKI-I ( 3122) GGTGCCAC  1 
+hCoV-19/South_Africa/NHL ( 1284) GGTGCCAC  1 
+hCoV-19/France/IDF-SLS76 ( 3152) GGTGCCAC  1 
+hCoV-19/Finland/6477/202 ( 3123) GGTGCCAC  1 
+hCoV-19/Belgium/CHUNamur ( 3098) GGTGCCAC  1 
+hCoV-19/South_Africa/KRI ( 3114) GGTGCCAC  1 
+hCoV-19/Sweden/401329316 ( 3122) GGTGCCAC  1 
+hCoV-19/Luxembourg/LNS22 ( 1251) GGTGCCAC  1 
+hCoV-19/Austria/MUW_1377 ( 3117) GGTGCCAC  1 
+hCoV-19/Sweden/20244314P ( 1299) GGTGCCAC  1 
+hCoV-19/Canada/ON-PHL-21 ( 3098) GGTGCCAC  1 
+hCoV-19/USA/PA-CDC-STM-0 ( 1292) GGTGCCAC  1 
+hCoV-19/South_Africa/NIC ( 3092) GGTGCCAC  1 
+hCoV-19/South_Africa/KRI ( 3122) GGTGCCAC  1 
+hCoV-19/USA/MD-CDC-ASC21 ( 3135) GGTGCCAC  1 
+hCoV-19/Kenya/AFI-LAM-20 ( 1312) GGTGCCAC  1 
+hCoV-19/France/HDF-P104- ( 1312) GGTGCCAC  1 
+hCoV-19/Sweden/191660786 ( 1285) GGTGCCAC  1 
+hCoV-19/France/IDF-HMN-2 ( 1272) GGTGCCAC  1 
+hCoV-19/Sweden/608106671 ( 1299) GGTGCCAC  1 
+hCoV-19/Belgium/AZDelta- ( 1297) GGTGCCAC  1 
+hCoV-19/Singapore/320/20 ( 1318) GGTGCCAC  1 
+hCoV-19/Rwanda/NRLNAT403 ( 3098) GGTGCCAC  1 
+hCoV-19/Reunion/HCL02111 ( 1268) GGTGCCAC  1 
+hCoV-19/Netherlands/GE-R ( 1268) GGTGCCAC  1 
+hCoV-19/Switzerland/GE-3 ( 1287) GGTGCCAC  1 
+hCoV-19/Belgium/ULG-1222 ( 1268) GGTGCCAC  1 
+hCoV-19/South_Africa/NHL ( 3114) GGTGCCAC  1 
+hCoV-19/USA/OR-OHSU-1170 ( 3098) GGTGCCAC  1 
+hCoV-19/Malaysia/IMR_WC2 ( 3142) GGTGCCAC  1 
+hCoV-19/Sweden/21-52060/ ( 3110) GGTGCCAC  1 
+hCoV-19/Finland/2875/202 ( 3122) GGTGCCAC  1 
+hCoV-19/Philippines/PH-P ( 1286) GGTGCCAC  1 
+hCoV-19/Philippines/PH-P ( 3117) GGTGCCAC  1 
+hCoV-19/Philippines/PH-P ( 1316) GGTGCCAC  1 
+hCoV-19/Denmark/DCGC-691 ( 3098) GGTGCCAC  1 
+hCoV-19/Qatar/QA.QU_18.1 ( 1268) GGTGCCAC  1 
+hCoV-19/Finland/V8839/20 ( 1307) GGTGCCAC  1 
+hCoV-19/Finland/THL-2021 ( 1293) GGTGCCAC  1 
+hCoV-19/Denmark/DCGC-122 ( 3098) GGTGCCAC  1 
+hCoV-19/Finland/THL-2021 ( 1308) GGTGCCAC  1 
+hCoV-19/USA/MN-MDH-4258/ ( 1268) GGTGCCAC  1 
+hCoV-19/South_Africa/UFS ( 3126) GGTGCCAC  1 
+hCoV-19/Sweden/DC1095372 ( 3129) GGTGCCAC  1 
+hCoV-19/Finland/3488/202 ( 1294) GGTGCCAC  1 
+hCoV-19/Czech_Republic/1 ( 1268) GGTGCCAC  1 
+hCoV-19/Canada/MB-NML-17 ( 1268) GGTGCCAC  1 
+hCoV-19/Belgium/Jessa_55 ( 1280) GGTGCCAC  1 
+hCoV-19/South_Africa/NHL ( 3116) GGTGCCAC  1 
+hCoV-19/Sweden/394734726 ( 1292) GGTGCCAC  1 
+hCoV-19/South_Africa/NHL ( 1284) GGTGCCAC  1 
+hCoV-19/Sweden/16661167P ( 1299) GGTGCCAC  1 
+hCoV-19/Philippines/PH-P ( 3115) GGTGCCAC  1 
+hCoV-19/Germany/SN-RKI-I ( 1314) GGTGCCAC  1 
+hCoV-19/South_Africa/NHL ( 3114) GGTGCCAC  1 
+hCoV-19/Finland/V8832/20 ( 1318) GGTGCCAC  1 
+hCoV-19/Belgium/ULG-1245 ( 1268) GGTGCCAC  1 
+hCoV-19/Turkey/HSGM-3199 ( 3120) GGTGCCAC  1 
+hCoV-19/USA/MN-MDH-4453/ ( 3113) GGTGCCAC  1 
+hCoV-19/Philippines/PH-P ( 1314) GGTGCCAC  1 
+hCoV-19/Canada/ON-PHL-21 ( 1268) GGTGCCAC  1 
+hCoV-19/Sweden/10048365/ ( 1299) GGTGCCAC  1 
+hCoV-19/France/IDF-IPP14 ( 1268) GGTGCCAC  1 
+hCoV-19/England/MILK-156 ( 1268) GGTGCCAC  1 
+hCoV-19/Canada/ON-PHL-21 ( 1268) GGTGCCAC  1 
+hCoV-19/France/PDL-IPP01 ( 1259) GGTGCCAC  1 
+hCoV-19/Israel/CVL-6616/ ( 1287) GGTGCCAC  1 
+hCoV-19/Finland/5922/202 ( 3131) GGTGCCAC  1 
+hCoV-19/Belgium/rega-359 ( 1268) GGTGCCAC  1 
+hCoV-19/USA/PA-CDC-STM-0 ( 1292) GGTGCCAC  1 
+hCoV-19/Sweden/259445549 ( 3129) GGTGCCAC  1 
+hCoV-19/Zambia/ZMB-89114 ( 1266) GGTGCCAC  1 
+hCoV-19/South_Africa/NIC ( 1262) GGTGCCAC  1 
+hCoV-19/Denmark/DCGC-973 ( 3098) GGTGCCAC  1 
+hCoV-19/Wales/PHWC-4B982 ( 1284) GGTGCCAC  1 
+hCoV-19/Malawi/CERI-KRIS ( 1284) GGTGCCAC  1 
+hCoV-19/Sweden/DC1098782 ( 1299) GGTGCCAC  1 
+hCoV-19/Norway/4577/2021 ( 3128) GGTGCCAC  1 
+hCoV-19/Sweden/191920416 ( 1322) GGTGCCAC  1 
+hCoV-19/Belgium/UZA-UA-4 ( 1316) GGTGCCAC  1 
+hCoV-19/France/IDF-HB_11 ( 3098) GGTGCCAC  1 
+hCoV-19/Sweden/SE0020406 ( 3122) GGTGCCAC  1 
+hCoV-19/Finland/THL-2021 ( 3123) GGTGCCAC  1 
+hCoV-19/USA/OH-CDC-QDX23 ( 1268) GGTGCCAC  1 
+hCoV-19/France/IDF-HMN-2 ( 3135) GGTGCCAC  1 
+hCoV-19/South_Africa/NHL ( 3113) GGTGCCAC  1 
+hCoV-19/Germany/un-RKI-I ( 1322) GGTGCCAC  1 
+hCoV-19/Sweden/394131216 ( 3152) GGTGCCAC  1 
+hCoV-19/Kenya/C86741/202 ( 1268) GGTGCCAC  1 
+hCoV-19/Sweden/SE1410276 ( 3116) GGTGCCAC  1 
+hCoV-19/South_Africa/KRI ( 1293) GGTGCCAC  1 
+hCoV-19/Germany/NW-RKI-I ( 1306) GGTGCCAC  1 
+hCoV-19/Luxembourg/LNS54 ( 1251) GGTGCCAC  1 
+hCoV-19/England/CAMC-150 ( 3098) GGTGCCAC  1 
+hCoV-19/Luxembourg/LNS88 ( 3081) GGTGCCAC  1 
+hCoV-19/Belgium/ULG-1338 ( 1268) GGTGCCAC  1 
+hCoV-19/Germany/BW-RKI-I ( 1282) GGTGCCAC  1 
+hCoV-19/Sweden/SE0019403 ( 1290) GGTGCCAC  1 
+hCoV-19/Finland/6097/202 ( 3152) GGTGCCAC  1 
+hCoV-19/Portugal/PT4078/ ( 1282) GGTGCCAC  1 
+hCoV-19/Portugal/PT2276/ ( 3103) GGTGCCAC  1 
+hCoV-19/Finland/THL-2021 ( 3152) GGTGCCAC  1 
+hCoV-19/France/IDF-HMN-2 ( 3111) GGTGCCAC  1 
+hCoV-19/Belgium/UGent-44 ( 1268) GGTGCCAC  1 
+hCoV-19/South_Africa/KRI ( 1284) GGTGCCAC  1 
+hCoV-19/Sweden/190819996 ( 1290) GGTGCCAC  1 
+hCoV-19/Germany/RP-USAFS ( 1281) GGTGCCAC  1 
+hCoV-19/Germany/NI-RKI-I ( 3122) GGTGCCAC  1 
+hCoV-19/Belgium/rega-848 ( 3098) GGTGCCAC  1 
+hCoV-19/France/NOR-HMN-2 ( 1298) GGTGCCAC  1 
+hCoV-19/France/IDF-HMN-2 ( 3111) GGTGCCAC  1 
+hCoV-19/France/IDF-HMN-2 ( 3114) GGTGCCAC  1 
+hCoV-19/USA/GA-CDC-ASC21 ( 3125) GGTGCCAC  1 
+hCoV-19/Germany/BW-RKI-I ( 1280) GGTGCCAC  1 
+hCoV-19/France/IDF-IPP04 ( 3098) GGTGCCAC  1 
+hCoV-19/Sweden/191456016 ( 3101) GGTGCCAC  1 
+hCoV-19/Germany/BY-RKI-I ( 1297) GGTGCCAC  1 
+hCoV-19/Philippines/PH-P ( 3141) GGTGCCAC  1 
+hCoV-19/Luxembourg/LNS01 ( 3086) GGTGCCAC  1 
+hCoV-19/South_Africa/NIC ( 1262) GGTGCCAC  1 
+hCoV-19/Zambia/RC-060/20 ( 1268) GGTGCCAC  1 
+hCoV-19/Netherlands/NB-R ( 3098) GGTGCCAC  1 
+hCoV-19/Germany/HH-HPI-p ( 1289) GGTGCCAC  1 
+hCoV-19/Sweden/20273369P ( 3129) GGTGCCAC  1 
+hCoV-19/Switzerland/SG-C ( 3098) GGTGCCAC  1 
+hCoV-19/South_Africa/VID ( 1140) GGTGCCAC  1 
+hCoV-19/France/IDF-HMN-2 ( 1282) GGTGCCAC  1 
+hCoV-19/Netherlands/ZH-R ( 1268) GGTGCCAC  1 
+hCoV-19/Germany/BE-RKI-I ( 3114) GGTGCCAC  1 
+hCoV-19/Malaysia/IMR_WC7 ( 1314) GGTGCCAC  1 
+hCoV-19/South_Africa/KRI ( 3119) GGTGCCAC  1 
+hCoV-19/Philippines/PH-P ( 3114) GGTGCCAC  1 
+hCoV-19/South_Africa/KRI ( 3114) GGTGCCAC  1 
+hCoV-19/Germany/BW-RKI-I ( 3152) GGTGCCAC  1 
+hCoV-19/Belgium/Jessa_55 ( 1280) GGTGCCAC  1 
+hCoV-19/Canada/ON-PHL-21 ( 3098) GGTGCCAC  1 
+hCoV-19/France/IDF-HMN-2 ( 1289) GGTGCCAC  1 
+hCoV-19/Netherlands/NB-R ( 3098) GGTGCCAC  1 
+hCoV-19/Luxembourg/LNS78 ( 3081) GGTGCCAC  1 
+hCoV-19/South_Africa/Tyg ( 3130) GGTGCCAC  1 
+hCoV-19/France/BFC-HMN-2 ( 1287) GGTGCCAC  1 
+hCoV-19/Sweden/191957976 ( 3152) GGTGCCAC  1 
+hCoV-19/Canada/BC-BCCDC- ( 3098) GGTGCCAC  1 
+hCoV-19/Turkey/HSGM-8306 ( 1290) GGTGCCAC  1 
+hCoV-19/South_Africa/NHL ( 1284) GGTGCCAC  1 
+hCoV-19/Sweden/10063024/ ( 1299) GGTGCCAC  1 
+hCoV-19/Finland/THL-2021 ( 3152) GGTGCCAC  1 
+hCoV-19/USA/PA-CDC-QDX24 ( 1268) GGTGCCAC  1 
+hCoV-19/Zimbabwe/ZW-4621 ( 1283) GGTGCCAC  1 
+hCoV-19/France/IDF-SLS76 ( 3113) GGTGCCAC  1 
+hCoV-19/England/CAMC-148 ( 3098) GGTGCCAC  1 
+hCoV-19/Netherlands/ZH-R ( 3098) GGTGCCAC  1 
+hCoV-19/Canada/MB-NML-17 ( 3098) GGTGCCAC  1 
+hCoV-19/USA/MI-CDC-STM-0 ( 1292) GGTGCCAC  1 
+hCoV-19/Sweden/191954916 ( 3152) GGTGCCAC  1 
+hCoV-19/Belgium/UGent-35 ( 3098) GGTGCCAC  1 
+hCoV-19/England/MILK-11A ( 3098) GGTGCCAC  1 
+hCoV-19/Canada/ON-PHL-21 ( 1268) GGTGCCAC  1 
+hCoV-19/South_Africa/NHL ( 3148) GGTGCCAC  1 
+hCoV-19/South_Africa/Tyg ( 3098) GGTGCCAC  1 
+hCoV-19/Qatar/QA-QU_18-3 ( 3098) GGTGCCAC  1 
+hCoV-19/Zambia/ZMB-85345 ( 1266) GGTGCCAC  1 
+hCoV-19/Philippines/PH-P ( 3129) GGTGCCAC  1 
+hCoV-19/Portugal/PT4895/ ( 3112) GGTGCCAC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGTGCCAC MEME-2 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 8 n= 7416319 bayes= 17.1669 E= 4.8e+007 
+ -1457  -1457    240  -1457 
+ -1457  -1457    240  -1457 
+ -1457  -1457  -1457    169 
+ -1457  -1457    240  -1457 
+ -1457    240  -1457  -1457 
+ -1457    240  -1457  -1457 
+   169  -1457  -1457  -1457 
+ -1457    240  -1457  -1457 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGTGCCAC MEME-2 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 8 nsites= 244 E= 4.8e+007 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGTGCCAC MEME-2 regular expression
+--------------------------------------------------------------------------------
+GGTGCCAC
+--------------------------------------------------------------------------------
+
+
+
+
+Time 119.07 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF GTTGCCAC MEME-3	width =   8  sites =   2  llr = 24  E-value = 1.1e+008
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif GTTGCCAC MEME-3 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::::::a:
+pos.-specific     C  ::::aa:a
+probability       G  a::a::::
+matrix            T  :aa:::::
+
+         bits    2.4 *  *** *
+                 2.2 *  *** *
+                 1.9 *  *** *
+                 1.7 ********
+Relative         1.4 ********
+Entropy          1.2 ********
+(17.1 bits)      1.0 ********
+                 0.7 ********
+                 0.5 ********
+                 0.2 ********
+                 0.0 --------
+
+Multilevel           GTTGCCAC
+consensus                    
+sequence                     
+                             
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GTTGCCAC MEME-3 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name            Strand  Start   P-value              Site
+-------------            ------  ----- ---------            --------
+hCoV-19/Netherlands/NH-R     +  13194  7.38e-06 CTGTACTGCC GTTGCCAC ATAGATCATC
+hCoV-19/Sweden/20244314P     +  13225  7.38e-06 CTGTACTGCC GTTGCCAC ATAGATCATC
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GTTGCCAC MEME-3 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+hCoV-19/Netherlands/NH-R          7.4e-06  13193_[+3]_16563
+hCoV-19/Sweden/20244314P          7.4e-06  13224_[+3]_16579
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GTTGCCAC MEME-3 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF GTTGCCAC width=8 seqs=2
+hCoV-19/Netherlands/NH-R ( 13194) GTTGCCAC  1 
+hCoV-19/Sweden/20244314P ( 13225) GTTGCCAC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GTTGCCAC MEME-3 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 8 n= 7416319 bayes= 21.8223 E= 1.1e+008 
+  -765   -765    239   -765 
+  -765   -765   -765    168 
+  -765   -765   -765    168 
+  -765   -765    239   -765 
+  -765    239   -765   -765 
+  -765    239   -765   -765 
+   168   -765   -765   -765 
+  -765    239   -765   -765 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GTTGCCAC MEME-3 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 8 nsites= 2 E= 1.1e+008 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GTTGCCAC MEME-3 regular expression
+--------------------------------------------------------------------------------
+GTTGCCAC
+--------------------------------------------------------------------------------
+
+
+
+
+Time 176.42 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF GTTGCCAC MEME-4	width =   8  sites =   2  llr = 24  E-value = 1.1e+008
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif GTTGCCAC MEME-4 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::::::a:
+pos.-specific     C  ::::aa:a
+probability       G  a::a::::
+matrix            T  :aa:::::
+
+         bits    2.4 *  *** *
+                 2.2 *  *** *
+                 1.9 *  *** *
+                 1.7 ********
+Relative         1.4 ********
+Entropy          1.2 ********
+(17.1 bits)      1.0 ********
+                 0.7 ********
+                 0.5 ********
+                 0.2 ********
+                 0.0 --------
+
+Multilevel           GTTGCCAC
+consensus                    
+sequence                     
+                             
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GTTGCCAC MEME-4 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name            Strand  Start   P-value              Site
+-------------            ------  ----- ---------            --------
+hCoV-19/Netherlands/NH-R     -  20607  7.38e-06 GCAACACCCG GTTGCCAC GCTTGACTAG
+hCoV-19/Sweden/20244314P     -  20638  7.38e-06 GCAACACCCG GTTGCCAC GCTTGACTAG
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GTTGCCAC MEME-4 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+hCoV-19/Netherlands/NH-R          7.4e-06  20606_[-4]_9150
+hCoV-19/Sweden/20244314P          7.4e-06  20637_[-4]_9166
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GTTGCCAC MEME-4 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF GTTGCCAC width=8 seqs=2
+hCoV-19/Netherlands/NH-R ( 20607) GTTGCCAC  1 
+hCoV-19/Sweden/20244314P ( 20638) GTTGCCAC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GTTGCCAC MEME-4 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 8 n= 7416319 bayes= 21.8223 E= 1.1e+008 
+  -765   -765    239   -765 
+  -765   -765   -765    168 
+  -765   -765   -765    168 
+  -765   -765    239   -765 
+  -765    239   -765   -765 
+  -765    239   -765   -765 
+   168   -765   -765   -765 
+  -765    239   -765   -765 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GTTGCCAC MEME-4 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 8 nsites= 2 E= 1.1e+008 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GTTGCCAC MEME-4 regular expression
+--------------------------------------------------------------------------------
+GTTGCCAC
+--------------------------------------------------------------------------------
+
+
+
+
+Time 233.78 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF GTTGCCAC MEME-5	width =   8  sites =   2  llr = 24  E-value = 1.1e+008
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif GTTGCCAC MEME-5 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::::::a:
+pos.-specific     C  ::::aa:a
+probability       G  a::a::::
+matrix            T  :aa:::::
+
+         bits    2.4 *  *** *
+                 2.2 *  *** *
+                 1.9 *  *** *
+                 1.7 ********
+Relative         1.4 ********
+Entropy          1.2 ********
+(17.1 bits)      1.0 ********
+                 0.7 ********
+                 0.5 ********
+                 0.2 ********
+                 0.0 --------
+
+Multilevel           GTTGCCAC
+consensus                    
+sequence                     
+                             
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GTTGCCAC MEME-5 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name            Strand  Start   P-value              Site
+-------------            ------  ----- ---------            --------
+hCoV-19/Netherlands/NH-R     -  17962  7.38e-06 AGCTTGTAAA GTTGCCAC ATTCCTACGT
+hCoV-19/South_Africa/VID     +  13075  7.38e-06 CTGTACTGCC GTTGCCAC ATAGATCATC
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GTTGCCAC MEME-5 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+hCoV-19/Netherlands/NH-R          7.4e-06  17961_[-5]_11795
+hCoV-19/South_Africa/VID          7.4e-06  13074_[+5]_16489
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GTTGCCAC MEME-5 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF GTTGCCAC width=8 seqs=2
+hCoV-19/Netherlands/NH-R ( 17962) GTTGCCAC  1 
+hCoV-19/South_Africa/VID ( 13075) GTTGCCAC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GTTGCCAC MEME-5 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 8 n= 7416319 bayes= 21.8223 E= 1.1e+008 
+  -765   -765    239   -765 
+  -765   -765   -765    168 
+  -765   -765   -765    168 
+  -765   -765    239   -765 
+  -765    239   -765   -765 
+  -765    239   -765   -765 
+   168   -765   -765   -765 
+  -765    239   -765   -765 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GTTGCCAC MEME-5 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 8 nsites= 2 E= 1.1e+008 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GTTGCCAC MEME-5 regular expression
+--------------------------------------------------------------------------------
+GTTGCCAC
+--------------------------------------------------------------------------------
+
+
+
+
+Time 291.29 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+hCoV-19/Portugal/PT4895/         2.86e-01  1281_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6222
+hCoV-19/Philippines/PH-P         2.87e-01  1298_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6246
+hCoV-19/Zambia/ZMB-85345         2.85e-01  1265_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6179
+hCoV-19/Qatar/QA-QU_18-3         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/South_Africa/Tyg         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/South_Africa/NHL         2.88e-01  1317_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1249_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6288
+hCoV-19/Canada/ON-PHL-21         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/England/MILK-11A         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2918_[+1(2.46e-05)]_\
+    6221
+hCoV-19/Belgium/UGent-35         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/Botswana/R17B52_         2.87e-01  1291_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1249_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2930_[+1(2.46e-05)]_\
+    6251
+hCoV-19/Sweden/191954916         2.88e-01  1321_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6252
+hCoV-19/USA/MI-CDC-STM-0         2.87e-01  1291_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6247
+hCoV-19/Canada/MB-NML-17         2.85e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6153
+hCoV-19/Netherlands/ZH-R         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/England/CAMC-148         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/France/IDF-SLS76         2.87e-01  1282_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1249_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2930_[+1(2.46e-05)]_\
+    6241
+hCoV-19/Zimbabwe/ZW-4621         2.86e-01  1282_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/USA/PA-CDC-QDX24         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/Finland/THL-2021         2.88e-01  1321_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6254
+hCoV-19/Sweden/10063024/         2.87e-01  1298_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6237
+hCoV-19/South_Africa/NHL         2.88e-01  1283_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2918_[+1(2.46e-05)]_\
+    6288
+hCoV-19/Turkey/HSGM-8306         2.87e-01  1289_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6230
+hCoV-19/Canada/BC-BCCDC-         2.85e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6153
+hCoV-19/Sweden/191957976         2.88e-01  11_[-2(2.46e-05)]_1302_\
+    [+2(4.52e-06)]_1822_[+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_\
+    1240_[+3(5.66e-05)]_1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_\
+    [+3(7.38e-06)]_2225_[+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_\
+    2921_[+1(2.46e-05)]_6252
+hCoV-19/France/BFC-HMN-2         2.87e-01  1286_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1249_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2930_[+1(2.46e-05)]_\
+    6247
+hCoV-19/South_Africa/Tyg         2.87e-01  1299_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6254
+hCoV-19/Luxembourg/LNS78         2.84e-01  1250_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6119
+hCoV-19/Netherlands/NB-R         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/France/IDF-HMN-2         2.86e-01  1288_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_7411_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_1168_[+3(5.66e-05)]_\
+    31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_[+3(5.66e-05)]_2527_\
+    [-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_6221
+hCoV-19/Canada/ON-PHL-21         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/Belgium/Jessa_55         2.87e-01  1279_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1249_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2930_[+1(2.46e-05)]_\
+    6227
+hCoV-19/Germany/BW-RKI-I         2.87e-01  9_[+1(2.46e-05)]_1304_\
+    [+2(4.52e-06)]_1822_[+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_\
+    1240_[+3(5.66e-05)]_1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_\
+    [+3(7.38e-06)]_2225_[+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_\
+    2921_[+1(2.46e-05)]_6246
+hCoV-19/South_Africa/KRI         2.88e-01  1283_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6287
+hCoV-19/Philippines/PH-P         2.87e-01  1283_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6238
+hCoV-19/South_Africa/KRI         2.88e-01  1288_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6288
+hCoV-19/Malaysia/IMR_WC7         2.88e-01  1313_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6265
+hCoV-19/Germany/BE-RKI-I         2.87e-01  1283_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6239
+hCoV-19/Netherlands/ZH-R         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/France/IDF-HMN-2         2.87e-01  1281_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6240
+hCoV-19/South_Africa/VID         2.82e-01  1139_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1249_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6147
+hCoV-19/Switzerland/SG-C         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/Sweden/20273369P         2.87e-01  1298_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6237
+hCoV-19/Germany/HH-HPI-p         2.87e-01  1288_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6228
+hCoV-19/Netherlands/NB-R         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6202
+hCoV-19/Zambia/RC-060/20         2.85e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6153
+hCoV-19/South_Africa/NIC         2.86e-01  1261_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6214
+hCoV-19/Luxembourg/LNS01         2.85e-01  1255_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    1840_[+3(5.66e-05)]_4323
+hCoV-19/Philippines/PH-P         2.87e-01  1310_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6242
+hCoV-19/Germany/BY-RKI-I         2.86e-01  1296_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6217
+hCoV-19/Sweden/191456016         2.84e-01  1270_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6128
+hCoV-19/France/IDF-IPP04         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/Germany/BW-RKI-I         2.87e-01  1279_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6265
+hCoV-19/USA/GA-CDC-ASC21         2.88e-01  1294_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6287
+hCoV-19/France/IDF-HMN-2         2.87e-01  1283_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6237
+hCoV-19/France/IDF-HMN-2         2.84e-01  1280_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6088
+hCoV-19/France/NOR-HMN-2         2.87e-01  1297_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6238
+hCoV-19/Belgium/rega-848         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/Germany/NI-RKI-I         2.86e-01  1291_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/Germany/RP-USAFS         2.87e-01  1280_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6234
+hCoV-19/Sweden/190819996         2.87e-01  1289_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6252
+hCoV-19/South_Africa/KRI         2.87e-01  1283_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6118_[+3(5.66e-05)]_112
+hCoV-19/Belgium/UGent-44         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/France/IDF-HMN-2         2.87e-01  1280_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6236
+hCoV-19/Finland/THL-2021         2.88e-01  1321_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6251
+hCoV-19/Portugal/PT2276/         2.86e-01  1272_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6224
+hCoV-19/Portugal/PT4078/         2.86e-01  1281_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6222
+hCoV-19/Finland/6097/202         2.88e-01  1321_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1249_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6255
+hCoV-19/Sweden/SE0019403         2.84e-01  1289_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6068
+hCoV-19/Germany/BW-RKI-I         2.87e-01  1281_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6263
+hCoV-19/Belgium/ULG-1338         2.85e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6153
+hCoV-19/Luxembourg/LNS88         2.84e-01  1250_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6147
+hCoV-19/England/CAMC-150         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/Luxembourg/LNS54         2.85e-01  1250_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6188
+hCoV-19/Germany/NW-RKI-I         2.87e-01  1305_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1246_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2930_[+1(2.46e-05)]_\
+    6241
+hCoV-19/South_Africa/KRI         2.87e-01  1292_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6239
+hCoV-19/Sweden/SE1410276         2.87e-01  1285_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6252
+hCoV-19/Kenya/C86741/202         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(2.46e-05)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/Sweden/394131216         2.88e-01  1321_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6252
+hCoV-19/Germany/un-RKI-I         2.88e-01  1321_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6252
+hCoV-19/South_Africa/NHL         2.87e-01  1282_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6238
+hCoV-19/France/IDF-HMN-2         2.87e-01  1304_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6237
+hCoV-19/USA/OH-CDC-QDX23         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/Finland/THL-2021         2.87e-01  1292_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6251
+hCoV-19/Sweden/SE0020406         2.84e-01  1291_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6070
+hCoV-19/France/IDF-HB_11         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/Belgium/UZA-UA-4         2.88e-01  1315_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6287
+hCoV-19/Sweden/191920416         2.88e-01  1321_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6252
+hCoV-19/Norway/4577/2021         2.87e-01  1297_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6237
+hCoV-19/Finland/3386/202         2.87e-01  1296_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2930_[+1(2.46e-05)]_\
+    6255
+hCoV-19/Sweden/DC1098782         2.87e-01  1298_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6237
+hCoV-19/Malawi/CERI-KRIS         2.86e-01  1283_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6226
+hCoV-19/Wales/PHWC-4B982         2.88e-01  1283_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6288
+hCoV-19/Denmark/DCGC-973         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/South_Africa/NIC         2.86e-01  1261_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6214
+hCoV-19/Zambia/ZMB-89114         2.85e-01  1265_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6179
+hCoV-19/Sweden/259445549         2.87e-01  1298_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6237
+hCoV-19/USA/PA-CDC-STM-0         2.87e-01  1291_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6246
+hCoV-19/Belgium/rega-359         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/Finland/5922/202         2.87e-01  1300_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6255
+hCoV-19/Israel/CVL-6616/         2.88e-01  1286_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6288
+hCoV-19/France/PDL-IPP01         2.86e-01  1258_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/Canada/ON-PHL-21         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/England/MILK-156         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/France/IDF-IPP14         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/Sweden/10048365/         2.87e-01  1298_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6237
+hCoV-19/Canada/ON-PHL-21         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/Philippines/PH-P         2.87e-01  1313_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6241
+hCoV-19/USA/MN-MDH-4453/         2.87e-01  1282_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6236
+hCoV-19/Turkey/HSGM-3199         2.87e-01  1289_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6230
+hCoV-19/Belgium/ULG-1245         2.85e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6153
+hCoV-19/Finland/V8832/20         2.88e-01  1317_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6255
+hCoV-19/South_Africa/NHL         2.88e-01  1283_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6288
+hCoV-19/Germany/SN-RKI-I         2.88e-01  1313_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6288
+hCoV-19/Philippines/PH-P         2.87e-01  1284_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6241
+hCoV-19/Sweden/16661167P         2.87e-01  1298_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6237
+hCoV-19/South_Africa/NHL         2.88e-01  1283_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6288
+hCoV-19/Sweden/394734726         2.87e-01  1291_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6252
+hCoV-19/South_Africa/NHL         2.87e-01  1285_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2930_[+1(2.46e-05)]_\
+    6246
+hCoV-19/Belgium/Jessa_55         2.86e-01  1279_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6227
+hCoV-19/Canada/MB-NML-17         2.85e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6153
+hCoV-19/Czech_Republic/1         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/Finland/3488/202         2.87e-01  1293_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6253
+hCoV-19/Sweden/DC1095372         2.87e-01  1298_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6237
+hCoV-19/South_Africa/UFS         2.87e-01  1295_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/USA/MN-MDH-4258/         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/Finland/THL-2021         2.87e-01  1307_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6254
+hCoV-19/Finland/THL-2021         2.87e-01  1295_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6254
+hCoV-19/Denmark/DCGC-122         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2924_[+1(2.46e-05)]_\
+    6221
+hCoV-19/Finland/THL-2021         2.87e-01  1292_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6252
+hCoV-19/Finland/V8839/20         2.87e-01  1306_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6255
+hCoV-19/Qatar/QA.QU_18.1         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/Denmark/DCGC-691         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/Philippines/PH-P         2.87e-01  1315_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6242
+hCoV-19/Philippines/PH-P         2.87e-01  1286_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6242
+hCoV-19/Reunion/PIMIT_03         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    3269_[+2(4.52e-06)]_2944
+hCoV-19/Philippines/PH-P         2.86e-01  1285_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6226
+hCoV-19/Finland/2875/202         2.87e-01  1291_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6251
+hCoV-19/Sweden/21-52060/         2.86e-01  1279_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6227
+hCoV-19/Malaysia/IMR_WC2         2.88e-01  1311_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6273
+hCoV-19/Finland/5048/202         2.87e-01  1295_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6255
+hCoV-19/USA/OR-OHSU-1170         2.87e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6288
+hCoV-19/South_Africa/NHL         2.88e-01  1283_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6288
+hCoV-19/Belgium/ULG-1222         2.85e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6153
+hCoV-19/Switzerland/GE-3         2.87e-01  1286_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6240
+hCoV-19/Netherlands/GE-R         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/Reunion/HCL02111         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/Rwanda/NRLNAT403         2.85e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6153
+hCoV-19/Singapore/320/20         2.88e-01  1317_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6276
+hCoV-19/Belgium/AZDelta-         2.87e-01  1296_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1249_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2930_[+1(2.46e-05)]_\
+    6244
+hCoV-19/Sweden/608106671         2.87e-01  1298_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6237
+hCoV-19/France/IDF-HMN-2         2.86e-01  1271_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/Sweden/191660786         2.83e-01  1284_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6022
+hCoV-19/France/HDF-P104-         2.88e-01  1311_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6288
+hCoV-19/Kenya/AFI-LAM-20         2.88e-01  1311_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1249_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2930_[+1(2.46e-05)]_\
+    6288
+hCoV-19/USA/MD-CDC-ASC21         2.88e-01  1304_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6288
+hCoV-19/South_Africa/KRI         2.88e-01  1291_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6288
+hCoV-19/South_Africa/NIC         2.86e-01  1261_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1249_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2930_[+1(2.46e-05)]_\
+    6215
+hCoV-19/USA/PA-CDC-STM-0         2.87e-01  1291_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6251
+hCoV-19/Canada/ON-PHL-21         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/Sweden/20244314P         2.87e-01  1298_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_5172_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_6237
+hCoV-19/Austria/MUW_1377         2.87e-01  1286_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6249
+hCoV-19/Luxembourg/LNS22         2.85e-01  1250_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6159
+hCoV-19/Sweden/401329316         2.87e-01  1291_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6252
+hCoV-19/South_Africa/KRI         2.87e-01  1283_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6236
+hCoV-19/Belgium/CHUNamur         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/Finland/6477/202         2.87e-01  1292_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6254
+hCoV-19/France/IDF-SLS76         2.88e-01  1321_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6288
+hCoV-19/South_Africa/NHL         2.87e-01  1283_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2930_[+1(2.46e-05)]_\
+    6254
+hCoV-19/Germany/BY-RKI-I         2.87e-01  1291_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6244
+hCoV-19/Germany/un-RKI-I         2.87e-01  1290_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6252
+hCoV-19/Hong_Kong/CM2100         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/South_Africa/NIC         2.86e-01  1261_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6214
+hCoV-19/South_Africa/KRI         2.87e-01  1285_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1249_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6246
+hCoV-19/Belgium/rega-527         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/Finland/5697/202         2.87e-01  1313_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6253
+hCoV-19/England/CAMC-13E         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/Belgium/rega-351         2.81e-01  979_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/Philippines/PH-P         2.87e-01  1285_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6245
+hCoV-19/Thailand/Narathi         2.88e-01  1282_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6288
+hCoV-19/South_Africa/NHL         2.88e-01  1283_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6288
+hCoV-19/France/PDL-IPP00         2.86e-01  1255_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/France/IDF-IPP11         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/Belgium/rega-690         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/Netherlands/ZH-E         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6212
+hCoV-19/South_Africa/KRI         2.87e-01  1283_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6239
+hCoV-19/Belgium/ULG-1388         2.85e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6153
+hCoV-19/Germany/SL-RKI-I         2.88e-01  1297_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6282
+hCoV-19/South_Africa/NIC         2.86e-01  1261_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6214
+hCoV-19/USA/WI-CDC-LC003         2.85e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6152
+hCoV-19/Sweden/394245706         2.88e-01  1321_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6252
+hCoV-19/Canada/BC-BCCDC-         2.85e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6153
+hCoV-19/Sweden/10024124/         2.87e-01  1298_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6237
+hCoV-19/Luxembourg/LNS39         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6193
+hCoV-19/Finland/THL-2021         2.88e-01  1316_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6255
+hCoV-19/Philippines/PH-P         2.87e-01  1285_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6241
+hCoV-19/Switzerland/BE-E         2.87e-01  1291_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6249
+hCoV-19/USA/WA-CDC-UW210         2.82e-01  1120_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6126
+hCoV-19/Belgium/AZKLINA1         2.87e-01  1286_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6230
+hCoV-19/France/IDF-SLS76         2.88e-01  1321_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1249_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6288
+hCoV-19/Belgium/ULG-1619         2.85e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6153
+hCoV-19/South_Africa/KRI         2.87e-01  1291_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6246
+hCoV-19/USA/WA-UW-210410         2.82e-01  1120_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6126
+hCoV-19/USA/GA-CDC-ASC21         2.88e-01  1294_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6288
+hCoV-19/Canada/ON-PHL-21         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/Sweden/14176380P         2.85e-01  1289_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6160
+hCoV-19/Belgium/rega-952         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6218
+hCoV-19/Portugal/PT4077/         2.86e-01  1281_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6222
+hCoV-19/Germany/NW-RKI-I         2.87e-01  1291_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6243
+hCoV-19/Austria/CeMM4045         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/Netherlands/NH-R         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/Finland/THL-2021         2.87e-01  1292_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6252
+hCoV-19/France/IDF-HCL02         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/Germany/BY-RKI-I         2.87e-01  1284_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6242
+hCoV-19/Belgium/rega-343         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/Norway/5552/2021         2.87e-01  1297_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6237
+hCoV-19/Finland/THL-2021         2.87e-01  1309_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6251
+hCoV-19/South_Africa/KRI         2.88e-01  1283_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6288
+hCoV-19/USA/MN-1615/2021         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/South_Africa/KRI         2.88e-01  1285_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6288
+hCoV-19/Reunion/PIMIT_06         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    3269_[+2(4.52e-06)]_2944
+hCoV-19/South_Africa/NIC         2.85e-01  1243_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6214
+hCoV-19/South_Africa/KRI         2.88e-01  1316_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6288
+hCoV-19/France/IDF-SLS76         2.87e-01  1282_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1249_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6244
+hCoV-19/France/ARA-HCL02         2.88e-01  1291_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6288
+hCoV-19/USA/CA-SC-210835         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/South_Africa/NIC         2.86e-01  1261_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6204
+hCoV-19/Netherlands/OV-R         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/Germany/un-RKI-I         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/South_Africa/NIC         2.86e-01  1261_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6214
+hCoV-19/Germany/MV-RKI-I         2.87e-01  1291_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6245
+hCoV-19/South_Africa/NHL         2.87e-01  1285_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2930_[+1(2.46e-05)]_\
+    6239
+hCoV-19/South_Africa/NHL         2.87e-01  1283_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6239
+hCoV-19/USA/MN-MDH-4408/         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/Spain/CT-HUGTiPM         2.87e-01  1283_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2927_[+1(2.46e-05)]_\
+    6238
+hCoV-19/Zimbabwe/ZW-5168         2.86e-01  1283_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/South_Africa/NHL         2.88e-01  1283_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6288
+hCoV-19/Sweden/392462166         2.85e-01  1286_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6164
+hCoV-19/Finland/5754/202         2.88e-01  1321_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6255
+hCoV-19/Ireland/CW-NVRL-         2.86e-01  1267_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/South_Africa/KRI         2.88e-01  1312_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6287
+hCoV-19/South_Africa/NIC         2.86e-01  1261_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1249_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2930_[+1(2.46e-05)]_\
+    6215
+hCoV-19/Sweden/644314828         2.87e-01  1298_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6237
+hCoV-19/Sweden/16859012P         2.87e-01  1298_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1249_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6237
+hCoV-19/France/IDF-HMN-2         2.86e-01  1270_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6221
+hCoV-19/Sweden/DC1083473         2.87e-01  1291_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6252
+hCoV-19/Norway/5431/2021         2.87e-01  1297_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6237
+hCoV-19/South_Africa/NIC         2.86e-01  1261_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6214
+hCoV-19/Sweden/16141208P         2.87e-01  1298_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6237
+hCoV-19/Sweden/DC1083599         2.87e-01  1291_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6252
+hCoV-19/Norway/4412/2021         2.87e-01  1297_[+2(4.52e-06)]_1822_\
+    [+2(4.52e-06)]_1516_[-1(4.52e-06)]_5887_[+1(4.52e-06)]_1240_[+3(5.66e-05)]_\
+    1168_[+3(5.66e-05)]_31_[-1(2.46e-05)]_206_[+3(7.38e-06)]_2225_\
+    [+3(5.66e-05)]_2527_[-3(7.38e-06)]_2637_[-3(7.38e-06)]_2921_[+1(2.46e-05)]_\
+    6237
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (5) found.
+********************************************************************************
+
+CPU: noble-meme.grid.gs.washington.edu
+
+********************************************************************************

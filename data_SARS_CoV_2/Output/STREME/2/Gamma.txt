@@ -1,0 +1,60 @@
+********************************************************************************
+STREME - Sensitive, Thorough, Rapid, Enriched Motif Elicitation
+********************************************************************************
+MEME version 5.4.1 (Release date: Sat Aug 21 19:23:23 2021 -0700)
+
+For further information on how to interpret these results please access https://meme-suite.org/meme.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey,
+"STREME: accurate and versatile sequence motif discovery",
+Bioinformatics, Mar. 24, 2021.
+********************************************************************************
+
+
+ALPHABET= ACGT
+
+strands: + -
+
+Background letter frequencies
+A 0.31 C 0.19 G 0.19 T 0.31 
+
+MOTIF 1-ACTTTCAA STREME-1
+letter-probability matrix: alength= 4 w= 8 nsites= 133 E= 2.5e-004
+ 0.937282 0.017264 0.017264 0.028191
+ 0.028191 0.926355 0.017264 0.028191
+ 0.028191 0.017264 0.017264 0.937282
+ 0.028191 0.017264 0.017264 0.937282
+ 0.028191 0.017264 0.017264 0.937282
+ 0.028191 0.926355 0.017264 0.028191
+ 0.937282 0.017264 0.017264 0.028191
+ 0.937282 0.017264 0.017264 0.028191
+
+MOTIF 2-CAAAACCG STREME-2
+letter-probability matrix: alength= 4 w= 8 nsites= 133 E= 2.5e-004
+ 0.028191 0.926355 0.017264 0.028191
+ 0.937282 0.017264 0.017264 0.028191
+ 0.937282 0.017264 0.017264 0.028191
+ 0.937282 0.017264 0.017264 0.028191
+ 0.937282 0.017264 0.017264 0.028191
+ 0.028191 0.926355 0.017264 0.028191
+ 0.028191 0.926355 0.017264 0.028191
+ 0.028191 0.017264 0.926355 0.028191
+
+********************************************************************************
+Stopped because maximum number of motifs (2) reached.
+********************************************************************************
+COMMAND:	streme --verbosity 1 --oc . --dna --totallength 4000000 --time 14400 --minw 8 --maxw 8 --nmotifs 2 --align center --p Gamma_P.1_primary.fasta --n Gamma_P.1_control.fasta
+********************************************************************************
+CPU:		noble-meme.grid.gs.washington.edu
+********************************************************************************
+FINALTIME:	17.03 seconds
+********************************************************************************
