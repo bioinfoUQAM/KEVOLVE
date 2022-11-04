@@ -41,7 +41,6 @@ def predict(parameters):
 	probabilities = numpy.empty(0, float)
 	# Load the testing data
 	D_test = data.loadData(parameters["testing_fasta"])
-
 	# Compute the belonging probability for each model
 	for fasta, model in zip(os.listdir(parameters["k_mers_path"]), os.listdir(parameters["model_path"])):
 		# Get the current model

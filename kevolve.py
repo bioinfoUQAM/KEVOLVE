@@ -1,12 +1,18 @@
 # Imports
+import time
 import data
 import numpy
 import kmers
 import matrix
 import algorithm
+from sklearn.svm import SVC
+from operator import itemgetter
+from sklearn.feature_selection import SelectFromModel
 
 # Function to extract feature subsets
 def extract(parameters):
+	# Get start time
+	start = time.time()
 	# Table of solutions
 	solutions = []
 	# Number of attempts at the first iteration 
@@ -16,13 +22,25 @@ def extract(parameters):
 	# Population retained at each iteration
 	temporaryPopulation = []	
 	# Load the training data
+	print("Load sequences...")
 	D = data.loadData(parameters["training_fasta"])
 	# Get the k-mers existing in the sequences
+	print("Count k-mers...")
 	K = kmers.getKmers(parameters["k"], D)
 	# Generate the samples matrix (X) and the target values (y)
+	print("Generate matrices...")
 	X, y = matrix.generateSamplesTargets(D, K , parameters["k"])
 	# Variance threshold preprocessing
-	X, K = algorithm.varianceThreshold(X, K, parameters["variance_threshold"])
+	print("Preprocessing...")
+	X, K = algorithm.varianceThreshold(X, K)
+	classifier = SVC(kernel = 'linear', C = 1, cache_size = 1000)
+	selectFromModel = SelectFromModel(estimator=classifier).fit(X, y)
+	indices = [i for i, value in enumerate(selectFromModel.get_support()) if value == True]
+	X = X[:,indices]
+	# Update the list of k-mers
+	K = dict.fromkeys(list(itemgetter(*indices)(list(K.keys()))), 0)
+	# Clear the indices list
+	indices.clear()
 	# Get the number of features
 	n_features = numpy.size(X, 1)
 	# Initialize the number of genes 
@@ -31,7 +49,7 @@ def extract(parameters):
 	genes = algorithm.generateGenes(n_features)
 	# Initialize the weights
 	weights = algorithm.initialWeights(genes)
-
+	print("Solution search...\n")
 	# Iterate through the number of iterations
 	for n in range(parameters["n_iterations"]):
 		# Initialize the global scores 
@@ -71,8 +89,10 @@ def extract(parameters):
 			temporaryPopulation.clear()
 			# Add the selection to the temporary population
 			temporaryPopulation = selection
+			# If the number of solution is reached, stop the algorithm
+			if parameters["n_solutions"] <= len(solutions): break
 			# If the objectif is not reached, update the number of attempts
-			if attempt + 1 == n_attempts and objective == False: n_attempts = algorithm.compute_n_attempts(parameters["objective_score"], max_global_weighted_score, max_global_unweighted_score)
+			elif attempt + 1 == n_attempts and objective == False: n_attempts = algorithm.compute_n_attempts(parameters["objective_score"], max_global_weighted_score, max_global_unweighted_score)
 			# If the objectif is reached, update the number of attempts to 1
 			elif attempt + 1 == n_attempts and objective == True: n_attempts = 1
 		# If the number of solution is reached, stop the algorithm
@@ -80,3 +100,4 @@ def extract(parameters):
 	# Save the identified solutions
 	print("Identified solutions (" + str(len(solutions)) + ") saved at : " + parameters["k_mers_path"])
 	kmers.saveExtractedKmers(K = K, solutions = solutions, path = parameters["k_mers_path"])
+	print("Time: ",time.time() - start)

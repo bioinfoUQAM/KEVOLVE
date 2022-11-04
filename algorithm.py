@@ -4,25 +4,28 @@ import numpy
 import heapq
 import statistics
 from sklearn.svm import SVC
+from operator import itemgetter
 from sklearn.metrics import f1_score
 from sklearn.model_selection import StratifiedKFold
 from sklearn.model_selection import cross_val_predict
 from sklearn.feature_selection import VarianceThreshold
 
-# Function removing quasi-constant features
-def varianceThreshold(X, K, threshold):
-	# Instancies the filter method
-	varianceThreshold = VarianceThreshold(threshold = threshold)
-	# Apply the filter
-	X = varianceThreshold.fit_transform(X)
-	# Initialize the list of k-mers to delete
-	delete = []
-	# Iterate through the variance threshold support
-	for i, value in enumerate(varianceThreshold.get_support()):
-		# If support is egal to false, add to the list of k-mers to delete
-		if value == False: delete.append(list(K.keys())[i])
-	# Delete all the k-mers of the list from the initial dictionary
-	for key in delete: del K[key]
+# Function removing quasi-constant features (itemgetter divide by 10 execution time)
+def varianceThreshold(X, K):
+	# If it is possible to apply a variance filter
+	try:
+		# Instancies the filter method
+		varianceThreshold = VarianceThreshold(threshold = 0.01)
+		# Apply the filter
+		X = varianceThreshold.fit_transform(X)
+		# Compute the list of k-mers indices to retain 
+		indices = [i for i, value in enumerate(varianceThreshold.get_support()) if value == True]
+		# Update the list of k-mers
+		K = dict.fromkeys(list(itemgetter(*indices)(list(K.keys()))), 0)
+		# Clear the indices list
+		indices.clear()
+	# If not, pass on
+	except: pass
 	# Return the transformed samples matrix and the updated dictionary of k-mers
 	return X, K
 

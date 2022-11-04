@@ -23,6 +23,5 @@ def getParameters(configuration_file):
 	parameters["objective_score"] = float(configurationParser.get("parameters", "objective_score"))
 	parameters["mutation_rate"] = float(configurationParser.get("parameters", "mutation_rate"))
 	parameters["crossover_rate"] = float(configurationParser.get("parameters", "crossover_rate"))
-	parameters["variance_threshold"] = float(configurationParser.get("parameters", "variance_threshold"))
 	# Return the parameter dictionary
 	return parameters
