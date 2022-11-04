@@ -1,8 +1,8 @@
-# CASTOR-KRFE
-* CASTOR-KRFE v1.3 Help file																		  
+# KEVOLVE
+* KEVOLVE v1.1 Help file																		  
 * K-mers based feature identifier for viral genomic classification                            
-* Copyright (C) 2022  Dylan Lebatteux, Amine M. Remita, Abdoulaye Banire Diallo    
-* Author : Dylan Lebatteux, Amine M. Remita													  
+* Copyright (C) 2022  Dylan Lebatteux and Abdoulaye Banire Diallo    
+* Author : Dylan Lebatteux												  
 * Contact : lebatteux.dylan@courrier.uqam.ca
 
 ### Description
