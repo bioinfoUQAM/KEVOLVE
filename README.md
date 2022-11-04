@@ -65,6 +65,6 @@ CTCAACTCAGTTCCACCAGGCTCTGTTGGATCCGAGGGTAAGGGCTCTGTATTTTCCTGC
 * Prediction.csv : Results file of the prediction of unknown genomic sequences   
 * Signature_location.xlsx : Analysis report associated with a signature
 
-### Reference to cite CASTOR-KRFE
-* [Lebatteux, D., Remita, A. M., & Diallo, A. B. (2019). Toward an alignment-free method for feature extraction and accurate classification of viral sequences. Journal of Computational Biology, 26(6), 519-535.](https://www.liebertpub.com/doi/pdfplus/10.1089/cmb.2018.0239)
+### Reference to cite KEVOLVE
+* [Lebatteux, Dylan, and Abdoulaye Baniré Diallo. "Combining a genetic algorithm and ensemble method to improve the classification of viruses." 2021 IEEE International Conference on Bioinformatics and Biomedicine (BIBM). IEEE, 2021.](https://ieeexplore.ieee.org/abstract/document/9669670)
                                                                                   
