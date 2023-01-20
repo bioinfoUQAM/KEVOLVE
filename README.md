@@ -6,7 +6,7 @@
 * Contact : lebatteux.dylan@courrier.uqam.ca
 
 ### Description
-
+KEVOLVE, an approach based on a Genetic Algorithm  including a Machine-Learning kernel to extract a bag of minimal subsets of k-mers features maximizing a given classification score threshold. 
 
 ### Required softwares
 * [python](https://www.python.org/downloads/) 
@@ -67,4 +67,7 @@ CTCAACTCAGTTCCACCAGGCTCTGTTGGATCCGAGGGTAAGGGCTCTGTATTTTCCTGC
 
 ### Reference to cite KEVOLVE
 * [Lebatteux, Dylan, and Abdoulaye Baniré Diallo. "Combining a genetic algorithm and ensemble method to improve the classification of viruses." 2021 IEEE International Conference on Bioinformatics and Biomedicine (BIBM). IEEE, 2021.](https://ieeexplore.ieee.org/abstract/document/9669670)
+
+### Reference to cite KANALYZER (Option 4: Motif analyzer)
+* [Lebatteux, Dylan, et al. "KANALYZER: a method to identify variations of discriminative k-mers in genomic sequences." 2022 IEEE International Conference on Bioinformatics and Biomedicine (BIBM). IEEE Computer Society, 2022.](https://www.computer.org/csdl/proceedings-article/bibm/2022/09995370/1JC2uDIO8cE)
                                                                                   
