@@ -30,7 +30,7 @@ def extract(parameters):
 	# Generate the samples matrix (X) and the target values (y)
 	print("Generate matrices...")
 	X, y = matrix.generateSamplesTargets(D, K , parameters["k"])
-	# Variance threshold preprocessing
+	# Preprocessing
 	print("Preprocessing...")
 	X, K = algorithm.varianceThreshold(X, K)
 	classifier = SVC(kernel = 'linear', C = 1, cache_size = 1000)

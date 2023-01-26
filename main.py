@@ -2,6 +2,7 @@
 import ml
 import sys
 import kevolve
+import analyzer
 import configuration
 
 # Main program loop
@@ -10,7 +11,7 @@ while(True):
 	print("\n#########################")
 	print("######## KEVOLVE ########")
 	print("#########################")
-	print("\n1) Extract k-mers\n2) Fit an ensemble model\n3) Predict a sequences\n4) Exit/Quit")
+	print("\n1) Extract k-mers\n2) Fit a model\n3) Predict a sequences\n4) Motif analyzer (New)\n5) Exit/Quit")
 	# Get the selected option
 	option = int(input("\nSelect an option: "))
 	# Get/Update the parameters
@@ -27,8 +28,14 @@ while(True):
 	elif  option == 3: 
 		print("\nKEVOLVE: testing mode\n")
 		ml.predict(parameters)
-	# Quit the program
+	# Analyzer the identified k-mers
 	elif option == 4: 
+		print("\nKEVOLVE: motif analyzer mode\n")
+		Results = analyzer.identifyPerfectMatch(parameters)	
+		Results = analyzer.identifyVariations(Results, parameters)
+		Results = analyzer.extractRelatedInformation(Results, parameters)
+	# Quit the program
+	elif option == 5: 
 		print("Program exit")
 		sys.exit(0)
 	# If the mode specified is not valid

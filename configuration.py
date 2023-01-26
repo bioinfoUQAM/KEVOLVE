@@ -23,5 +23,8 @@ def getParameters(configuration_file):
 	parameters["objective_score"] = float(configurationParser.get("parameters", "objective_score"))
 	parameters["mutation_rate"] = float(configurationParser.get("parameters", "mutation_rate"))
 	parameters["crossover_rate"] = float(configurationParser.get("parameters", "crossover_rate"))
+	parameters["refence_sequence_genbank"] = configurationParser.get("parameters", "reference_sequence")
+	parameters["analysis_report_path"] = configurationParser.get("parameters", "analysis_report_path")
+	parameters["k_mers_to_analyze_path"] = configurationParser.get("parameters", "k_mers_to_analyze_path")
 	# Return the parameter dictionary
 	return parameters
