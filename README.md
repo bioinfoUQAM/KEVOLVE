@@ -1,5 +1,5 @@
 # KEVOLVE
-* KEVOLVE v1.1 Help file																		  
+* KEVOLVE v1.2 Help file																		  
 * K-mers based feature identifier for viral genomic classification                            
 * Copyright (C) 2023  Dylan Lebatteux and Abdoulaye Banire Diallo    
 * Author : Dylan Lebatteux												  
@@ -33,7 +33,7 @@ List of parameters requiring adjustment in the configuration_file.ini :
 * objective_score : Score to be achieved by the objective function (default = 0.99)
 * mutation_rate : Initial mutation rate (default = 0.1)
 * crossover_rate : Percentage of crossover in each generation (default = 0.2)
-* evaluation_mode ; Evaluation mode during the prediction (True/False), require labelled sequences for the predicted set
+* evaluation_mode : Evaluation mode during the prediction (True/False), require labelled sequences for the predicted set
 
 ### Utilization
 1) Specify the parameters of the previous section in the configuration_file.ini.
@@ -42,7 +42,7 @@ List of parameters requiring adjustment in the configuration_file.ini :
 $ python main.py configuration_file.ini
 ```
 3) Select an option:
-- 1.Extract k-mers | Required parameters: T, k_min, k_max, training_fasta and k_mers_path
+- 1.Extract k-mers | Required parameters: k, model_path, training_fasta, k_mers_path, n_iterations, n_solution, n_chromosomes, n_genes, objective_score, mutation_rate, crossover_rate
 - 2.Fit a model | Required parameters: training_fasta, k_mers_path and model_path
 - 3.Predict a sequences | Required parameters: testing_fasta, k_mers_path, model_path, prediction_path and evaluation_mode
 - 4.Motif analyzer | Required parameters: training_fasta, k_mers_path and reference_sequence
