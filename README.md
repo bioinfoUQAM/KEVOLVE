@@ -65,7 +65,7 @@ CTCAACTCAGTTCCACCAGGCTCTGTTGGATCCGAGGGTAAGGGCTCTGTATTTTCCTGC
 ```
 * The character "|" is used to separate the sequence ID from its target. 
 * The target must be specified in the fasta file for a prediction with evaluation_mode = True.
-* For more detailed examples see the data sets in the Data folder   
+* For more detailed examples see the data sets in the input folder   
 
 ### Output    
 * k_mers.fasta: File of the extracted k-mers list 
