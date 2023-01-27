@@ -17,15 +17,23 @@ KEVOLVE, an approach based on a Genetic Algorithm  including a Machine-Learning 
 
 ### Parameters
 List of parameters requiring adjustment in the configuration_file.ini :
-* k_min : Minimum length of k-mers
-* k_max : Maximum length of k-mers
-* T : Percentage performance threshold (T = 0.999 is recommended) .
+* k : Length of k-mers
+* model_path : Path of the prediction models directory
 * training_fasta : Training fasta file path
-* testing_fasta : Testing fasta file path
-* k_mers_path : Path file of the extracted k-mers
-* model_path : Path file of the prediction model
-* prediction_path : Path of the sequence prediction file
-* evaluation_mode : Evaluation mode during the prediction (True/False). 
+* testing_fasta: Testing fasta file path
+* reference_sequence : Reference sequence file path
+* k_mers_path : Path of the directory to save the extracted sets of k-mers
+* prediction_path : Path of the directory to save the predictions
+* analysis_report_path : Path of the directory to save the the analysis reports
+* k_mers_to_analyze_path : Path of the file of k-mers to analyze
+* n_iterations : Maximum number of generations of the genetic algorithm
+* n_solutions : Maximum number of solutions to identify
+* n_chromosomes : Number of feature subset generated at each iteration
+* n_genes : Number of k-mers in the initial population
+* objective_score : Score to be achieved by the objective function (default = 0.99)
+* mutation_rate : Initial mutation rate (default = 0.1)
+* crossover_rate : Percentage of crossover in each generation (default = 0.2)
+* evaluation_mode ; Evaluation mode during the prediction (True/False), require labelled sequences for the predicted set
 
 ### Utilization
 1) Specify the parameters of the previous section in the configuration_file.ini.
